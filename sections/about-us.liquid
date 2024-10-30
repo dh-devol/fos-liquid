@@ -1,0 +1,45 @@
+{% schema %}
+{
+  "name": "About Us Custom Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Welcome to Our About Us Page"
+    },
+    {
+      "type": "textarea",
+      "id": "section_description",
+      "label": "Section Description"
+    },
+    {
+      "type": "image_picker",
+      "id": "about_image",
+      "label": "About Us Image"
+    },
+    {
+      "type": "text",
+      "id": "additional_info",
+      "label": "Additional Information"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Us Custom Content",
+      "category": "Pages"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="about-us">
+  <h2>{{ section.settings.section_heading }}</h2>
+  <p>{{ section.settings.section_description }}</p>
+  
+  {% if section.settings.about_image %}
+    
+  {% endif %}
+  
+  <p>{{ section.settings.additional_info }}</p>
+</section>
