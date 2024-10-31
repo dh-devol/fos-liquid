@@ -144,25 +144,17 @@
         "text_zYMyWb": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "text_style": "body"
-          }
-        },
-        "button_K6XjFW": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_FMLfzh",
-        "text_zYMyWb",
-        "button_K6XjFW"
+        "text_zYMyWb"
       ],
       "settings": {
+        "image": "{{ product.metafields.custom.specification_drawing.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
