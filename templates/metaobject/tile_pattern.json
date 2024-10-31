@@ -33,6 +33,7 @@
         "text_kUrq3Y"
       ],
       "settings": {
+        "image": "{{ metaobject.pattern_image_2.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
