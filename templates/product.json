@@ -130,6 +130,53 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_BGrcNT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FMLfzh": {
+          "type": "heading",
+          "repeater": "{{ product.metafields.custom.tile_pattern.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.display_title.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_zYMyWb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_K6XjFW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FMLfzh",
+        "text_zYMyWb",
+        "button_K6XjFW"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_qhwKgc": {
       "type": "featured-collection",
       "settings": {
@@ -155,16 +202,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "page_iqiPm3": {
-      "type": "page",
-      "settings": {
-        "page": "",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -219,8 +256,8 @@
   "order": [
     "main",
     "collapsible_content_HcgWf6",
+    "image_with_text_BGrcNT",
     "featured_collection_qhwKgc",
-    "page_iqiPm3",
     "featured_collection_PAYMaR",
     "related-products"
   ]
