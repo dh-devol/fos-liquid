@@ -305,7 +305,7 @@
   margin-bottom: 0;
 }
 
-.card__heading h3 {
+.card__heading .h5 {
   font-size: 2rem;
 }
 
