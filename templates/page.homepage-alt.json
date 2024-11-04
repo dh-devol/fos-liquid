@@ -158,25 +158,25 @@
         "featured_collection_GRiTU3": {
           "type": "featured_collection",
           "settings": {
-            "collection": "limestone"
+            "collection": "aged"
           }
         },
         "featured_collection_WBCayF": {
           "type": "featured_collection",
           "settings": {
-            "collection": "terracotta-tiles"
+            "collection": "modern"
           }
         },
         "featured_collection_xER8Ax": {
           "type": "featured_collection",
           "settings": {
-            "collection": "marble-tiles"
+            "collection": "chequerboard"
           }
         },
         "featured_collection_9Ny3dR": {
           "type": "featured_collection",
           "settings": {
-            "collection": "wood-flooring"
+            "collection": "farmhouse"
           }
         }
       },
@@ -212,25 +212,25 @@
         "featured_collection_dgwLTP": {
           "type": "featured_collection",
           "settings": {
-            "collection": "limestone"
+            "collection": "ivory-white"
           }
         },
         "featured_collection_G4xkn7": {
           "type": "featured_collection",
           "settings": {
-            "collection": "terracotta-tiles"
+            "collection": "grey-black"
           }
         },
         "featured_collection_VmzKFC": {
           "type": "featured_collection",
           "settings": {
-            "collection": "marble-tiles"
+            "collection": "neutral"
           }
         },
         "featured_collection_LCEeei": {
           "type": "featured_collection",
           "settings": {
-            "collection": "wood-flooring"
+            "collection": "warm-tones"
           }
         }
       },
