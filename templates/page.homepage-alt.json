@@ -357,10 +357,33 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_LeRkUL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EraAWe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore our collection of limestone tiles",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EraAWe"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 12
+      }
+    },
     "featured_collection_Xdrd9Y": {
       "type": "featured-collection",
       "settings": {
-        "title": "Explore our collection of limestone tiles",
+        "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -381,7 +404,7 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -412,6 +435,7 @@
     "collection_list_V9gRdQ",
     "image_with_text_NM89UJ",
     "image_with_text_wQLFRk",
+    "rich_text_LeRkUL",
     "featured_collection_Xdrd9Y",
     "featured_blog_QLHPy4"
   ]
