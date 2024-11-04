@@ -34,7 +34,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-d0f84513-87e5-4b35-bb21-59eba01b05e4",
+            "color_scheme": "scheme-87d3c3b5-36cd-42bb-aa83-ee3957fdcd20",
             "text_alignment_mobile": "left"
           }
         },
@@ -349,8 +349,8 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-408079f8-dfa8-406e-ae83-8bfed7d8d112",
-        "color_scheme": "scheme-408079f8-dfa8-406e-ae83-8bfed7d8d112",
+        "section_color_scheme": "scheme-bcfef9d6-9964-4750-9703-24f920697c50",
+        "color_scheme": "scheme-bcfef9d6-9964-4750-9703-24f920697c50",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
