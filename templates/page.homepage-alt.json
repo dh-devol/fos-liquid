@@ -86,13 +86,16 @@
       "block_order": [
         "heading_8maFzU"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 12
       }
     },
     "collection_list_imVmTM": {
@@ -128,6 +131,13 @@
         "featured_collection_nWBRm4",
         "featured_collection_ay7U9E",
         "featured_collection_ecQRiH"
+      ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        "h3.card__heading {font-size: 1em;}",
+        "h3 .icon-arrow {display: none;}"
       ],
       "settings": {
         "title": "MATERIAL",
@@ -176,6 +186,13 @@
         "featured_collection_xER8Ax",
         "featured_collection_9Ny3dR"
       ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        "h3.card__heading {font-size: 1em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
       "settings": {
         "title": "STYLE",
         "heading_size": "h2",
@@ -223,6 +240,13 @@
         "featured_collection_VmzKFC",
         "featured_collection_LCEeei"
       ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        "h3.card__heading {font-size: 1em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
       "settings": {
         "title": "COLOUR",
         "heading_size": "h2",
@@ -266,6 +290,9 @@
         "heading_4mEfLV",
         "text_GV6zLm",
         "button_gbwgdM"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "image": "shopify://shop_images/Samples-2024.jpg",
