@@ -200,6 +200,28 @@
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
+      },
+      "scheme-d0f84513-87e5-4b35-bb21-59eba01b05e4": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#333333"
+        }
+      },
+      "scheme-408079f8-dfa8-406e-ae83-8bfed7d8d112": {
+        "settings": {
+          "background": "#f2f0ed",
+          "background_gradient": "",
+          "text": "#333333",
+          "button": "#333333",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#333333",
+          "shadow": "#333333"
+        }
       }
     }
   },
