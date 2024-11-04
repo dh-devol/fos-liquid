@@ -282,7 +282,7 @@
           "settings": {
             "button_label": "Find out more",
             "button_link": "shopify://pages/sample-request",
-            "button_style_secondary": false
+            "button_style_secondary": true
           }
         }
       },
