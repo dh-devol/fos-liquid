@@ -1,1 +1,350 @@
-{"sections":{"slideshow_XdqGrR":{"type":"slideshow","blocks":{"slide_ttrLEV":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/HomeBanner-2024-01.jpg","heading":"","heading_size":"h2","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-3","text_alignment_mobile":"left"}},"slide_Yr8jy6":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/HomeBanner-2024-03.jpg","heading":"","heading_size":"h2","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-3","text_alignment_mobile":"left"}},"slide_NtciMN":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/HomeBanner-2024-05.jpg","heading":"","heading_size":"h2","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-3","text_alignment_mobile":"left"}},"slide_XgQkXb":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/HomeBanner-2024-07.jpg","heading":"","heading_size":"h2","subheading":"","button_label":"","link":"","button_style_secondary":false,"box_align":"middle-center","show_text_box":false,"text_alignment":"center","image_overlay_opacity":0,"color_scheme":"scheme-3","text_alignment_mobile":"left"}}},"block_order":["slide_ttrLEV","slide_Yr8jy6","slide_NtciMN","slide_XgQkXb"],"custom_css":[".slideshow__controls {border: none;}"],"settings":{"layout":"full_bleed","slide_height":"adapt_image","slider_visual":"dots","auto_rotate":false,"change_slides_speed":5,"image_behavior":"none","show_text_below":true,"accessibility_info":"A selection of our favourite flooring images"}},"collection_list_Xw4UxX":{"type":"collection-list","blocks":{"featured_collection_L9gb8g":{"type":"featured_collection","settings":{"collection":"travertine"}},"featured_collection_Xna9zT":{"type":"featured_collection","settings":{"collection":"limestone"}},"featured_collection_VPNkbH":{"type":"featured_collection","settings":{"collection":"marble-tiles"}},"featured_collection_DqgMNF":{"type":"featured_collection","settings":{"collection":"slate-tiles"}},"featured_collection_DdjXmQ":{"type":"featured_collection","settings":{"collection":"porcelain-tiles"}},"featured_collection_Qqij3C":{"type":"featured_collection","settings":{"collection":"wood-effect-porcelain-tiles"}},"featured_collection_bNqATe":{"type":"featured_collection","settings":{"collection":"terracotta-tiles"}},"featured_collection_GCgNCp":{"type":"featured_collection","settings":{"collection":"wood-flooring"}},"featured_collection_h9RMrd":{"type":"featured_collection","settings":{"collection":"sandstone-tiles"}},"featured_collection_PkRyFi":{"type":"featured_collection","settings":{"collection":"glazed-wall-tiles"}},"featured_collection_QdexFC":{"type":"featured_collection","settings":{"collection":"cement-tiles"}},"featured_collection_KUVQYk":{"type":"featured_collection","settings":{"collection":"sample-request"}}},"block_order":["featured_collection_L9gb8g","featured_collection_Xna9zT","featured_collection_VPNkbH","featured_collection_DqgMNF","featured_collection_DdjXmQ","featured_collection_Qqij3C","featured_collection_bNqATe","featured_collection_GCgNCp","featured_collection_h9RMrd","featured_collection_PkRyFi","featured_collection_QdexFC","featured_collection_KUVQYk"],"custom_css":[".card__information {padding-top: 0.6em;}","h3 .icon-arrow {display: none;}"],"settings":{"title":"","heading_size":"h2","image_ratio":"adapt","columns_desktop":4,"color_scheme":"","show_view_all":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":0,"padding_bottom":36}},"image_with_text_A8E4Nh":{"type":"image-with-text","blocks":{"heading_8iYUk9":{"type":"heading","settings":{"heading":"Classically Beautiful Flooring","heading_size":"h2"}},"text_RaDg9h":{"type":"text","settings":{"text":"<h5>Floors of Stone have been selling high quality stone flooring since 2007, supplying affordable natural stone kitchen tiles to our sister company deVOL Kitchens, established in 1989. We are now a leading supplier of natural stone, porcelain, terracotta and reclaimed tiles, along with our own range of wood flooring. Visit the Floors of Stone showroom to view our flooring displays for yourself and speak to our friendly and knowledgeable staff.<\/h5><h5>We are always looking for new, exciting natural stone tiles and porcelain flooring to add to our extensive range. We also have a range of solid and engineered wood on display at our showroom at Cotes Mill: Planks & Parquet by Floors of Stone. We hold large quantities of flooring in stock with most items available for express delivery. Call today to discuss your requirements and we will happily provide quotations, free samples and expert advice.<\/h5>","text_style":"body"}},"button_thAfG8":{"type":"button","settings":{"button_label":"View our full product range >","button_link":"shopify:\/\/collections\/all","button_style_secondary":false}}},"block_order":["heading_8iYUk9","text_RaDg9h","button_thAfG8"],"settings":{"image":"shopify:\/\/shop_images\/TerracottaSquare-CotesScullery-2024.jpg","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"middle","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"scheme-2","color_scheme":"scheme-2","image_behavior":"none","mobile_content_alignment":"left","padding_top":0,"padding_bottom":0}},"featured_collection_xXzmqY":{"type":"featured-collection","settings":{"title":"Featured Flooring","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"limestone","products_to_show":10,"columns_desktop":4,"full_width":false,"show_view_all":false,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"featured_collection_NWbdxq":{"type":"featured-collection","settings":{"title":"Special Offers","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"limestone","products_to_show":10,"columns_desktop":4,"full_width":false,"show_view_all":false,"view_all_style":"link","enable_desktop_slider":true,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":36}},"featured_blog_4gWGh9":{"type":"featured-blog","settings":{"heading":"Our latest blog posts","heading_size":"h2","blog":"news","post_limit":3,"columns_desktop":3,"color_scheme":"scheme-1","show_image":true,"show_date":true,"show_author":true,"show_view_all":true,"padding_top":0,"padding_bottom":36}}},"order":["slideshow_XdqGrR","collection_list_Xw4UxX","image_with_text_A8E4Nh","featured_collection_xXzmqY","featured_collection_NWbdxq","featured_blog_4gWGh9"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_XdqGrR": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ttrLEV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/HomeBanner-2024-01.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_Yr8jy6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/HomeBanner-2024-03.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_NtciMN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/HomeBanner-2024-05.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_XgQkXb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/HomeBanner-2024-07.jpg",
+            "heading": "",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ttrLEV",
+        "slide_Yr8jy6",
+        "slide_NtciMN",
+        "slide_XgQkXb"
+      ],
+      "custom_css": [
+        ".slideshow__controls {border: none;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "A selection of our favourite flooring images"
+      }
+    },
+    "collection_list_Xw4UxX": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_L9gb8g": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travertine"
+          }
+        },
+        "featured_collection_Xna9zT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "limestone"
+          }
+        },
+        "featured_collection_VPNkbH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marble-tiles"
+          }
+        },
+        "featured_collection_DqgMNF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "slate-tiles"
+          }
+        },
+        "featured_collection_DdjXmQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "porcelain-tiles"
+          }
+        },
+        "featured_collection_Qqij3C": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-effect-porcelain-tiles"
+          }
+        },
+        "featured_collection_bNqATe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "terracotta-tiles"
+          }
+        },
+        "featured_collection_GCgNCp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-flooring"
+          }
+        },
+        "featured_collection_h9RMrd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sandstone-tiles"
+          }
+        },
+        "featured_collection_PkRyFi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "glazed-wall-tiles"
+          }
+        },
+        "featured_collection_QdexFC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cement-tiles"
+          }
+        },
+        "featured_collection_KUVQYk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sample-request"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_L9gb8g",
+        "featured_collection_Xna9zT",
+        "featured_collection_VPNkbH",
+        "featured_collection_DqgMNF",
+        "featured_collection_DdjXmQ",
+        "featured_collection_Qqij3C",
+        "featured_collection_bNqATe",
+        "featured_collection_GCgNCp",
+        "featured_collection_h9RMrd",
+        "featured_collection_PkRyFi",
+        "featured_collection_QdexFC",
+        "featured_collection_KUVQYk"
+      ],
+      "custom_css": [
+        ".card__information {padding-top: 0.6em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_A8E4Nh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8iYUk9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Classically Beautiful Flooring",
+            "heading_size": "h2"
+          }
+        },
+        "text_RaDg9h": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Floors of Stone have been selling high quality stone flooring since 2007, supplying affordable natural stone kitchen tiles to our sister company deVOL Kitchens, established in 1989. We are now a leading supplier of natural stone, porcelain, terracotta and reclaimed tiles, along with our own range of wood flooring. Visit the Floors of Stone showroom to view our flooring displays for yourself and speak to our friendly and knowledgeable staff.</h5><h5>We are always looking for new, exciting natural stone tiles and porcelain flooring to add to our extensive range. We also have a range of solid and engineered wood on display at our showroom at Cotes Mill: Planks & Parquet by Floors of Stone. We hold large quantities of flooring in stock with most items available for express delivery. Call today to discuss your requirements and we will happily provide quotations, free samples and expert advice.</h5>",
+            "text_style": "body"
+          }
+        },
+        "button_thAfG8": {
+          "type": "button",
+          "settings": {
+            "button_label": "View our full product range >",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8iYUk9",
+        "text_RaDg9h",
+        "button_thAfG8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/TerracottaSquare-CotesScullery-2024.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_xXzmqY": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card__content {padding: 0; padding-top: 1em;}",
+        ".card__information {padding: 0;}",
+        ".card__heading {font-size: 1em;}",
+        ".card-information .price {font-size: 0.9em;}"
+      ],
+      "settings": {
+        "title": "Featured Flooring",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "limestone",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_NWbdxq": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Special Offers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "limestone",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_4gWGh9": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Our latest blog posts",
+        "heading_size": "h2",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "show_view_all": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_XdqGrR",
+    "collection_list_Xw4UxX",
+    "image_with_text_A8E4Nh",
+    "featured_collection_xXzmqY",
+    "featured_collection_NWbdxq",
+    "featured_blog_4gWGh9"
+  ]
+}
