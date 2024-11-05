@@ -196,7 +196,7 @@
         "featured_collection_KUVQYk"
       ],
       "custom_css": [
-        ".card__information {padding-top: 0.6em;}",
+        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em}",
         "h3 .icon-arrow {display: none;}"
       ],
       "settings": {
