@@ -126,7 +126,7 @@
       "inventory_out_of_stock": "Out of stock",
       "inventory_out_of_stock_continue_selling": "In stock",
       "sku": "SKU",
-      "on_sale": "Sale",
+      "on_sale": "Special Offer",
       "product_variants": "Product variants",
       "media": {
         "gallery_viewer": "Gallery Viewer",
@@ -148,7 +148,7 @@
         "multiples_of": "Increments of {{ quantity }}",
         "min_of": "Min {{ quantity }}",
         "max_of": "Max {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in cart",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in basket",
         "note": "View quantity rules"
       },
       "volume_pricing": {
@@ -161,7 +161,7 @@
       "pickup_availability": {
         "view_store_info": "View store information",
         "check_other_stores": "Check availability at other stores",
-        "pick_up_available": "Pickup available",
+        "pick_up_available": "Available for collection from Cotes Mill",
         "pick_up_available_at_html": "Pickup available at <span class=\"color-foreground\">{{ location_name }}</span>",
         "pick_up_unavailable_at_html": "Pickup currently unavailable at <span class=\"color-foreground\">{{ location_name }}</span>",
         "unavailable": "Couldn't load pickup availability",
@@ -186,7 +186,7 @@
       "taxes_included": " ",
       "duties_included": "Duties included.",
       "duties_and_taxes_included": "Duties and taxes included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      "shipping_policy_html": "Delivery costs are calculated in the checkout"
     },
     "modal": {
       "label": "Media gallery"
@@ -196,7 +196,7 @@
       "apply": "Apply",
       "clear": "Clear",
       "clear_all": "Remove all",
-      "from": "From",
+      "from": "from",
       "filter_and_sort": "Filter and sort",
       "filter_by_label": "Filter:",
       "filter_button": "Filter",
@@ -219,7 +219,7 @@
       "reset": "Reset",
       "sort_button": "Sort",
       "sort_by_label": "Sort by:",
-      "to": "To",
+      "to": "to",
       "clear_filter": "Remove filter"
     }
   },
