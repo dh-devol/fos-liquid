@@ -36,7 +36,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 36
       }
     },
     "collection_list_xXmTTa": {
@@ -65,48 +65,13 @@
           "settings": {
             "collection": "terracotta-tiles"
           }
-        },
-        "featured_collection_KNq48G": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "travertine"
-          }
-        },
-        "featured_collection_YKcTLj": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sandstone-tiles"
-          }
-        },
-        "featured_collection_LBdVbr": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "porcelain-tiles"
-          }
-        },
-        "featured_collection_Dz4Hwt": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wood-flooring"
-          }
-        },
-        "featured_collection_bkUiQa": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "cement-tiles"
-          }
         }
       },
       "block_order": [
         "featured_collection_94QBa6",
         "featured_collection_U6CtAh",
         "featured_collection_NKCWGh",
-        "featured_collection_gNFJXx",
-        "featured_collection_KNq48G",
-        "featured_collection_YKcTLj",
-        "featured_collection_LBdVbr",
-        "featured_collection_Dz4Hwt",
-        "featured_collection_bkUiQa"
+        "featured_collection_gNFJXx"
       ],
       "custom_css": [
         ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
@@ -116,13 +81,13 @@
         "title": "",
         "heading_size": "h2",
         "image_ratio": "portrait",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 60
+        "padding_bottom": 20
       }
     },
     "main": {
@@ -132,11 +97,70 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collection_list_6L9MHU": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_wwaMV9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travertine"
+          }
+        },
+        "featured_collection_BKK8gk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sandstone-tiles"
+          }
+        },
+        "featured_collection_Ji9BQ8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "porcelain-tiles"
+          }
+        },
+        "featured_collection_jzWkwb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cement-tiles"
+          }
+        },
+        "featured_collection_hxdxJx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-flooring"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_wwaMV9",
+        "featured_collection_BKK8gk",
+        "featured_collection_Ji9BQ8",
+        "featured_collection_jzWkwb",
+        "featured_collection_hxdxJx"
+      ],
+      "custom_css": [
+        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
     }
   },
   "order": [
     "rich_text_B9yc8M",
     "collection_list_xXmTTa",
-    "main"
+    "main",
+    "collection_list_6L9MHU"
   ]
 }
