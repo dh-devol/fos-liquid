@@ -22,7 +22,7 @@
         "text_64i6pF": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ page.metafields.custom.description | metafield_tag }} </p>"
+            "text": "<p> {{ page.metafields.custom.description | metafield_tag }}</p>"
           }
         }
       },
