@@ -262,10 +262,7 @@
     "featured_collection_xXzmqY": {
       "type": "featured-collection",
       "custom_css": [
-        ".card__content {padding: 0; padding-top: 1em;}",
-        ".card__information {padding: 0;}",
-        ".card__heading {font-size: 1em;}",
-        ".card-information .price {font-size: 0.9em;}"
+
       ],
       "settings": {
         "title": "Featured Flooring",
@@ -296,10 +293,7 @@
     "featured_collection_NWbdxq": {
       "type": "featured-collection",
       "custom_css": [
-        ".card__content {padding: 0; padding-top: 1em;}",
-        ".card__information {padding: 0;}",
-        ".card__heading {font-size: 1em;}",
-        ".card-information .price {font-size: 0.9em;}"
+
       ],
       "settings": {
         "title": "Special Offers",
