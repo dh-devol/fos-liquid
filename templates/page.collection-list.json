@@ -15,7 +15,7 @@
         "heading_dw8zpb": {
           "type": "heading",
           "settings": {
-            "heading": "{{ page.title }}",
+            "heading": "Shop by {{ page.title }}",
             "heading_size": "h1"
           }
         },
