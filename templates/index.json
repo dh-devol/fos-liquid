@@ -196,7 +196,7 @@
         "featured_collection_KUVQYk"
       ],
       "custom_css": [
-        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em}",
+        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
         "h3 .icon-arrow {display: none;}"
       ],
       "settings": {
@@ -323,6 +323,9 @@
     },
     "featured_blog_4gWGh9": {
       "type": "featured-blog",
+      "custom_css": [
+        ".card__information {padding: 0; padding-top: 0.9em}"
+      ],
       "settings": {
         "heading": "Our latest blog posts",
         "heading_size": "h2",
