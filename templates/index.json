@@ -324,7 +324,9 @@
     "featured_blog_4gWGh9": {
       "type": "featured-blog",
       "custom_css": [
-        ".card__information {padding: 0; padding-top: 0.9em}"
+        ".card__information {padding: 0; padding-top: 1em;}",
+        ".article-card__excerpt {width: 95%;}",
+        ".rte-width {margin: 0; margin-top: 2rem; font-size: 0.9em;}"
       ],
       "settings": {
         "heading": "Our latest blog posts",
@@ -335,7 +337,7 @@
         "color_scheme": "scheme-1",
         "show_image": true,
         "show_date": true,
-        "show_author": true,
+        "show_author": false,
         "show_view_all": true,
         "padding_top": 0,
         "padding_bottom": 36
