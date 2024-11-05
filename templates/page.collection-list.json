@@ -86,6 +86,10 @@
         "featured_collection_Dz4Hwt",
         "featured_collection_bkUiQa"
       ],
+      "custom_css": [
+        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
       "settings": {
         "title": "{{ page.title }}",
         "heading_size": "h2",
