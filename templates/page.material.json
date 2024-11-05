@@ -1,0 +1,166 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_B9yc8M": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dw8zpb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop by {{ page.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_64i6pF": {
+          "type": "text",
+          "settings": {
+            "text": "<p> {{ page.metafields.custom.description | metafield_tag }}</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dw8zpb",
+        "text_64i6pF"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_xXmTTa": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_94QBa6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "limestone"
+          }
+        },
+        "featured_collection_U6CtAh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marble-tiles"
+          }
+        },
+        "featured_collection_NKCWGh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "slate-tiles"
+          }
+        },
+        "featured_collection_gNFJXx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "terracotta-tiles"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_94QBa6",
+        "featured_collection_U6CtAh",
+        "featured_collection_NKCWGh",
+        "featured_collection_gNFJXx"
+      ],
+      "custom_css": [
+        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collection_list_6L9MHU": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_wwaMV9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "travertine"
+          }
+        },
+        "featured_collection_BKK8gk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sandstone-tiles"
+          }
+        },
+        "featured_collection_Ji9BQ8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "porcelain-tiles"
+          }
+        },
+        "featured_collection_jzWkwb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cement-tiles"
+          }
+        },
+        "featured_collection_hxdxJx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-flooring"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_wwaMV9",
+        "featured_collection_BKK8gk",
+        "featured_collection_Ji9BQ8",
+        "featured_collection_jzWkwb",
+        "featured_collection_hxdxJx"
+      ],
+      "custom_css": [
+        ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "rich_text_B9yc8M",
+    "collection_list_xXmTTa",
+    "main",
+    "collection_list_6L9MHU"
+  ]
+}
