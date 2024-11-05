@@ -419,7 +419,10 @@
   },
   "platform_customizations": {
     "custom_css": [
-
+      ".card__content {padding: 0; padding-top: 1em;}",
+      ".card__information {padding: 0;}",
+      ".card__heading {font-size: 1em;}",
+      ".card-information .price {font-size: 0.9em;}"
     ]
   }
 }
