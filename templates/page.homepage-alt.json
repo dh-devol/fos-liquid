@@ -63,6 +63,7 @@
       ],
       "custom_css": [
         ".slideshow__controls {border: none;}",
+        ".slideshow__text {padding-bottom: 20px;}",
         ".banner__text.rte {text-underline-offset: 0.7rem; letter-spacing: 0.08em;}"
       ],
       "settings": {
@@ -245,7 +246,7 @@
         "featured_collection_LCEeei"
       ],
       "custom_css": [
-        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em}",
+        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
         ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
         ".card__information {padding-top: 0.6em;}",
         "h3.card__heading {font-size: 1em;}",
