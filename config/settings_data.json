@@ -192,10 +192,10 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#eeeeee",
+          "background": "#ebebeb",
           "background_gradient": "",
           "text": "#333333",
-          "button": "#eeeeee",
+          "button": "#ebebeb",
           "button_label": "#333333",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
