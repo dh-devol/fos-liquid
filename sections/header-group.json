@@ -13,6 +13,9 @@
   "sections": {
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header {padding-bottom: 12px;}"
+      ],
       "settings": {
         "logo_position": "top-center",
         "menu": "main-menu",
