@@ -105,6 +105,29 @@
         "accessibility_info": "A selection of our favourite flooring images"
       }
     },
+    "rich_text_RN99pG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QpzhrF": {
+          "type": "heading",
+          "settings": {
+            "heading": "classically beautiful flooring",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QpzhrF"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "collection_list_Xw4UxX": {
       "type": "collection-list",
       "blocks": {
@@ -208,7 +231,7 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 24,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -346,6 +369,7 @@
   },
   "order": [
     "slideshow_XdqGrR",
+    "rich_text_RN99pG",
     "collection_list_Xw4UxX",
     "image_with_text_A8E4Nh",
     "featured_collection_xXzmqY",
