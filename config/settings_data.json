@@ -427,9 +427,10 @@
   "platform_customizations": {
     "custom_css": [
       ".card__content {padding: 0; padding-top: 1em; padding-bottom: 1.2em;}",
-      ".card__information {padding: 0;}",
+      ".card__information {padding-top: 0.6em; padding-left: 0;}",
       ".card__heading {font-size: 1em;}",
-      ".card-information .price {font-size: 0.9em;}"
+      ".card-information .price {font-size: 0.9em;}",
+      ".icon-wrap {display: none;}"
     ]
   }
 }
