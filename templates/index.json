@@ -516,6 +516,53 @@
         "padding_bottom": 0
       }
     },
+    "image_with_text_4DytpK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eJEbEY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our showroom at Cotes Mill",
+            "heading_size": "h2"
+          }
+        },
+        "text_yUbQyy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cotes Mill is unlike any flooring showroom you could imagine. It has become  a destination that people travel to from across the country. The whole building has a wonderful sense of tmosphere and character. Floors of Stone’s showroom occupies the main entrance ground floor and galleried mezzanine and there are dozens of large format displays of our most popular flooring as well as individual tiles of every product we sell.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_W7Fgxq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Visit our showroom",
+            "button_link": "shopify://pages/about-us",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_eJEbEY",
+        "text_yUbQyy",
+        "button_W7Fgxq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/HomeBanner-2024-02.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-bcfef9d6-9964-4750-9703-24f920697c50",
+        "color_scheme": "scheme-bcfef9d6-9964-4750-9703-24f920697c50",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_with_text_A8E4Nh": {
       "type": "image-with-text",
       "blocks": {
@@ -658,6 +705,7 @@
     "collection_list_gwCtEa",
     "collection_list_Xw4UxX",
     "image_with_text_pdR9pL",
+    "image_with_text_4DytpK",
     "image_with_text_A8E4Nh",
     "featured_collection_xXzmqY",
     "featured_collection_NWbdxq",
