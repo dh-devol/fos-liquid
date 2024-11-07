@@ -108,7 +108,7 @@
 
    {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
   <div class="center collection-list-view-all{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
-    <a href="{{ section.settings.link }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
+    <a href="{{ section.settings.link }}" class="button">{{ 'sections.collection_list.button_label' | t }}</a>
   </div>
 {%- endif -%} 
   </div>
@@ -208,7 +208,7 @@
     },
         {
   "id": "button_label",
-  "type": "inline_richtext",
+  "type": "text",
   "label": "Button label"
     },
     {
