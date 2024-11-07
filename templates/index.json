@@ -56,7 +56,8 @@
       "custom_css": [
         ".slideshow__controls {border: none;}",
         ".slideshow__text {padding-bottom: 10px !important;}",
-        ".button {width: 100%; font-size: 1.4rem; padding: 0 2rem}"
+        ".banner__buttons {margin-top: 3rem;}",
+        ".button {width: 100%; font-size: 1.4rem; padding: 0 2rem;}"
       ],
       "settings": {
         "layout": "full_bleed",
