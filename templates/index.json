@@ -55,8 +55,8 @@
       ],
       "custom_css": [
         ".slideshow__controls {border: none;}",
-        " slideshow__text {padding-bottom: 20px; }",
-        " .banner__text.rte {text-underline-offset: 0.7rem; letter-spacing: 0.08em; }"
+        "slideshow__text {padding-bottom: 20px;}",
+        ".banner__text.rte {text-underline-offset: 0.7rem; letter-spacing: 0.08em;}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -501,7 +501,7 @@
         "button_CJGNjM"
       ],
       "custom_css": [
-        ".image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em;}",
+        "@media only screen and (min-width: 768px) {.image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em;}}",
         ".image-with-text__text {font-size: 0.9em; color: #333333;}"
       ],
       "settings": {
