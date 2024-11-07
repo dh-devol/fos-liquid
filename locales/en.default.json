@@ -311,7 +311,7 @@
       "headings": {
         "product": "Items",
         "price": "Price",
-        "total": "Total",
+        "total": "Price",
         "quantity": "Quantity",
         "image": "Product image"
       },
