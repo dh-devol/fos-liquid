@@ -334,7 +334,7 @@
       "view_all_label": "View all products in the {{ collection_name }} collection"
     },
     "collection_list": {
-      "view_all": "View all {{ heading }}"
+      "view_all": "View all {{ page_name }}"
     },
     "collection_template": {
       "empty": "No products found",
