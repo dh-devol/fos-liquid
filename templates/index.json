@@ -475,23 +475,23 @@
         "heading_JhMP4W": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "Free sample request",
+            "heading_size": "h2"
           }
         },
         "text_6mXRcg": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>The perfect floor should be timeless and low-key, it should be natural, authentic, and it should blend seamlessly into the room with a reassuringly understated quality. A natural stone, handmade terracotta or beautiful wooden floor are all hallmarks of a high-quality renovation or building project, and the colour, texture and character that these classic materials bring to a room will never go unnoticed.<br/><br/>Floors of Stone has a tasteful and carefully selected range for you to choose from. All of these products, as well as any details you may need, including sizes, prices and delivery, are available to view online, where you can also order our free samples. We are sure you’ll find something that you love.</p>",
             "text_style": "body"
           }
         },
         "button_CJGNjM": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_label": "Find out more",
+            "button_link": "shopify://pages/sample-request",
+            "button_style_secondary": true
           }
         }
       },
@@ -508,12 +508,12 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "section_color_scheme": "scheme-3",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_with_text_A8E4Nh": {
