@@ -115,7 +115,7 @@
           "settings": {
             "heading": "Pattern information",
             "icon": "none",
-            "row_content": "{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}{{ block.repeater.sizes_text_info | metafield_tag }}",
+            "row_content": "{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}<p></p>",
             "page": ""
           }
         }
