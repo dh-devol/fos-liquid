@@ -551,6 +551,10 @@
         "text_yUbQyy",
         "button_W7Fgxq"
       ],
+      "custom_css": [
+        ".image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em;}",
+        ".image-with-text__text {font-size: 0.9em; color: #333333;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/HomeBanner-2024-02.jpg",
         "height": "adapt",
