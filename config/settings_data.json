@@ -184,8 +184,8 @@
           "text": "#333333",
           "button": "#333333",
           "button_label": "#ffffff",
-          "secondary_button_label": "#333333",
-          "shadow": "#121212"
+          "secondary_button_label": "#9a9a9a",
+          "shadow": "#333333"
         }
       },
       "scheme-4": {
