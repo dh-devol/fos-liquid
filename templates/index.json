@@ -9,6 +9,66 @@
  */
 {
   "sections": {
+    "slideshow_QV8MUw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_NF3EDC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/TerracottaBanner-2024-11.jpg",
+            "heading": "Explore our terracotta tiles",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "TAKE A LOOK",
+            "link": "shopify://collections/terracotta-tiles",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-87d3c3b5-36cd-42bb-aa83-ee3957fdcd20",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_9FUJUh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/MarbleBanner-2024-01.jpg",
+            "heading": "Chequered flooring",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "TAKE A LOOK",
+            "link": "shopify://collections/chequerboard",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-87d3c3b5-36cd-42bb-aa83-ee3957fdcd20",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_NF3EDC",
+        "slide_9FUJUh"
+      ],
+      "custom_css": [
+        ".slideshow__controls {border: none;}",
+        ".slideshow__text {padding-bottom: 20px;}",
+        ".banner__text.rte {text-underline-offset: 0.7rem; letter-spacing: 0.08em;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 7,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow of featured flooring"
+      }
+    },
     "slideshow_XdqGrR": {
       "type": "slideshow",
       "blocks": {
@@ -91,6 +151,7 @@
         "slide_NtciMN",
         "slide_XgQkXb"
       ],
+      "disabled": true,
       "custom_css": [
         ".slideshow__controls {border: none;}"
       ],
@@ -124,8 +185,57 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 40
+      }
+    },
+    "collection_list_qrrNJX": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_WxK4in": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_Hq6JGM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_KjNiFi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_WxK4in",
+        "featured_collection_Hq6JGM",
+        "featured_collection_KjNiFi"
+      ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        "h3.card__heading {font-size: 1em;}",
+        "h3 .icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "MATERIAL",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "link": "shopify://pages/material",
+        "button_label": "View all materials",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 36
       }
     },
     "collection_list_Xw4UxX": {
@@ -218,6 +328,7 @@
         "featured_collection_QdexFC",
         "featured_collection_KUVQYk"
       ],
+      "disabled": true,
       "custom_css": [
         ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
         "h3 .icon-arrow {display: none;}"
@@ -229,6 +340,8 @@
         "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
+        "link": "",
+        "button_label": "",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
@@ -368,8 +481,10 @@
     }
   },
   "order": [
+    "slideshow_QV8MUw",
     "slideshow_XdqGrR",
     "rich_text_RN99pG",
+    "collection_list_qrrNJX",
     "collection_list_Xw4UxX",
     "image_with_text_A8E4Nh",
     "featured_collection_xXzmqY",
