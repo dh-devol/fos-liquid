@@ -227,8 +227,8 @@
         ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
         ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
         ".card__information {padding-top: 0.6em;}",
-        "h3.card__heading {font-size: 1em;}",
-        "h3 .icon-arrow {display: none;}"
+        ".card__heading {font-size: 1em;}",
+        ".icon-arrow {display: none;}"
       ],
       "settings": {
         "title": "MATERIAL",
@@ -239,6 +239,118 @@
         "show_view_all": true,
         "link": "shopify://pages/material",
         "button_label": "View all materials",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_XYBb8U": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_BtYLKP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "natural-stone-tiles"
+          }
+        },
+        "featured_collection_UdT8QX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "terracotta-tiles"
+          }
+        },
+        "featured_collection_F7phRb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marble-tiles"
+          }
+        },
+        "featured_collection_APDc4B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-flooring"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_BtYLKP",
+        "featured_collection_UdT8QX",
+        "featured_collection_F7phRb",
+        "featured_collection_APDc4B"
+      ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        ".card__heading {font-size: 1em;}",
+        ".icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "STYLE",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "link": "shopify://pages/style",
+        "button_label": "View all styles",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_gwCtEa": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_aGMdkR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "natural-stone-tiles"
+          }
+        },
+        "featured_collection_MeTy6A": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "terracotta-tiles"
+          }
+        },
+        "featured_collection_Jjp9yX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "marble-tiles"
+          }
+        },
+        "featured_collection_6y7nM9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-flooring"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_aGMdkR",
+        "featured_collection_MeTy6A",
+        "featured_collection_Jjp9yX",
+        "featured_collection_6y7nM9"
+      ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        ".card__heading {font-size: 1em;}",
+        ".icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "COLOUR",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "link": "shopify://pages/material",
+        "button_label": "View all colours",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 16,
@@ -492,6 +604,8 @@
     "slideshow_XdqGrR",
     "rich_text_RN99pG",
     "collection_list_qrrNJX",
+    "collection_list_XYBb8U",
+    "collection_list_gwCtEa",
     "collection_list_Xw4UxX",
     "image_with_text_A8E4Nh",
     "featured_collection_xXzmqY",
