@@ -469,6 +469,53 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_pdR9pL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_JhMP4W": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_6mXRcg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CJGNjM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_JhMP4W",
+        "text_6mXRcg",
+        "button_CJGNjM"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Samples-2024_f1f118a4-9952-4927-9e60-760d5c896a8f.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_A8E4Nh": {
       "type": "image-with-text",
       "blocks": {
@@ -500,6 +547,7 @@
         "text_RaDg9h",
         "button_thAfG8"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/TerracottaSquare-CotesScullery-2024.jpg",
         "height": "adapt",
@@ -609,6 +657,7 @@
     "collection_list_XYBb8U",
     "collection_list_gwCtEa",
     "collection_list_Xw4UxX",
+    "image_with_text_pdR9pL",
     "image_with_text_A8E4Nh",
     "featured_collection_xXzmqY",
     "featured_collection_NWbdxq",
