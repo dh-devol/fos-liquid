@@ -127,7 +127,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "all-flooring",
-    "cart_color_scheme": "scheme-1",
+    "cart_color_scheme": "scheme-3",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -142,9 +142,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "8127967367361207402": {
         "type": "shopify://apps/option-calculator/blocks/global_product_option/8f01aabe-62b9-4cde-aee9-dfb98853943a",
