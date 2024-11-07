@@ -663,7 +663,7 @@ summary .icon-caret {
 }
 
 summary.list-menu__item {
-    padding-right: 2rem !important;
+    padding-right: 1.2rem !important;
 }
 
 summary::-webkit-details-marker {
