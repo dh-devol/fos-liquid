@@ -55,8 +55,8 @@
       ],
       "custom_css": [
         ".slideshow__controls {border: none;}",
-        ".slideshow__text {padding-bottom: 20px;}",
-        ".banner__text.rte {text-underline-offset: 0.7rem; letter-spacing: 0.08em;}"
+        " slideshow__text {padding-bottom: 20px; }",
+        " .banner__text.rte {text-underline-offset: 0.7rem; letter-spacing: 0.08em; }"
       ],
       "settings": {
         "layout": "full_bleed",
