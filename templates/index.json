@@ -228,7 +228,8 @@
         ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
         ".card__information {padding-top: 0.6em;}",
         ".card__heading {font-size: 1em;}",
-        ".icon-arrow {display: none;}"
+        ".icon-arrow {display: none;}",
+        ".collection-list-wrapper {border-bottom: 1px solid #333333;}"
       ],
       "settings": {
         "title": "MATERIAL",
