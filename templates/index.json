@@ -646,9 +646,7 @@
     },
     "featured_collection_xXzmqY": {
       "type": "featured-collection",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -678,9 +676,7 @@
     "featured_collection_NWbdxq": {
       "type": "featured-collection",
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Special Offers",
         "heading_size": "h2",
@@ -726,7 +722,7 @@
         "show_author": false,
         "show_view_all": true,
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 72
       }
     }
   },
