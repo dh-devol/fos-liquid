@@ -662,10 +662,10 @@ summary .icon-caret {
   display: none;
 }
 
-summary.list-menu__item {
+/* summary.list-menu__item {
     padding-right: 0;
 }
-
+ */
 summary::-webkit-details-marker {
   display: none;
 }
