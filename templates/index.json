@@ -285,7 +285,8 @@
         ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
         ".card__information {padding-top: 0.6em;}",
         ".card__heading {font-size: 1em;}",
-        ".icon-arrow {display: none;}"
+        ".icon-arrow {display: none;}",
+        ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
       ],
       "settings": {
         "title": "STYLE",
