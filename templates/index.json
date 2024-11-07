@@ -195,26 +195,33 @@
         "featured_collection_WxK4in": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "natural-stone-tiles"
           }
         },
         "featured_collection_Hq6JGM": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "terracotta-tiles"
           }
         },
         "featured_collection_KjNiFi": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "marble-tiles"
+          }
+        },
+        "featured_collection_w3wAFU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-flooring"
           }
         }
       },
       "block_order": [
         "featured_collection_WxK4in",
         "featured_collection_Hq6JGM",
-        "featured_collection_KjNiFi"
+        "featured_collection_KjNiFi",
+        "featured_collection_w3wAFU"
       ],
       "custom_css": [
         ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
