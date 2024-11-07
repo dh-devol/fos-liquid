@@ -229,7 +229,7 @@
         ".card__information {padding-top: 0.6em;}",
         ".card__heading {font-size: 1em;}",
         ".icon-arrow {display: none;}",
-        ".collection-list-wrapper {border-bottom: 1px solid #333333;}"
+        ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
       ],
       "settings": {
         "title": "MATERIAL",
