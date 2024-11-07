@@ -13,13 +13,7 @@
   "sections": {
     "header": {
       "type": "header",
-      "custom_css": [
-        ".header {padding-bottom: 12px;}",
-        ".header__menu-item {padding-left: 30px; padding-right: 30px; padding-top: 20px;}",
-        ".header__active-menu-item {color: rgba(var(--color-foreground), 0.75); text-decoration: none;}",
-        ".header__menu-item .icon-caret {display: none;}",
-        ".cart-count-bubble {height: 2rem; width: 2rem; bottom: 0.3rem; left: 2rem;}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "top-center",
         "menu": "main-menu",
