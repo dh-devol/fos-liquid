@@ -282,6 +282,7 @@
   </header>
 
   <script>
+  document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
   let openTimeout, closeTimeout; // Initialize timers for opening and closing delay
 
@@ -302,6 +303,7 @@
         item.removeAttribute("open");
       }, 200); // Adjust delay time (200ms) as needed
     });
+  });
   });
 </script>
 
