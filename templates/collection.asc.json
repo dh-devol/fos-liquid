@@ -11,6 +11,18 @@
   "sections": {
     "image_banner_U7zytq": {
       "type": "image-banner",
+      "blocks": {
+        "heading_DzYqcE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image of someone laying tiles",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_DzYqcE"
+      ],
       "settings": {
         "image": "{{ collection.metafields.custom.banner_image.value }}",
         "image_overlay_opacity": 0,
