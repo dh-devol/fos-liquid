@@ -284,30 +284,28 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
-  let openTimeout, closeTimeout; // Timers for delaying opening and closing actions
+  let openTimeout, closeTimeout;
 
   items.forEach(item => {
     const megaMenuContent = item.querySelector(".mega-menu__content");
-
+    
     item.addEventListener("mouseover", () => {
-      clearTimeout(closeTimeout); // Clear any closing timeout if the user re-enters the menu
-      openTimeout = setTimeout(() => {
-        // Use requestAnimationFrame to ensure the class gets added after the DOM update
-        requestAnimationFrame(() => {
-          megaMenuContent.classList.add("show");
-        });
-      }, 200); // Delay for 200ms before showing the menu
+      clearTimeout(closeTimeout); // Clear any closing timeout
+      openTimeout = setTimeout(() => { // Add delay before opening
+        megaMenuContent.classList.add("show"); // Add the 'show' class for fade-in effect
+        item.setAttribute("open", true); // Ensure the menu stays open
+      }, 200); // Delay before showing the menu (200ms)
     });
 
     item.addEventListener("mouseleave", () => {
       clearTimeout(openTimeout); // Clear opening timeout if leaving early
-      closeTimeout = setTimeout(() => {
-        megaMenuContent.classList.remove("show");
-      }, 200); // Delay for 200ms before hiding the menu
+      closeTimeout = setTimeout(() => { // Add delay before closing
+        megaMenuContent.classList.remove("show"); // Remove 'show' class for fade-out effect
+        item.removeAttribute("open"); // Close the menu
+      }, 200); // Delay before hiding the menu (200ms)
     });
   });
 });
-
 
 
 </script>
