@@ -282,27 +282,34 @@
   </header>
 
   <script>
+  document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
   let openTimeout, closeTimeout; // Initialize timers for opening and closing delay
 
   items.forEach(item => {
     const megaMenuContent = item.querySelector(".mega-menu__content");
+    
     item.addEventListener("mouseover", () => {
       clearTimeout(closeTimeout); // Clear any closing timeout
       openTimeout = setTimeout(() => { // Add delay before opening
-        megaMenuContent.classList.add("show"); 
-        
+        megaMenuContent.classList.add("show"); // Add the show class
+        item.setAttribute("open", true); // Keep the menu open
+
+        // Force a reflow so the transition is applied correctly
+        megaMenuContent.offsetHeight; // This forces the browser to recalculate styles
       }, 200); // Adjust delay time (200ms) as needed
     });
 
     item.addEventListener("mouseleave", () => {
       clearTimeout(openTimeout); // Clear opening timeout if leaving early
       closeTimeout = setTimeout(() => { // Add delay before closing
-         megaMenuContent.classList.remove("show");
-        
+        megaMenuContent.classList.remove("show"); // Remove the show class
+        item.removeAttribute("open"); // Close the menu
       }, 200); // Adjust delay time (200ms) as needed
     });
   });
+});
+
 </script>
 
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
