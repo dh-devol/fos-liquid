@@ -282,7 +282,7 @@
   </header>
 
   <script>
-  const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+
   let openTimeout, closeTimeout; // Initialize timers for opening and closing delay
 
   items.forEach(item => {
@@ -299,7 +299,7 @@
         item.removeAttribute("open");
       }, 200); // Adjust delay time (200ms) as needed
     });
-  });
+
 </script>
 
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
