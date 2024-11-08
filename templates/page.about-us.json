@@ -25,14 +25,6 @@
         "show_text_below": true
       }
     },
-    "about_us_QYKcrL": {
-      "type": "about-us",
-      "settings": {
-        "section_heading": "Welcome to Our About Us Page",
-        "section_description": "",
-        "additional_info": ""
-      }
-    },
     "image_with_text_M4aWHj": {
       "type": "image-with-text",
       "blocks": {
@@ -215,7 +207,6 @@
   },
   "order": [
     "image_banner_xEeiE7",
-    "about_us_QYKcrL",
     "image_with_text_M4aWHj",
     "multicolumn_8mUmrn",
     "main"
