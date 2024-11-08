@@ -2775,6 +2775,7 @@ details[open] > .header__submenu {
 }
 
 .header__inline-menu .mega-menu__content {
+  opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
