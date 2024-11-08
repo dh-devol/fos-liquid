@@ -282,24 +282,29 @@
   </header>
 
   <script>
+ document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
   let openTimeout, closeTimeout;
 
   items.forEach(item => {
-    item.addEventListener("mouseover", () => {
-      clearTimeout(closeTimeout);
+    const megaMenuContent = item.querySelector(".mega-menu__content");
+
+    item.addEventListener("mouseenter", () => {
+      clearTimeout(closeTimeout); // Clear close delay if entering again quickly
       openTimeout = setTimeout(() => {
         item.setAttribute("open", true);
-      }, 200);
+      }, 200); // Delay to open (200ms)
     });
 
     item.addEventListener("mouseleave", () => {
-      clearTimeout(openTimeout);
+      clearTimeout(openTimeout); // Clear open delay if moving out quickly
       closeTimeout = setTimeout(() => {
         item.removeAttribute("open");
-      }, 200);
+      }, 200); // Delay to close (200ms)
     });
   });
+});
+
 </script>
 
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
