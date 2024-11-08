@@ -289,17 +289,17 @@
     const megaMenuContent = item.querySelector(".mega-menu__content");
 
     item.addEventListener("mouseenter", () => {
-      clearTimeout(closeTimeout); // Clear close delay if entering again quickly
+      clearTimeout(closeTimeout); // Clear any close timeout
       openTimeout = setTimeout(() => {
         item.setAttribute("open", true);
-      }, 200); // Delay to open (200ms)
+      }, 200); // Adjust delay for opening (200ms)
     });
 
     item.addEventListener("mouseleave", () => {
-      clearTimeout(openTimeout); // Clear open delay if moving out quickly
+      clearTimeout(openTimeout); // Clear any open timeout
       closeTimeout = setTimeout(() => {
         item.removeAttribute("open");
-      }, 200); // Delay to close (200ms)
+      }, 200); // Adjust delay for closing (200ms)
     });
   });
 
