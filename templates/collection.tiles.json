@@ -31,7 +31,7 @@
         "heading_tg3Bpd": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.title }} Tiles",
+            "heading": "{{ collection.title }} tiles",
             "heading_size": "h1"
           }
         },
