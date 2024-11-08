@@ -297,6 +297,51 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('header-menu').on('mouseover',function(){
+        $(this).addClass('visible-is')
+      })
+      $('header-menu').on('mouseout',function(){
+        $(this).removeClass('visible-is')
+      })
+      $('header-menu').each(function(){
+        var delay = 10;
+        $(this).find('li a').each(function(){
+          $(this).css('transition-delay', delay + 'ms')
+          delay = delay + 50;
+        })
+      })
+    });
+</script>
+<style>
+  @media(min-width: 990px){
+        .header__submenu li a {
+          opacity: 0;
+          display: block!important;
+          transform: translateY(-5px);
+          transition: transform .15s cubic-bezier(.215, .61, .355, 1), opacity .35s cubic-bezier(.215, .61, .355, 1);
+        }
+        .visible-is details > .header__submenu li a{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      .js details > .header__submenu {
+        opacity: 0;
+         transition: opacity .1s ease-out;
+        visibility: hidden;
+        transform: none!important;
+        animation: none!important;
+      }
+           
+      .visible-is details > .header__submenu {
+        opacity: 1!important;
+        transition: opacity .2s ease-out!important;
+         visibility: visible!important;
+      }  
+    }
+</style>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
