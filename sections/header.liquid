@@ -292,14 +292,14 @@
     item.addEventListener("mouseenter", () => {
       clearTimeout(closeTimeout); // Clear any close timeout
       openTimeout = setTimeout(() => {
-        megaMenuContent.classList.add("show"); // Fade in the menu
+        item.setAttribute("open", true);
       }, 200); // Delay before showing the menu (200ms)
     });
 
     item.addEventListener("mouseleave", () => {
       clearTimeout(openTimeout); // Clear any open timeout
       closeTimeout = setTimeout(() => {
-        megaMenuContent.classList.remove("show"); // Fade out the menu
+        item.removeAttribute("open");
       }, 200); // Delay before hiding the menu (200ms)
     });
   });
