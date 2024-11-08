@@ -2774,17 +2774,46 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
+/* Basic styling for the mega menu */
 .header__inline-menu .mega-menu__content {
+  display: none; /* Hide by default */
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
+/* When the dropdown is open, make it visible */
 .mega-menu[open] .mega-menu__content {
+  display: block;
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto; /* Enable interaction when visible */
+}
 
+/* Delay effect for children inside the mega menu */
+.mega-menu__list li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeSlideUp 0.3s ease forwards;
+  animation-delay: 0.2s; /* Adds delay for a smoother effect */
+}
+
+/* Keyframes for child list items' animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 990px) {
