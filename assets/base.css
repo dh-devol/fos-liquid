@@ -2774,28 +2774,6 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-/* Base styling for the mega menu */
-.header__inline-menu .mega-menu__content {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  pointer-events: none; /* Prevent interaction when hidden */
-  z-index: 1000;
-}
-
-/* Show mega menu with animation */
-.mega-menu[open] .mega-menu__content {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto; /* Enable interaction when visible */
-}
-
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
