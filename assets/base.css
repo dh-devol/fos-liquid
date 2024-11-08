@@ -2775,28 +2775,16 @@ details[open] > .header__submenu {
 }
 
 .header__inline-menu .mega-menu__content {
-  display: none; /* Hide by default */
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .mega-menu[open] .mega-menu__content {
-  display: block;
   opacity: 1;
   transform: translateY(0);
-}
+  pointer-events: auto; /* Enable interaction when visible */
 
-/* Keyframes for child list items' animation */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media screen and (min-width: 990px) {
