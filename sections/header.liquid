@@ -281,6 +281,26 @@
     </div>
   </header>
 
+  <script>
+  const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+  let openTimeout, closeTimeout; // Initialize timers for opening and closing delay
+
+  items.forEach(item => {
+    item.addEventListener("mouseover", () => {
+      clearTimeout(closeTimeout); // Clear any closing timeout
+      openTimeout = setTimeout(() => { // Add delay before opening
+        item.setAttribute("open", true);
+      }, 200); // Adjust delay time (200ms) as needed
+    });
+
+    item.addEventListener("mouseleave", () => {
+      clearTimeout(openTimeout); // Clear opening timeout if leaving early
+      closeTimeout = setTimeout(() => { // Add delay before closing
+        item.removeAttribute("open");
+      }, 200); // Adjust delay time (200ms) as needed
+    });
+  });
+</script>
 
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
