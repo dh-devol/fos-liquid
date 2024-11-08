@@ -2784,13 +2784,6 @@ details[open] > .header__submenu {
   transform: translateY(0);
 }
 
-.mega-menu__list li {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeSlideUp 0.3s ease forwards;
-  animation-delay: 0.2s; /* Adds delay for a smoother effect */
-}
-
 /* Keyframes for child list items' animation */
 @keyframes fadeSlideUp {
   from {
