@@ -284,7 +284,7 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
-  let openTimeout, closeTimeout; // Initialize timers for opening and closing delay
+  let openTimeout, closeTimeout;
 
   items.forEach(item => {
     const megaMenuContent = item.querySelector(".mega-menu__content");
@@ -292,23 +292,21 @@
     item.addEventListener("mouseover", () => {
       clearTimeout(closeTimeout); // Clear any closing timeout
       openTimeout = setTimeout(() => { // Add delay before opening
-        megaMenuContent.classList.add("show"); // Add the show class
-        item.setAttribute("open", true); // Keep the menu open
-
-        // Force a reflow so the transition is applied correctly
-        megaMenuContent.offsetHeight; // This forces the browser to recalculate styles
-      }, 200); // Adjust delay time (200ms) as needed
+        megaMenuContent.classList.add("show"); // Add the 'show' class for fade-in effect
+        item.setAttribute("open", true); // Ensure the menu stays open
+      }, 200); // Delay before showing the menu (200ms)
     });
 
     item.addEventListener("mouseleave", () => {
       clearTimeout(openTimeout); // Clear opening timeout if leaving early
       closeTimeout = setTimeout(() => { // Add delay before closing
-        megaMenuContent.classList.remove("show"); // Remove the show class
+        megaMenuContent.classList.remove("show"); // Remove 'show' class for fade-out effect
         item.removeAttribute("open"); // Close the menu
-      }, 200); // Adjust delay time (200ms) as needed
+      }, 200); // Delay before hiding the menu (200ms)
     });
   });
 });
+
 
 </script>
 
