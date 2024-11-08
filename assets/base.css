@@ -2774,6 +2774,18 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
+.header__inline-menu details ul {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.header__inline-menu details[open] ul {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
