@@ -663,7 +663,7 @@ summary .icon-caret {
 }
 
 summary.list-menu__item {
-    padding-right: 1.2rem !important;
+    padding-right: 3rem !important;
 }
 
 summary::-webkit-details-marker {
@@ -2776,13 +2776,13 @@ details[open] > .header__submenu {
 
 .mega-menu__content {
   opacity: 0;
-    visibility: hidden;
+  visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* 0.3s fade in/out */
 }
 
 .mega-menu__content.show {
   opacity: 1;
-    visibility: visible;
+  visibility: visible;
   transition: opacity 0.3s ease, visibility 0s linear 0s; /* Immediate visibility when shown */
 }
 
@@ -2810,7 +2810,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 1.2rem 3rem 2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
