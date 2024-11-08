@@ -282,7 +282,7 @@
   </header>
 
   <script>
-  const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
   let openTimeout, closeTimeout;
 
   items.forEach(item => {
@@ -292,14 +292,14 @@
       clearTimeout(closeTimeout); // Clear any close timeout
       openTimeout = setTimeout(() => {
         item.setAttribute("open", true);
-      }, 200); // Adjust delay for opening (200ms)
+      }, 200); // Delay before showing the menu (200ms)
     });
 
     item.addEventListener("mouseleave", () => {
       clearTimeout(openTimeout); // Clear any open timeout
       closeTimeout = setTimeout(() => {
         item.removeAttribute("open");
-      }, 200); // Adjust delay for closing (200ms)
+      }, 200); // Delay before hiding the menu (200ms)
     });
   });
 
