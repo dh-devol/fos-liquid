@@ -2774,17 +2774,6 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-/* .mega-menu__content {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* 0.3s fade in/out */
-}
-
-.mega-menu__content.show {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease, visibility 0s linear 0s; /* Immediate visibility when shown */
-} */
 
 @media screen and (min-width: 990px) {
   .header__inline-menu {
