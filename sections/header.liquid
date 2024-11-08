@@ -282,21 +282,26 @@
   </header>
 
   <script>
-  let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
-  console.log(items)
+  const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+  let openTimeout, closeTimeout;
+
   items.forEach(item => {
     item.addEventListener("mouseover", () => {
-      item.setAttribute("open", true);
-      item.querySelector("ul").addEventListener("mouseleave", () => {
-        item.removeAttribute("open");
-      });
+      clearTimeout(closeTimeout);
+      openTimeout = setTimeout(() => {
+        item.setAttribute("open", true);
+      }, 200);
+    });
+
     item.addEventListener("mouseleave", () => {
-      item.removeAttribute("open");
+      clearTimeout(openTimeout);
+      closeTimeout = setTimeout(() => {
+        item.removeAttribute("open");
+      }, 200);
     });
   });
-  
-  });
 </script>
+
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
