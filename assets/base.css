@@ -2774,7 +2774,7 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-/* .mega-menu__content {
+.mega-menu__content {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;
@@ -2785,7 +2785,7 @@ details[open] > .header__submenu {
   visibility: visible;
   transition: opacity 0.3s ease, visibility 0s linear 0s;
 }
- */
+
 
 @media screen and (min-width: 990px) {
   .header__inline-menu {
