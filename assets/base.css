@@ -2774,13 +2774,13 @@ details[open] > .header__submenu {
   margin-left: 0;
 }
 
-.header__inline-menu details ul {
+.header__inline-menu ul details {
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease; 
 }
 
-.header__inline-menu details[open] ul {
+.header__inline-menu ul details[open] {
   opacity: 1;
   transform: translateY(0);
 }
