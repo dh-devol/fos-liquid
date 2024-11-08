@@ -2824,7 +2824,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  color: red;
+    background: #c6c5c594;
 }
 
 /* .header__menu-item:hover span {
