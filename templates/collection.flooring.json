@@ -31,7 +31,7 @@
         "heading_tg3Bpd": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.title }} Flooring",
+            "heading": "{{ collection.title }} flooring",
             "heading_size": "h1"
           }
         },
