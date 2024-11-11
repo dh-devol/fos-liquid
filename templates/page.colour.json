@@ -103,16 +103,16 @@
     "collection_list_6L9MHU": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_BKK8gk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cream-biege"
+          }
+        },
         "featured_collection_wwaMV9": {
           "type": "featured_collection",
           "settings": {
             "collection": "multicoloured"
-          }
-        },
-        "featured_collection_BKK8gk": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sandstone-tiles"
           }
         },
         "featured_collection_Ji9BQ8": {
@@ -129,8 +129,8 @@
         }
       },
       "block_order": [
-        "featured_collection_wwaMV9",
         "featured_collection_BKK8gk",
+        "featured_collection_wwaMV9",
         "featured_collection_Ji9BQ8",
         "featured_collection_jzWkwb"
       ],
