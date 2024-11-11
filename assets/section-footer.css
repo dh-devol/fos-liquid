@@ -45,6 +45,10 @@
   margin-left: 6%;
 }
 
+.footer__content--side h4 {
+  
+}
+
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
@@ -86,6 +90,7 @@
 .footer__content-bottom-wrapper {
   display: flex;
   width: 100%;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 749px) {
