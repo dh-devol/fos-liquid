@@ -636,7 +636,7 @@ h3 .icon-arrow,
 
 .svg-wrapper {
   display: inline-flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 30px;
   height: 30px;
