@@ -23,7 +23,7 @@
 }
 
 .my-icons .list-social__item:first-child {order: 1;}
-.my-icons .list-social__item:nth-child(2) {order: 3;}
+.my-icons .list-social__item:nth-child(2) {order: 0;}
 
 .list-social__link:first-of-type {
   padding-left: 0;
