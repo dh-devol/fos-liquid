@@ -12,6 +12,7 @@
 }
 
 .footer__content--main {
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   flex: 0 0 auto;
