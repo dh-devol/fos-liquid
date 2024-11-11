@@ -31,7 +31,11 @@
 }
 
 .footer__content--main-links li {
-  padding: .5rem 0;
+  padding: 1rem 0;
+}
+
+.footer__content--main-links li:first-of-type {
+  padding-top: 0;
 }
 
 .footer__content--main-showroom p {
