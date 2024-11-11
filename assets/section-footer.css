@@ -43,13 +43,13 @@
   margin-bottom: 0;
 }
 
-.footer__content--main-showroom h5 {
-  margin: 0;
-}
-
-/* .footer__content--main-showroom .footer__content--main-links {
+/* .footer__content--main-showroom h5 {
   margin: 0;
 } */
+
+.footer__content--main-showroom .footer__content--main-links {
+  margin: 0;
+}
 
 .footer__content--main-showroom .footer__content--main-links li {
   padding: 0;
