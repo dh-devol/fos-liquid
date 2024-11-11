@@ -15,7 +15,7 @@
         "heading_dw8zpb": {
           "type": "heading",
           "settings": {
-            "heading": "Shop by {{ page.title }}",
+            "heading": "Flooring by {{ page.title }}",
             "heading_size": "h1"
           }
         },
