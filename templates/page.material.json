@@ -156,6 +156,18 @@
     "collection_list_ecdhng": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_FawGFA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-effect-porcelain-tiles"
+          }
+        },
+        "featured_collection_p3VGXG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "porcelain-tiles"
+          }
+        },
         "featured_collection_XgCgdg": {
           "type": "featured_collection",
           "settings": {
@@ -170,6 +182,8 @@
         }
       },
       "block_order": [
+        "featured_collection_FawGFA",
+        "featured_collection_p3VGXG",
         "featured_collection_XgCgdg",
         "featured_collection_q3gaQp"
       ],
