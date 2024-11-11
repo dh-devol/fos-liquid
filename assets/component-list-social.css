@@ -22,6 +22,9 @@
   color: rgb(var(--color-foreground));
 }
 
+.social-links .social-links__icon:first-child {order: 2;}
+.social-links .social-links__icon:nth-child(2) {order: 1;}
+
 .list-social__link:first-of-type {
   padding-left: 0;
 }
