@@ -34,7 +34,7 @@
   padding: .5rem 0;
 }
 
-.footer__content--main-showroom .footer__content--main-links ul {
+.footer__content--main-showroom ul.footer__content--main-links {
   margin: 0;
 }
 
