@@ -74,6 +74,10 @@
   margin-top: 0;
 }
 
+.footer__content--side p {
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
