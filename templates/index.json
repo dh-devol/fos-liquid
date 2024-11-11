@@ -353,7 +353,7 @@
         "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": true,
-        "link": "shopify://pages/material",
+        "link": "shopify://pages/colour",
         "button_label": "View all colours",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
