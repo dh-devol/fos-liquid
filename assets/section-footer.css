@@ -47,7 +47,8 @@
 }
 
 .footer__content--side h4 {
-  
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 749px) {
