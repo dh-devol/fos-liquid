@@ -45,25 +45,25 @@
         "featured_collection_94QBa6": {
           "type": "featured_collection",
           "settings": {
-            "collection": "limestone"
+            "collection": "whites"
           }
         },
         "featured_collection_U6CtAh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "marble-tiles"
+            "collection": "greys"
           }
         },
         "featured_collection_NKCWGh": {
           "type": "featured_collection",
           "settings": {
-            "collection": "slate-tiles"
+            "collection": "warm-neutrals"
           }
         },
         "featured_collection_gNFJXx": {
           "type": "featured_collection",
           "settings": {
-            "collection": "terracotta-tiles"
+            "collection": "cool-neutrals"
           }
         }
       },
@@ -84,6 +84,8 @@
         "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
+        "link": "",
+        "button_label": "",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
@@ -104,7 +106,7 @@
         "featured_collection_wwaMV9": {
           "type": "featured_collection",
           "settings": {
-            "collection": "travertine"
+            "collection": "multicoloured"
           }
         },
         "featured_collection_BKK8gk": {
@@ -124,20 +126,13 @@
           "settings": {
             "collection": "cement-tiles"
           }
-        },
-        "featured_collection_hxdxJx": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wood-flooring"
-          }
         }
       },
       "block_order": [
         "featured_collection_wwaMV9",
         "featured_collection_BKK8gk",
         "featured_collection_Ji9BQ8",
-        "featured_collection_jzWkwb",
-        "featured_collection_hxdxJx"
+        "featured_collection_jzWkwb"
       ],
       "custom_css": [
         ".card__information {padding-top: 0.6em; padding-bottom: 0.9em;}",
@@ -147,9 +142,11 @@
         "title": "",
         "heading_size": "h2",
         "image_ratio": "portrait",
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
+        "link": "",
+        "button_label": "",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
