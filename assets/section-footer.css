@@ -43,6 +43,10 @@
   margin-bottom: 0;
 }
 
+.footer__content--main-showroom h5 {
+  margin: 0;
+}
+
 .footer__content--main-showroom ul.footer__content--main-links {
   margin: 0;
 }
