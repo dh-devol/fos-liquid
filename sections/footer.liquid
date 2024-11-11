@@ -293,6 +293,12 @@
       <div class="footer__content--side">
         <div class="footer__content--side-links">
           <h4>Get in touch!</h4>
+          <p>
+            Our friendly and knowledgeable sales team are always happy yoanswer any pf your questions.
+          </p>
+          {%- if block.settings.show_social and has_social_icons -%}
+            {%- render 'social-icons', class: 'footer__list-social' -%}
+          {%- endif -%}
         </div>
       </div>
     </div>
