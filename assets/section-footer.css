@@ -34,6 +34,10 @@
   padding: .5rem 0;
 }
 
+.footer__content--main-showroom p {
+  font-size: 1.3rem;
+}
+
 .footer__content--main-showroom ul.footer__content--main-links {
   margin: 0;
 }
