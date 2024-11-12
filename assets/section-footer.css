@@ -81,6 +81,7 @@
 
 .footer__content--side p {
   font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 749px) {
