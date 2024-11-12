@@ -11,6 +11,9 @@
   "sections": {
     "image_banner_U7zytq": {
       "type": "image-banner",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.banner--small:not(.banner--mobile-bottom):not(.banner--adapt) .banner__content {min-height: 15rem; }"
+      ],
       "settings": {
         "image": "{{ collection.metafields.custom.banner_image.value }}",
         "image_overlay_opacity": 0,
