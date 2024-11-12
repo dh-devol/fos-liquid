@@ -46,7 +46,6 @@
 .footer__content--main-showroom p {
   font-size: 1.3rem;
   margin-bottom: 0;
-    color: rgba(var(--color-foreground));
 }
 
 .footer__content--main-showroom h5 {
@@ -65,9 +64,8 @@
 
 .footer__content--main-links a {
   text-decoration: none;
-  font-size: 1.5rem;
-  /* color: rgb(var(--color-foreground) 75%);
-} */
+  color: rgb(var(--color-foreground) 75%);
+}
 
 .footer__content--side {
   display: flex;
