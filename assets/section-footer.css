@@ -89,7 +89,7 @@
     justify-content: space-between;
 }
 
-.footer__content--side-content-contact a {
+.footer__content--side-content-contact p a {
     color: rgb(var(--color-foreground) 75%);
 }
 

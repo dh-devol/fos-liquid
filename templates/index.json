@@ -234,7 +234,7 @@
         ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
       ],
       "settings": {
-        "title": "MATERIAL",
+        "title": "BY MATERIAL",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
@@ -242,7 +242,7 @@
         "show_view_all": true,
         "link": "shopify://pages/material",
         "button_label": "View all materials",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 36
@@ -291,7 +291,7 @@
         ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
       ],
       "settings": {
-        "title": "COLOUR",
+        "title": "BY COLOUR",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
@@ -299,7 +299,7 @@
         "show_view_all": true,
         "link": "shopify://pages/colour",
         "button_label": "View all colours",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 36
@@ -355,7 +355,7 @@
         "show_view_all": true,
         "link": "shopify://pages/style",
         "button_label": "View all styles",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 36
