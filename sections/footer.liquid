@@ -78,15 +78,14 @@
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
-                  <!-- {%- when 'text' -%}
+                  {%- when 'text' -%}
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
-                    </div> -->
+                    </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                         {%- for link in block.settings.menu.links -%}
                               <h4>{{ link.title | escape }}</h4>
-                            
                             {%- if link.links.size > 0 -%}
                               <ul class="list-unstyled nested-menu">
                                 {%- for child_link in link.links -%}
