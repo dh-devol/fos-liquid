@@ -313,6 +313,7 @@
         </div>
         
         {%- if section.settings.show_policy -%}
+          <div>
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
@@ -324,6 +325,7 @@
               {%- endif -%}
             {%- endfor -%}
           </ul>
+          </div>
         {%- endif -%}
       </div>
     </div>
