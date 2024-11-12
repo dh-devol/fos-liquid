@@ -64,8 +64,8 @@
 
 .footer__content--main-links a {
   text-decoration: none;
-  color: rgb(var(--color-foreground) 75%);
-}
+  /* color: rgb(var(--color-foreground) 75%);
+} */
 
 .footer__content--side {
   display: flex;
