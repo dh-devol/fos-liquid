@@ -231,7 +231,8 @@
         ".card__information {padding-top: 0.6em;}",
         ".card__heading {font-size: 1em;}",
         ".icon-arrow {display: none;}",
-        ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
+        ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}",
+        "@media screen and (max-width: 749px) {.slider-buttons {display: none; }}"
       ],
       "settings": {
         "title": "BY MATERIAL",
@@ -347,7 +348,7 @@
         ".icon-arrow {display: none;}"
       ],
       "settings": {
-        "title": "STYLE",
+        "title": "BY STYLE",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
