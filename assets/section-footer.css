@@ -13,9 +13,9 @@
 
 .footer__content--main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex: 0 0 auto;
-  width: 70%;
+  width: 60%;
 }
 
 .footer__content--main h4 {
