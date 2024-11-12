@@ -232,7 +232,7 @@
         ".card__heading {font-size: 1em;}",
         ".icon-arrow {display: none;}",
         ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}",
-        "@media screen and (max-width: 749px) {.slider-buttons {display: none; } .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {width: 80%;}}"
+        "@media screen and (max-width: 749px) {.slider-buttons {display: none; } .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {width: 70%; }}"
       ],
       "settings": {
         "title": "BY MATERIAL",
