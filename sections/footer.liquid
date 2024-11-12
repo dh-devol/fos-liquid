@@ -253,6 +253,30 @@
       data-cascade
     {% endif %}
   >
+    {%- case block.type -%}
+      {%- when '@app' -%}
+        {% render block %}
+      {%- when 'link_list' -%}
+        {%- if block.settings.menu != blank -%}
+            {%- for link in block.settings.menu.links -%}
+                  <h4>{{ link.title | escape }}</h4>
+                {%- if link.links.size > 0 -%}
+                  <ul class="list-unstyled nested-menu">
+                    {%- for child_link in link.links -%}
+                      <li>
+                        <a
+                          href="{{ child_link.url }}"
+                          class="link link--text list-menu__item list-menu__item--link{% if child_link.active %} list-menu__item--active{% endif %}"
+                        >
+                          {{ child_link.title | escape }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
+    {%- endcase -%}
     <div class="footer__content-bottom-wrapper page-width grid">
       <div class="footer__content--main">
         <div class="footer__content--main-information">
