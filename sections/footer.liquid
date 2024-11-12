@@ -45,7 +45,7 @@
     or section.settings.enable_follow_on_shop
   -%}
     
-    {%- unless only_empty_brand -%}
+    {%- unless only_empty_brand or section.settings.hide_footer_content -%}
       <div class="footer__content-top page-width">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
