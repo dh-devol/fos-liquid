@@ -255,41 +255,46 @@
   >
     <div class="footer__content-bottom-wrapper page-width grid">
       <div class="footer__content--main">
-        {%- if block.type == 'link_list' and block.settings.menu != blank -%}
-          <div class="footer__content--test">
-            <h4>{{ block.settings.heading | escape }}</h4>
-            <ul class="footer__content--main-links">
-              
-              {%- for link in block.settings.menu.links -%}
+       {%- if block.type == 'link_list' and block.settings.menu != blank -%}
+  <div class="footer__content--test">
+    <h4>{{ block.settings.heading | escape }}</h4>
+    <ul class="footer__content--main-links">
+
+      {%- for link in block.settings.menu.links -%}
+        <li>
+          <a
+            href="{{ link.url }}"
+            class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+          >
+            {{ link.title | escape }}
+          </a>
+
+          {%- if link.links and link.links.size > 0 -%}
+            <ul class="footer__content--main-links nested-menu">
+              {%- for child_link in link.links -%}
                 <li>
                   <a
-                    href="{{ link.url }}"
-                    class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                    href="{{ child_link.url }}"
+                    class="link link--text list-menu__item list-menu__item--link{% if child_link.active %} list-menu__item--active{% endif %}"
                   >
-                    {{ link.title | escape }}
+                    {{ child_link.title | escape }}
                   </a>
-                  
-                  {%- if link.links.size > 0 -%}
-                    <ul class="footer__content--main-links nested-menu">
-                      {%- for child_link in link.links -%}
-                        <li>
-                          <a
-                            href="{{ child_link.url }}"
-                            class="link link--text list-menu__item list-menu__item--link{% if child_link.active %} list-menu__item--active{% endif %}"
-                          >
-                            {{ child_link.title | escape }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-        
                 </li>
               {%- endfor -%}
-              
             </ul>
-          </div>
-        {%- endif -%}
+          {%- endif -%}
+
+        </li>
+      {%- endfor -%}
+
+    </ul>
+  </div>
+{%- else -%}
+  <!-- Debugging Output to verify block structure -->
+  <p>No menu found or incorrect block type.</p>
+  <p>Block Type: {{ block.type }}</p>
+{%- endif -%}
+
 
         <div class="footer__content--main-showroom">
           <h4>Our Showroom</h4>
