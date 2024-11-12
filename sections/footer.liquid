@@ -39,10 +39,7 @@
     endif
   -%}
   {%- if section.blocks.size > 0
-    or section.settings.newsletter_enable
-    or section.settings.show_social
-    and has_social_icons == true
-    or section.settings.enable_follow_on_shop
+   
   -%}
     {%- unless only_empty_brand -%}
       <div class="footer__content-top page-width">
@@ -71,7 +68,6 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
