@@ -272,25 +272,22 @@
         </div>
       </div>
       <div class="footer__content--side">
-        <div class="footer__content--side-links">
-          <h4>Get in touch!</h4>
-          <p>
-            Our friendly and knowledgeable sales team are always happy to answer any of your questions.
-          </p>
-          {%- liquid
-            assign has_social_icons = false
-            if settings.social_facebook_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_tiktok_link != blank or settings.social_twitter_link != blank or settings.social_pinterest_link != blank or settings.social_snapchat_link != blank or settings.social_tumblr_link != blank or settings.social_vimeo_link != blank
-              assign has_social_icons = true
-            endif
-          -%}
-          
-          {%- if section.settings.show_social and has_social_icons -%}
-            <div class="my-icons">
-              {%- render 'social-icons', class: 'footer__list-social' -%}
-            </div>
-          {%- endif -%}
-
-        </div>
+        <h4>Get in touch!</h4>
+        <p>
+          Our friendly and knowledgeable sales team are always happy to answer any of your questions.
+        </p>
+        {%- liquid
+          assign has_social_icons = false
+          if settings.social_facebook_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_tiktok_link != blank or settings.social_twitter_link != blank or settings.social_pinterest_link != blank or settings.social_snapchat_link != blank or settings.social_tumblr_link != blank or settings.social_vimeo_link != blank
+            assign has_social_icons = true
+          endif
+        -%}
+        
+        {%- if section.settings.show_social and has_social_icons -%}
+          <div class="my-icons">
+            {%- render 'social-icons', class: 'footer__list-social' -%}
+          </div>
+        {%- endif -%}
       </div>
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
