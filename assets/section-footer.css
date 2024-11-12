@@ -73,10 +73,9 @@
 } 
 
 .footer__content--side {
-  display: flex;
-  justify-content: center;
   flex: 0 0 auto;
   width: 20%;
+  color: rgba(var(--color-foreground));
 }
 
 .footer__content--side h4 {
