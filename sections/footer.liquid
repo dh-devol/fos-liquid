@@ -256,31 +256,36 @@
     <div class="footer__content-bottom-wrapper page-width grid">
       <div class="footer__content--main">
        {%- for block in section.blocks -%}
-          {%- if block.type == 'link_list' -%}
-            {%- if block.settings.menu != blank -%}
-              <div class="footer__content--main-test">
-                  {%- for link in block.settings.menu.links -%}
-                      <h4>{{ link.title | escape }}</h4>
-                      {%- if link.links and link.links.size > 0 -%}
-                        <ul class="footer__content--main-links">
-                          {%- for child_link in link.links -%}
-                            <li>
-                              <a href="{{ child_link.url }}" class="link link--text list-menu__item list-menu__item--link{% if child_link.active %} list-menu__item--active{% endif %}">
-                                {{ child_link.title | escape }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
-                  {%- endfor -%}
-              </div>
-            {%- else -%}
-              <p>No menu assigned to this link_list block.</p>
-            {%- endif -%}
-          {%- else -%}
-            <p>This block is not a link_list. Block type: {{ block.type }}</p>
+  {%- if block.type == 'link_list' -%}
+    {%- if block.settings.menu != blank -%}
+      
+      {%- for link in block.settings.menu.links -%}
+        <div class="footer__content--main-test">
+          <h4>{{ link.title | escape }}</h4>
+          
+          {%- if link.links and link.links.size > 0 -%}
+            <ul class="footer__content--main-links">
+              {%- for child_link in link.links -%}
+                <li>
+                  <a href="{{ child_link.url }}" class="link link--text list-menu__item list-menu__item--link{% if child_link.active %} list-menu__item--active{% endif %}">
+                    {{ child_link.title | escape }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
           {%- endif -%}
-        {%- endfor -%}
+          
+        </div>
+      {%- endfor -%}
+      
+    {%- else -%}
+      <p>No menu assigned to this link_list block.</p>
+    {%- endif -%}
+  {%- else -%}
+    <p>This block is not a link_list. Block type: {{ block.type }}</p>
+  {%- endif -%}
+{%- endfor -%}
+
         <div class="footer__content--main-showroom">
           <h4>Our Showroom</h4>
           <p>
