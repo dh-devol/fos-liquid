@@ -47,7 +47,8 @@
 .footer__content--main-showroom p {
   font-size: 1.3rem;
   margin-bottom: 0;
-    color: rgba(var(--color-foreground));
+  color: rgba(var(--color-foreground));
+  line-height: 2rem;
 }
 
 .footer__content--main-showroom h5 {
