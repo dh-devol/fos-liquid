@@ -543,7 +543,8 @@
           "delivery": {
             "only_one_delivery_line_allowed": "Basket must have only one delivery line."
           }
-        }
+        },
+        "autocomplete_powered_by_google": " "
       },
       "stock": {
         "removed_from_cart_notice": "Removed from basket",
@@ -624,6 +625,9 @@
     },
     "page_titles": {
       "shopping_cart": "Your Basket"
+    },
+    "links": {
+      "powered_by_shopify": " "
     }
   }
 }
