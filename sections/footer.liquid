@@ -256,10 +256,7 @@
     <div class="footer__content-bottom-wrapper page-width grid">
       <div class="footer__content--main">
        {%- for block in section.blocks -%}
-  <p>Block Type: {{ block.type }}</p>
-
   {%- if block.type == 'link_list' -%}
-    <p>Block is of type link_list.</p>
 
     {%- if block.settings.menu != blank -%}
       <div class="footer__content--main">
