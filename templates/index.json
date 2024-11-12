@@ -182,6 +182,9 @@
       "block_order": [
         "heading_QpzhrF"
       ],
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.rich-text.content-container {padding-top: 24px; padding-bottom: 55px; }}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
