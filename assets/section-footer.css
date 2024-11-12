@@ -108,7 +108,7 @@
 }
 
 .footer__content-bottom-wrapper--start {
-  justify-content: start;
+  justify-content: start !important;
 }
 
 @media screen and (max-width: 749px) {
