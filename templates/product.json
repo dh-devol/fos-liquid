@@ -65,6 +65,12 @@
             "metadata04": "Delete this text and insert Metadata",
             "metadata05": "Delete this text and insert Metadata"
           }
+        },
+        "custom_liquid_fHgEwc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ variant.metafields.custom.tile_area }}"
+          }
         }
       },
       "block_order": [
@@ -76,7 +82,8 @@
         "quantity_selector",
         "buy_buttons",
         "custom_liquid_YigFRV",
-        "option_calculator_product_option_tMHpBc"
+        "option_calculator_product_option_tMHpBc",
+        "custom_liquid_fHgEwc"
       ],
       "settings": {
         "enable_sticky_info": true,
