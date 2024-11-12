@@ -248,63 +248,6 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_XYBb8U": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_BtYLKP": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "aged"
-          }
-        },
-        "featured_collection_UdT8QX": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "modern"
-          }
-        },
-        "featured_collection_F7phRb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "chequerboard"
-          }
-        },
-        "featured_collection_APDc4B": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "farmhouse"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_BtYLKP",
-        "featured_collection_UdT8QX",
-        "featured_collection_F7phRb",
-        "featured_collection_APDc4B"
-      ],
-      "custom_css": [
-        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
-        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
-        ".card__information {padding-top: 0.6em;}",
-        ".card__heading {font-size: 1em;}",
-        ".icon-arrow {display: none;}",
-        ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
-      ],
-      "settings": {
-        "title": "STYLE",
-        "heading_size": "h2",
-        "image_ratio": "portrait",
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_view_all": true,
-        "link": "shopify://pages/style",
-        "button_label": "View all styles",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "collection_list_gwCtEa": {
       "type": "collection-list",
       "blocks": {
@@ -344,7 +287,8 @@
         ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
         ".card__information {padding-top: 0.6em;}",
         ".card__heading {font-size: 1em;}",
-        ".icon-arrow {display: none;}"
+        ".icon-arrow {display: none;}",
+        ".collection-list-view-all {padding-bottom: 3rem; border-bottom: 1px solid #e5e5e5;}"
       ],
       "settings": {
         "title": "COLOUR",
@@ -355,6 +299,62 @@
         "show_view_all": true,
         "link": "shopify://pages/colour",
         "button_label": "View all colours",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_XYBb8U": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_BtYLKP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "aged"
+          }
+        },
+        "featured_collection_UdT8QX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "modern"
+          }
+        },
+        "featured_collection_F7phRb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "chequerboard"
+          }
+        },
+        "featured_collection_APDc4B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "farmhouse"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_BtYLKP",
+        "featured_collection_UdT8QX",
+        "featured_collection_F7phRb",
+        "featured_collection_APDc4B"
+      ],
+      "custom_css": [
+        ".collection-list-title {font-size: 0.9em; letter-spacing: 0.08em;}",
+        ".title-wrapper--no-top-margin {margin-bottom: 0.9em;}",
+        ".card__information {padding-top: 0.6em;}",
+        ".card__heading {font-size: 1em;}",
+        ".icon-arrow {display: none;}"
+      ],
+      "settings": {
+        "title": "STYLE",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "link": "shopify://pages/style",
+        "button_label": "View all styles",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 0,
@@ -731,8 +731,8 @@
     "slideshow_XdqGrR",
     "rich_text_RN99pG",
     "collection_list_qrrNJX",
-    "collection_list_XYBb8U",
     "collection_list_gwCtEa",
+    "collection_list_XYBb8U",
     "collection_list_Xw4UxX",
     "image_with_text_pdR9pL",
     "image_with_text_4DytpK",
