@@ -259,7 +259,6 @@
           {%- if block.type == 'link_list' -%}
             {%- if block.settings.menu != blank -%}
               <div class="footer__content--main">
-                <h4>{{ block.settings.heading | escape }}</h4>
                 <ul class="footer__content--main-links">
                   {%- for link in block.settings.menu.links -%}
                     <li>
