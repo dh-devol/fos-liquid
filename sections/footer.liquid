@@ -253,7 +253,8 @@
       data-cascade
     {% endif %}
   >
-    {%- case block.type -%}
+    <div class="footer__content-bottom-wrapper page-width grid">
+      {%- case block.type -%}
       {%- when '@app' -%}
         {% render block %}
       {%- when 'link_list' -%}
@@ -277,7 +278,6 @@
             {%- endfor -%}
         {%- endif -%}
     {%- endcase -%}
-    <div class="footer__content-bottom-wrapper page-width grid">
       <div class="footer__content--main">
         <div class="footer__content--main-information">
           <h4>Information</h4>
