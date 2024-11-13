@@ -355,6 +355,10 @@
   /* .footer__content-bottom {
     padding-top: 0;
   } */
+
+  .footer .grid {
+    padding: 0 5rem;
+  }
   
   .footer__content--main {
     justify-content: space-around;
