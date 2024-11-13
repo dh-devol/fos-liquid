@@ -129,7 +129,7 @@
 {% if thumbnail_image != blank %}
   <img class="test" src="{{ thumbnail_image | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
 {% else %}
-  nothing
+  <p>nothing</p>
 {% endif %}
           </div>
           <div class="card__badge {{ settings.badge_position }}">
