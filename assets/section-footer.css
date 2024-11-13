@@ -133,14 +133,6 @@
     padding-left: calc(4rem / var(--font-body-scale));
     padding-right: calc(4rem / var(--font-body-scale));
   }
-
-  .footer__content--main {
-    width: 100%;
-    }
-
-  .footer__content--side {
-    width: 70%;
-  }
 }
 
 @media screen and (min-width: 750px) {
@@ -385,6 +377,15 @@
 
   .footer-block__newsletter {
     flex-direction: column;
+  }
+
+  .footer__content--main {
+    width: 100%;
+    }
+
+  .footer__content--side {
+    width: 70%;
+    margin-top: 2rem;
   }
 }
 
