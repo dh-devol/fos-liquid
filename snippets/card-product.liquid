@@ -109,9 +109,9 @@
         {% assign thumbnail_image = product.metafields.custom.thumbnail %}
 
 {% if thumbnail_image != blank %}
-  <img src="{{ thumbnail_image | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
+  <img class="test" src="{{ thumbnail_image | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
 {% else %}
-  <img src="{{ card_product.featured_media | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
+  <img class="test" src="{{ card_product.featured_media | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
 {% endif %}
 
         <div class="card__content">
