@@ -13,7 +13,7 @@
 
 .footer__content--main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 0 0 auto;
   width: 35%;
 }
