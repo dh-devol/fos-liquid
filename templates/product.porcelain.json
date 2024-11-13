@@ -1,0 +1,249 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "text_xtknKD": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "body"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "swatch_shape": "none"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_liquid_YigFRV": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p>\n  {{ page.title }}\n</p>"
+          }
+        },
+        "option_calculator_product_option_tMHpBc": {
+          "type": "shopify://apps/option-calculator/blocks/product_option/8f01aabe-62b9-4cde-aee9-dfb98853943a",
+          "settings": {
+            "include_jquery": false,
+            "metadata01": "Delete this text and insert Metadata",
+            "metadata02": "Delete this text and insert Metadata",
+            "metadata03": "Delete this text and insert Metadata",
+            "metadata04": "Delete this text and insert Metadata",
+            "metadata05": "Delete this text and insert Metadata"
+          }
+        },
+        "custom_liquid_fHgEwc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ variant.metafields.custom.tile_area }}"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "text_xtknKD",
+        "description",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "custom_liquid_YigFRV",
+        "option_calculator_product_option_tMHpBc",
+        "custom_liquid_fHgEwc"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-3",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "collapsible_content_HcgWf6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_yqnwVQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.product_long_description | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_row_mJmkgk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specification",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_rGYeMQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Delivery",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_VNekGn": {
+          "type": "collapsible_row",
+          "repeater": "{{ product.metafields.custom.tile_pattern.value }}",
+          "settings": {
+            "heading": "Pattern information",
+            "icon": "none",
+            "row_content": "{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}<p></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_yqnwVQ",
+        "collapsible_row_mJmkgk",
+        "collapsible_row_rGYeMQ",
+        "collapsible_row_VNekGn"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "scheme-3",
+        "container_color_scheme": "scheme-3",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_qhwKgc": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "For installing and maintaining these tiles...",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "asc-for-porcelain",
+        "products_to_show": 25,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-3",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_PAYMaR": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "You may also like...",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "limestone",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-3",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like...",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-3",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_HcgWf6",
+    "featured_collection_qhwKgc",
+    "featured_collection_PAYMaR",
+    "related-products"
+  ]
+}
