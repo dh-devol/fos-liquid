@@ -340,6 +340,10 @@
 }
 
 @media screen and (max-width: 989px) {
+  .footer__content-bottom {
+    padding-top: 0;
+  }
+  
   .footer__content--main {
     width: 75%;
   }
