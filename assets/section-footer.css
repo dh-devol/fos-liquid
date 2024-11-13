@@ -346,6 +346,7 @@
 
   .footer__content--side {
     width: 75%;
+    margin-top: 2rem;
   }
 }
 
