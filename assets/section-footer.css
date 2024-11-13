@@ -567,7 +567,7 @@
 }
 
 .policies li::before {
-  content: '25CF';
+  content: '\25CF';
   padding: 0 2rem;
 }
 
