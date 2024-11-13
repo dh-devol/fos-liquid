@@ -394,8 +394,7 @@
 }
 
 .footer__copyright {
-  text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 5.5rem;
 }
 
 @media screen and (min-width: 750px) {
