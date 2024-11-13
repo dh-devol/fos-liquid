@@ -323,6 +323,13 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .footer__content--side p br {
+    display: none;
+}
+  
+}
+
 @media screen and (max-width: 749px) {
   /*
     On a small screen we want all the items to be centered
