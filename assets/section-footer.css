@@ -51,6 +51,13 @@
   line-height: 2rem;
 }
 
+.footer__content--mid h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+}
+
 .footer__content--mid h5 {
   margin: 0;
   margin-top: 2rem;
