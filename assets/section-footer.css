@@ -571,6 +571,10 @@
   padding: 0 0.8rem;
 }
 
+.policies li::before:first-of-type {
+  display: none;
+}
+
 .policies li a {
   padding: 0.6rem 0;
   display: block;
