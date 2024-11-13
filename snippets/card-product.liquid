@@ -124,13 +124,7 @@
                 {{ card_product.title | escape }}
               </a>
             </h3>
-                {% assign thumbnail_image = product.metafields.custom.thumbnail %}
-
-{% if thumbnail_image != blank %}
-  <img class="test" src="{{ thumbnail_image | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
-{% else %}
-  <img class="test" src="{{ card_product.featured_media | image_url: 'small' }}" alt="{{ product.title }}" width="100px" height="100px">
-{% endif %}
+            
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
