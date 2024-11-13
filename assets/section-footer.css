@@ -337,8 +337,18 @@
   .footer__content--side {
     width: 25%;
   }
-  
 }
+
+@media screen and (max-width: 989px) {
+  .footer__content--main {
+    width: 75%;
+  }
+
+  .footer__content--side {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 749px) {
   /*
     On a small screen we want all the items to be centered
