@@ -570,13 +570,6 @@
           {%- endif -%}
         </div>
       </div>
-                 {% assign thumbnail_image = card_product.metafields.custom.thumbnail %}
-
-{% if thumbnail_image != blank %}
-  <img class="test" src="{{ thumbnail_image | file_url }}" alt="{{ product.title }}" width="100px" height="100px">
-{% else %}
-  <p>nothing</p>
-{% endif %}
     </div>
   </div>
 {%- else -%}
