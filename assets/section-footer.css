@@ -44,25 +44,25 @@
   padding-top: 0;
 }
 
-.footer__content--main-showroom p {
+.footer__content--mid p {
   font-size: 1.3rem;
   margin-bottom: 0;
   color: rgba(var(--color-foreground));
   line-height: 2rem;
 }
 
-.footer__content--main-showroom h5 {
+.footer__content--mid h5 {
   margin: 0;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-.footer__content--main-showroom .footer__content--main-links {
+.footer__content--mid .footer__content--main-links {
   margin-top: 0;
   line-height: 2rem;
 }
 
-.footer__content--main-showroom .footer__content--main-links li {
+.footer__content--mid .footer__content--main-links li {
   padding: 0;
 }
 
