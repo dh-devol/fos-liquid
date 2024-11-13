@@ -571,7 +571,7 @@
   padding: 0 0.8rem;
 }
 
-.policies li::before:first-of-type {
+.policies li:first-of-type {
   display: none;
 }
 
