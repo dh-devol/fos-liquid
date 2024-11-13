@@ -359,9 +359,13 @@
   .footer .grid {
     padding: 0 5rem;
   }
+
+  .footer__content-bottom-wrapper {
+    justify-content: space-between;
+}
   
   .footer__content--main {
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 0 0 auto;
     width: 50%;
   }
