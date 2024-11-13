@@ -567,7 +567,7 @@
 }
 
 .policies li::before {
-  content: '\2022';
+  content: '\1F784';
   padding: 0 2rem;
 }
 
