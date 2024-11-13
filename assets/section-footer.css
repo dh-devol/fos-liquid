@@ -349,22 +349,28 @@
   .footer__content--side {
     width: 25%;
   }
-}
+} */
 
 @media screen and (max-width: 989px) {
-  .footer__content-bottom {
+  /* .footer__content-bottom {
     padding-top: 0;
-  }
+  } */
   
   .footer__content--main {
-    width: 75%;
+    justify-content: space-around;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .footer__content--mid {
+    width: 35%;
   }
 
   .footer__content--side {
-    width: 75%;
+    width: 82%;
     margin-top: 2rem;
   }
-} */
+} 
 
 @media screen and (max-width: 749px) {
   /*
