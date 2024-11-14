@@ -407,6 +407,15 @@
   .footer__content--main {
     width: 70%;
   }
+
+  .footer__content--mid {
+    width: 49%;
+    margin-top: 3rem;
+  }
+
+  .footer__content--side {
+    width: 49%;
+  }
 }
 
 @media screen and (min-width: 750px) {
