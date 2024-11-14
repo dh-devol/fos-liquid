@@ -2489,6 +2489,13 @@ input[type='checkbox'] {
   .header__heading,
   .header__heading-link {
     text-align: center;
+  }
+
+  .header__heading {
+    width: 77%
+  }
+
+  .header__heading-link {
     width: 66%
   }
 
