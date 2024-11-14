@@ -434,6 +434,7 @@
 
   .footer__copyright {
     width: 100% !important;
+    flex-direction: column-reverse;
   }
 }
 
