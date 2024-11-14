@@ -1570,10 +1570,11 @@ details[open] > .share-button__fallback {
 /* component-form */
 .EzfyHeaderSearch .field__input {
   background-color: #F3F3F3;
+  height: 4rem;
 }
 
 .EzfyHeaderSearch .field__label {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .EzfyHeaderSearch .field:before {
