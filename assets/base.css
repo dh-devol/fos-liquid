@@ -1568,6 +1568,10 @@ details[open] > .share-button__fallback {
 }
 
 /* component-form */
+.EzfyHeaderSearch .field__input {
+  background-color: #F3F3F3;
+}
+
 .field__input,
 .select__select,
 .customer .field input,
