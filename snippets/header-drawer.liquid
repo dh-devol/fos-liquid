@@ -20,6 +20,7 @@
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
+            {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
                 <li>
@@ -49,7 +50,6 @@
                             </span>
                             {{ link.title | escape }}
                           </button>
-                          {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
