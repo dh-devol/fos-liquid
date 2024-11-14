@@ -43,13 +43,13 @@
                         tabindex="-1"
                       >
                         <div class="menu-drawer__inner-submenu">
-                          {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
                           <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                             <span class="svg-wrapper">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
                             </span>
                             {{ link.title | escape }}
                           </button>
+                          {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
