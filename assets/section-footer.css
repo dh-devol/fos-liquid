@@ -338,7 +338,11 @@
 @media screen and (max-width: 1300px) {
   .footer__content--side p br {
     display: none;
-  } 
+  }
+
+  .footer__content-bottom-wrapper--start {
+    padding: 0px 7.6rem;
+  }
 }
 
 /* @media screen and (max-width: 1200px) {
