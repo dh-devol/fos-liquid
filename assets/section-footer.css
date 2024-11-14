@@ -418,6 +418,24 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .footer__content br {
+    display: none;
+  }
+  
+  .footer__content--main {
+    width: 100%;
+  }
+
+  .footer__content--mid {
+    width: 100%;
+  }
+
+  .footer__content--side {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .footer-block__newsletter + .footer__list-social {
     margin-top: 0;
