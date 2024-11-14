@@ -404,6 +404,10 @@
     flex-direction: column;
   }
 
+  .footer .grid {
+    padding: 0 3rem;
+  }
+
   .footer__content-bottom-wrapper br {
     display: none;
   }
