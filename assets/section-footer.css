@@ -431,6 +431,10 @@
   .footer__content-bottom-wrapper--start {
     padding: 0px 3rem;
   }
+
+  .footer__copyright {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
