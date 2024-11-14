@@ -43,6 +43,7 @@
                         tabindex="-1"
                       >
                         <div class="menu-drawer__inner-submenu">
+                          {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
                           <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                             <span class="svg-wrapper">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
@@ -134,7 +135,6 @@
                 </li>
               {%- endfor -%}
             </ul>
-            {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
           </nav>
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
