@@ -1574,6 +1574,7 @@ details[open] > .share-button__fallback {
 
 .EzfyHeaderSearch field::before {
   border: 1px solid #F3F3F3;
+  z-index: 2;
 }
 
 .field__input,
