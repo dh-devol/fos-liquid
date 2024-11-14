@@ -2495,6 +2495,10 @@ input[type='checkbox'] {
     width: 77%
   }
 
+  .header__heading .header__heading-link {
+    width: 0%
+  }
+
   .header__heading-link {
     width: 66%
   }
