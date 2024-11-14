@@ -1572,7 +1572,7 @@ details[open] > .share-button__fallback {
   background-color: #F3F3F3;
 }
 
-.EzfyHeaderSearch field::before {
+.EzfyHeaderSearch .field:before {
   border: 1px solid #F3F3F3;
   z-index: 2;
 }
