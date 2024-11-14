@@ -1575,6 +1575,7 @@ details[open] > .share-button__fallback {
 
 .EzfyHeaderSearch .field__label {
   font-size: 1.4rem;
+  color: rgba(var(--color-foreground), .5);
 }
 
 .EzfyHeaderSearch .field:before {
