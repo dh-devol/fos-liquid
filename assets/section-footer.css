@@ -404,7 +404,7 @@
     flex-direction: column;
   }
 
-  .footer__content br {
+  .footer__content-bottom-wrapper br {
     display: none;
   }
 
