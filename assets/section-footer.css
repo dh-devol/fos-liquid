@@ -427,6 +427,10 @@
   .footer__content--side {
     width: 49%;
   }
+
+  .footer__content-bottom-wrapper--start {
+    padding: 0px 3rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
