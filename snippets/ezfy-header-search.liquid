@@ -40,9 +40,9 @@
         class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
         aria-label="{{ 'general.search.reset' | t }}"
       >
-        <svg class="icon icon-close" aria-hidden="true" focusable="false">
-          <use xlink:href="#icon-reset">
-        </svg>
+        <span class="svg-wrapper">
+          {{- 'icon-close.svg' | inline_asset_content -}}
+        </span>
       </button>
       <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
         <span class="svg-wrapper">
