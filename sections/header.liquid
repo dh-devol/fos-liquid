@@ -132,7 +132,7 @@
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
+        <h1 class="header__heading h1">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
@@ -279,8 +279,8 @@
       </a>
     </div>
   </header>
-  <!-- {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
- -->
+  
+
   <script>
   document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelector(".header__inline-menu").querySelectorAll("details");
