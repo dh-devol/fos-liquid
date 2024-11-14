@@ -1578,6 +1578,10 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), .5);
 }
 
+.EzfyHeaderSearch .field__button {
+  height: 4rem;
+}
+
 .EzfyHeaderSearch .field:before {
   border: 1px solid #F3F3F3;
   z-index: 2;
