@@ -442,7 +442,7 @@
   }
 
   .policies li:before {
-    padding: 0 1rem;
+    padding: 0 1rem !important;
   }
 }
 
