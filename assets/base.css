@@ -2491,6 +2491,10 @@ input[type='checkbox'] {
     text-align: center;
   }
 
+  .header__heading {
+    width: 74%
+  }
+
   .header--mobile-left .header__heading,
   .header--mobile-left .header__heading-link {
     text-align: left;
