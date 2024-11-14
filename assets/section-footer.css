@@ -345,16 +345,6 @@
   }
 }
 
-/* @media screen and (max-width: 1200px) {
-  .footer__content--main {
-    width: 60%;
-  }
-
-  .footer__content--side {
-    width: 25%;
-  }
-} */
-
 @media screen and (max-width: 989px) {
   /* .footer__content-bottom {
     padding-top: 0;
@@ -381,6 +371,10 @@
   .footer__content--side {
     width: 82%;
     margin-top: 2rem;
+  }
+
+  .footer__content-bottom-wrapper--start {
+    padding: 0px 5rem;
   }
 } 
 
