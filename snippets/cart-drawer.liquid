@@ -542,9 +542,21 @@
         <!-- CTAs -->
 
         <div class="cart__ctas" {{ block.shopify_attributes }}>
-          
-          {% if cart == empty %}
+          <!-- <button
+            type="submit"
+            id="CartDrawer-Checkout"
+            class="cart__checkout-button button"
+            name="checkout"
+            form="CartDrawer-Form"
+            {% if cart == empty %}
+              disabled
+            {% endif %}
+          >
+            {{ 'sections.cart.checkout' | t }}
+          </button> -->
             <a href="/cart">{{ 'sections.cart.checkout' | t }}</a>
+          {% if cart == empty %}
+            disabled
           {% endif %}
         </div>
       </div>
