@@ -554,7 +554,7 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button> -->
-            <a href="/cart">{{ 'sections.cart.checkout' | t }}</a>
+            <a href="/cart" class="cart__checkout-button button">{{ 'sections.cart.checkout' | t }}</a>
           {% if cart == empty %}
             disabled
           {% endif %}
