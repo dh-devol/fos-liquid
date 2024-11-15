@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.image-with-text__content image-with-text__content--middle {
+  max-width: 65rem;
+}
+
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
     flex-direction: row-reverse;
