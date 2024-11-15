@@ -554,6 +554,9 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button> -->
+          {% if cart == empty %}
+            <a href="/cart">Continue to checkout</a>
+          {% endif %}
         </div>
       </div>
     </div>
