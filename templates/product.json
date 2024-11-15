@@ -109,7 +109,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "row_content": "{{ product.metafields.custom.product_long_description | metafield_tag }}<p>{{ product.metafields.custom.calibrated.value }}</p>",
+            "row_content": "{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}{{ product.metafields.custom.product_long_description | metafield_tag }}<p>{{ product.metafields.custom.calibrated.value }}</p>",
             "page": ""
           }
         },
@@ -168,10 +168,12 @@
       "blocks": {
         "collapsible_row_HNjf8W": {
           "type": "collapsible_row",
+          "repeater": "{{ product.metafields.custom.tile_pattern.value }}",
           "settings": {
-            "heading": "Description",
+            "heading": "{{ block.repeater.admin_title.value }}",
             "icon": "none",
-            "row_content": "<p>{{ product.metafields.custom.tile_pattern | metafield_text: field: 'display_title' }}</p><p></p>",
+            "row_content": "{{ block.repeater.size_and_pattern | metafield_tag }}",
+            "image_content": "{{ block.repeater.pattern_image_2.value }}",
             "page": ""
           }
         }
