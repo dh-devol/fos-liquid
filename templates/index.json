@@ -508,7 +508,12 @@
         "text_6mXRcg",
         "button_CJGNjM"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em; }}",
+        ".image-with-text__text {font-size: 0.9em; color: #333333;}",
+        "@media only screen and (min-width: 768px) {.image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em; }}",
+        ".image-with-text__text {font-size: 0.9em; color: #333333;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/Samples-2024_f1f118a4-9952-4927-9e60-760d5c896a8f.jpg",
         "height": "large",
