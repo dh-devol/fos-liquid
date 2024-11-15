@@ -94,7 +94,7 @@
                     aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                   >
                     {{ block.settings.row_content }}
-                    {%- if block.settings.image != blank -%}
+                    {%- if block.settings.image_content != blank -%}
                       {{
                         block.settings.image_content
                         | image_url: width: 3200
