@@ -168,12 +168,10 @@
       "blocks": {
         "collapsible_row_HNjf8W": {
           "type": "collapsible_row",
-          "repeater": "{{ product.metafields.custom.tile_pattern.value }}",
           "settings": {
-            "heading": "{{ block.repeater.admin_title.value }}",
+            "heading": "",
             "icon": "none",
-            "row_content": "{{ block.repeater.size_and_pattern | metafield_tag }}",
-            "image_content": "{{ block.repeater.pattern_image_2.value }}",
+            "row_content": "",
             "page": ""
           }
         }
