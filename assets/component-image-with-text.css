@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 65rem;
+  max-width: 69rem;
   justify-content: center;
   align-self: center;
   padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
