@@ -109,7 +109,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "row_content": "{{ product.metafields.custom.product_long_description | metafield_tag }}<p>{{ product.metafields.custom.calibrated.value }}</p>",
+            "row_content": "{{ product.metafields.custom.product_long_description | metafield_tag }}<p>{{ product.metafields.custom.calibrated.value }}</p><p>{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}</p>",
             "page": ""
           }
         },
