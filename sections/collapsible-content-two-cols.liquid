@@ -43,8 +43,9 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
-                  {{ section.settings.specification | size }}
-                  {{ section.settings.specification }}
+                  {% if section.settings.specification.size > 2 %}
+                    {{ section.settings.specification }}
+                  {% endif %}
                 </div>
               </details>
             </div>
