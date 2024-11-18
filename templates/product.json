@@ -157,7 +157,7 @@
       "settings": {
         "caption": "",
         "heading": "",
-        "description": "<p>Description</p>",
+        "description": "{{ product.metafields.custom.product_long_description | metafield_tag }}",
         "specification": "<p>Specification</p>",
         "pattern": "<p>Pattern Information</p>",
         "pattern_image": "shopify://shop_images/Flooring-Accessories-NaturalWaxv2.jpg"
