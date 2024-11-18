@@ -157,7 +157,11 @@
       "settings": {
         "caption": "",
         "heading": "",
-        "description": "{{ product.metafields.custom.product_long_description | metafield_tag }}<p>{{ product.metafields.custom.requires_sealing.value }}</p>",
+        "sealing": "{{ product.metafields.custom.requires_sealing.value }}",
+        "underfloor": "{{ product.metafields.custom.suitable_for_underfloor_heating.value }}",
+        "walls": "{{ product.metafields.custom.suitable_for_walls.value }}",
+        "external": "{{ product.metafields.custom.suitable_for_external_use.value }}",
+        "description": "<p>{{ product.metafields.custom.product_long_description | metafield_tag }}</p>",
         "specification": "<p>Specification</p>",
         "pattern": "<p>Pattern Information</p>",
         "pattern_image": "shopify://shop_images/Flooring-Accessories-NaturalWaxv2.jpg",
@@ -169,6 +173,10 @@
       "settings": {
         "caption": "",
         "heading": "",
+        "sealing": "",
+        "underfloor": "",
+        "walls": "",
+        "external": "",
         "description": "",
         "specification": "",
         "pattern": "",
