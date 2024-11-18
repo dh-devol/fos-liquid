@@ -43,6 +43,9 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
+                  <script>
+                    console.log(section.settings.specification.length)
+                  </script>
                   {{ section.settings.specification | size }}
                   {{ section.settings.specification }}
                 </div>
