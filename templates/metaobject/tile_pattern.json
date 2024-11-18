@@ -31,6 +31,7 @@
         "heading_jmBGXE",
         "text_p7kWGT"
       ],
+      "custom_css": [],
       "settings": {
         "image": "{{ metaobject.pattern_image_2.value }}",
         "height": "adapt",
