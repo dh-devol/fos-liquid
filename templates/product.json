@@ -157,10 +157,11 @@
       "settings": {
         "caption": "",
         "heading": "",
-        "description": "{{ product.metafields.custom.product_long_description | metafield_tag }}",
+        "description": "{{ product.metafields.custom.product_long_description | metafield_tag }}<p>{{ product.metafields.custom.requires_sealing.value }}</p>",
         "specification": "<p>Specification</p>",
         "pattern": "<p>Pattern Information</p>",
-        "pattern_image": "shopify://shop_images/Flooring-Accessories-NaturalWaxv2.jpg"
+        "pattern_image": "shopify://shop_images/Flooring-Accessories-NaturalWaxv2.jpg",
+        "image_ratio": "adapt"
       }
     },
     "collapsible_content_two_cols_hpRhfL": {
@@ -170,7 +171,8 @@
         "heading": "",
         "description": "",
         "specification": "",
-        "pattern": ""
+        "pattern": "",
+        "image_ratio": "adapt"
       }
     },
     "featured_collection_qhwKgc": {
