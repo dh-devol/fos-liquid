@@ -43,6 +43,8 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
+                  {{ section.settings.sealing.label }}
+                  {{ section.settings.sealing }}
                   {{ section.settings.specification.value }}
                 </div>
               </details>
@@ -94,6 +96,26 @@
       "default": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.default",
       "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.label",
       "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
+    },
+    {
+      "type": "text",
+      "id": "sealing",
+      "label": "Requires Sealing?: "
+    },
+    {
+      "type": "text",
+      "id": "underfloor",
+      "label": "Suitable for underfloor heating?: "
+    },
+    {
+      "type": "text",
+      "id": "walls",
+      "label": "Suitable for walls?: "
+    },
+    {
+      "type": "text",
+      "id": "external",
+      "label": "Suitable for external use?: "
     },
     {
       "type": "richtext",
