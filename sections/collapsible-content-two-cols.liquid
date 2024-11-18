@@ -22,12 +22,20 @@
         <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <div class="grid__item">
             <div class="accordion">
-              <details>
+              <details
+                {% if section.settings.open_first_collapsible_row and forloop.first %}
+                  open
+                {% endif %}
+              >
                 <summary>
-                  {{ section.settings.description.label }}
+                  <h3 class="accordion__title inline-richtext h4">
+                    {{ section.settings.description.label }}
+                  </h3>
                 </summary>
                 <div>
-                  {{ section.settings.description }}
+                  <h3 class="accordion__title inline-richtext h4">
+                    {{ section.settings.description }}
+                  </h3>
                 </div>
               </details>
             </div>
