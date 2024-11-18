@@ -159,7 +159,8 @@
         "heading": "",
         "description": "<p>Description</p>",
         "specification": "<p>Specification</p>",
-        "pattern": "<p>Pattern Information</p>"
+        "pattern": "<p>Pattern Information</p>",
+        "pattern_image": "shopify://shop_images/Flooring-Accessories-NaturalWaxv2.jpg"
       }
     },
     "collapsible_content_two_cols_hpRhfL": {
