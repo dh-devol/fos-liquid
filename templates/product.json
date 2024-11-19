@@ -168,21 +168,6 @@
         "image_ratio": "adapt"
       }
     },
-    "collapsible_content_two_cols_hpRhfL": {
-      "type": "collapsible-content-two-cols",
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "sealing": "",
-        "underfloor": "",
-        "walls": "",
-        "external": "",
-        "description": "",
-        "specification": "",
-        "pattern": "",
-        "image_ratio": "adapt"
-      }
-    },
     "featured_collection_qhwKgc": {
       "type": "featured-collection",
       "settings": {
@@ -263,7 +248,6 @@
     "main",
     "collapsible_content_HcgWf6",
     "collapsible_content_two_cols_9hfcGG",
-    "collapsible_content_two_cols_hpRhfL",
     "featured_collection_qhwKgc",
     "featured_collection_PAYMaR",
     "related-products"
