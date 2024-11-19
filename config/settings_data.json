@@ -151,10 +151,12 @@
           "include_jquery": false
         }
       },
-      "13669795325273674392": {
-        "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
+      "18228966181090706294": {
+        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": false,
-        "settings": {}
+        "settings": {
+          "storefrontAccessToken": ""
+        }
       }
     },
     "color_schemes": {
