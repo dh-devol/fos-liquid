@@ -73,13 +73,7 @@
                   {% assign pattern = product.metafields.custom.tile_pattern %}
                   {{ pattern.display_title }}
                   {{ pattern.size_and_pattern }}
-                  {{
-                    pattern.pattern_image_2
-                    | image_url: width: 3200
-                    | image_tag:
-                      sizes: sizes,
-                      widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200'
-                  }}
+                  {{ pattern.pattern_image_2 | image_url }}
                 </div>
               </details>
             </div>
