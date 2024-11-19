@@ -31,7 +31,8 @@
                 </summary>
                 <div class="accordion__content rte" role="region">
                   <div>
-                    {{ section.settings.sealing | escape }}
+                    {{ section.settings.sealing.label }}
+                    {{ section.settings.sealing }}
                   </div>
                   <div>
                     {{ section.settings.underfloor.label }}
@@ -60,21 +61,6 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
-                  <div>
-                    {{ section.settings.sealing | escape }}
-                  </div>
-                  <div>
-                    {{ section.settings.underfloor.label }}
-                    {{ section.settings.underfloor }}
-                  </div>
-                  <div>
-                    {{ section.settings.walls.label }}
-                    {{ section.settings.walls }}
-                  </div>
-                  <div>
-                    {{ section.settings.external.label }}
-                    {{ section.settings.external }}
-                  </div>
                   <div>
                     {{ section.settings.specification.value }}
                   </div>
