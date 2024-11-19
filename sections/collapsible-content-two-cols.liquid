@@ -75,8 +75,10 @@
                     <div class="pattern-image">
                       {{ pattern.pattern_image_2 | img_tag }}
                     </div>
-                    <h3>{{ pattern.display_title }}</h3>
-                    <p>{{ pattern.size_and_pattern }}</p>
+                    <div>
+                      <h3>{{ pattern.display_title }}</h3>
+                      <p>{{ pattern.size_and_pattern }}</p>
+                    </div>
                   {% endfor %}
                 </div>
               </details>
