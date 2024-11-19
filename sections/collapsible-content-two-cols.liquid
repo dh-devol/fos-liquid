@@ -72,11 +72,15 @@
                 <div class="accordion__content rte" role="region">
                   {% assign patterns = product.metafields.custom.tile_pattern.value %}
                   {% for pattern in patterns %}
-                    <div class="pattern-image"
+                    <div class="pattern-image">
                       {{ pattern.pattern_image_2 | img_tag }}
                     </div>
-                    {{ pattern.display_title }}
-                    {{ pattern.size_and_pattern }}
+                    <h3>{{ pattern.display_title }}</h3>
+                    <ul>
+                      {% for size in pattern.size_and_pattern %}
+                        <li>{{ size }}</li>
+                      {% endfor %}
+                    </ul>
                   {% endfor %}
                 </div>
               </details>
