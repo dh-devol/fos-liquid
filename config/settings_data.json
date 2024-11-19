@@ -151,12 +151,10 @@
           "include_jquery": false
         }
       },
-      "18228966181090706294": {
-        "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+      "14429071373314833104": {
+        "type": "shopify://apps/candy-rack/blocks/head/cb9c657f-334f-4905-80c2-f69cca01460c",
         "disabled": false,
-        "settings": {
-          "storefrontAccessToken": "1148413200d78fcaa71cf7abb3f0dde5"
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
