@@ -71,6 +71,7 @@
                 </summary>
                 <div class="accordion__content rte" role="region">
                   {% assign pattern = page.metafields.custom.tile_pattern.value %}
+                  {{ pattern }}
                   {{ pattern.display_title.value[0] }}
                   {{ pattern.size_and_pattern }}
                   <!-- {{ pattern.pattern_image_2 | image_url }} -->
