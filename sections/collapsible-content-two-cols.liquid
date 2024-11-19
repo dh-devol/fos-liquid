@@ -15,6 +15,7 @@
   }
 {%- endstyle -%}
 
+{% assign get_metafield = product.metafields.custom %}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
@@ -30,22 +31,22 @@
                 <div class="accordion__content rte" role="region">
                   <div class="sealing">
                     Requires Sealing?:
-                    {{ section.settings.sealing }}
+                    {{ get_metafield.sealing.value }}
                   </div>
                   <div class="underfloor">
                     Suitable for underfloor heating?:
-                    {{ section.settings.underfloor }}
+                    {{ get_metafield.underfloor.value }}
                   </div>
                   <div class="walls">
                     Suitable for walls?:
-                    {{ section.settings.walls }}
+                    {{ get_metafield.walls.value }}
                   </div>
                   <div class="external">
                     Suitable for external use?:
-                    {{ section.settings.external }}
+                    {{ get_metafield.external.value }}
                   </div>
                   <div class="long-description">
-                    {{ section.settings.description }}
+                    {{ get_metafield.description.value }}
                   </div>
                 </div>
               </details>
@@ -58,7 +59,7 @@
                 </summary>
                 <div class="accordion__content rte" role="region">
                   <div>
-                    {{ section.settings.specification.value }}
+                    {{ get_metafield.specification.value }}
                   </div>
                 </div>
               </details>
@@ -70,7 +71,7 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
-                  {% assign patterns = product.metafields.custom.tile_pattern.value %}
+                  {% assign patterns = get_metafield.tile_pattern.value %}
                   {% for pattern in patterns %}
                     <div class="pattern-image">
                       {{ pattern.pattern_image_2 | img_tag }}
