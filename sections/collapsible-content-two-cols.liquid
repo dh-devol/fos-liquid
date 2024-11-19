@@ -73,8 +73,8 @@
                   {% assign patterns = product.metafields.custom.tile_pattern.value %}
                   {% for pattern in patterns %}
                     <div class="pattern-image"
-                    {{ pattern.pattern_image_2 | img_tag }}
-                      </div>
+                      {{ pattern.pattern_image_2 | img_tag }}
+                    </div>
                     {{ pattern.display_title }}
                     {{ pattern.size_and_pattern }}
                   {% endfor %}
