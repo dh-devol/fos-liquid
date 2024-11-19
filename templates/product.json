@@ -157,7 +157,7 @@
       "settings": {
         "caption": "",
         "heading": "",
-        "sealing": "Yes{{ product.metafields.custom.requires_sealing.value }}",
+        "sealing": "{{ product.metafields.custom.requires_sealing.value }}",
         "underfloor": "{{ product.metafields.custom.suitable_for_underfloor_heating.value }}",
         "walls": "{{ product.metafields.custom.suitable_for_walls.value }}",
         "external": "{{ product.metafields.custom.suitable_for_external_use.value }}",
