@@ -70,11 +70,13 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
-                  {% assign pattern = product.metafields.custom.tile_pattern.value %}
-                  {{ pattern[0] }}
-                  {{ pattern.display_title }}
-                  {{ pattern.size_and_pattern }}
-                  <!-- {{ pattern.pattern_image_2 | image_url }} -->
+                  {% assign patterns = product.metafields.custom.tile_pattern.value %}
+                  {% for pattern in patterns %}
+                    {{ pattern }}
+                    {{ pattern.display_title }}
+                    {{ pattern.size_and_pattern }}
+                    {{ pattern.pattern_image_2 | image_url }}
+                  {% endfor %}
                 </div>
               </details>
             </div>
