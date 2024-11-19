@@ -46,8 +46,8 @@
                     {{ get_metafield.suitable_for_external_use.value }}
                   </div>
                   <div class="long-description">
-                    {% assign description = get_metafield.product_long_description %}
-                    {{ description.value.children }}
+                    {% assign descriptions = get_metafield.product_long_description.value.children %}
+                    {{ descriptions }}
                   </div>
                 </div>
               </details>
