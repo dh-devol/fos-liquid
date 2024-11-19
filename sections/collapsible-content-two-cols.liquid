@@ -47,9 +47,7 @@
                   </div>
                   <div class="long-description">
                     {% assign descriptions = get_metafield.product_long_description.value %}
-                    {% for description in descriptions %}
-                      {{ description.value }}
-                    {% endfor %}
+                    {{ descriptions.value }}
                   </div>
                 </div>
               </details>
