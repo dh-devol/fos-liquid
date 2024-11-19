@@ -76,11 +76,7 @@
                       {{ pattern.pattern_image_2 | img_tag }}
                     </div>
                     <h3>{{ pattern.display_title }}</h3>
-                    <ul>
-                      {% for size in pattern.size_and_pattern %}
-                        <li>{{ size }}</li>
-                      {% endfor %}
-                    </ul>
+                    <p>{{ pattern.size_and_pattern }}</p>
                   {% endfor %}
                 </div>
               </details>
