@@ -70,7 +70,7 @@
                   {{- 'icon-caret.svg' | inline_asset_content -}}
                 </summary>
                 <div class="accordion__content rte" role="region">
-                  {% for pattern in product.metafield.tile_pattern.values %}
+                  {% for pattern in shop.metaobjects.tile_pattern.values %}
                     {{ pattern.display_title }}
                     {{ pattern.size_and_pattern }}
                     {{
