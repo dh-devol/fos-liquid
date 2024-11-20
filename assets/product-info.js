@@ -170,6 +170,8 @@ if (!customElements.get('product-info')) {
           this.updateURL(productUrl, variant?.id);
           this.updateVariantInputs(variant?.id);
 
+          console.log("Update variant")
+
           if (!variant) {
             this.setUnavailable();
             return;
@@ -219,8 +221,6 @@ if (!customElements.get('product-info')) {
           input.value = variantId ?? '';
           input.dispatchEvent(new Event('change', { bubbles: true }));
         });
-
-        console.log("Variant Change");
       }
 
       updateURL(url, variantId) {
