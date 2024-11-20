@@ -130,23 +130,12 @@
             "row_content": "",
             "page": ""
           }
-        },
-        "collapsible_row_VNekGn": {
-          "type": "collapsible_row",
-          "repeater": "{{ product.metafields.custom.tile_pattern.value }}",
-          "settings": {
-            "heading": "Pattern information",
-            "icon": "none",
-            "row_content": "{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}<p></p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
         "collapsible_row_yqnwVQ",
         "collapsible_row_mJmkgk",
-        "collapsible_row_rGYeMQ",
-        "collapsible_row_VNekGn"
+        "collapsible_row_rGYeMQ"
       ],
       "settings": {
         "caption": "",
