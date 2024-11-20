@@ -20,7 +20,7 @@
             "heading_size": "h2",
             "subheading": "",
             "button_label": "TAKE A LOOK",
-            "link": "shopify://collections/terracotta-tiles",
+            "link": "shopify://collections/terracotta",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -206,7 +206,7 @@
         "featured_collection_Hq6JGM": {
           "type": "featured_collection",
           "settings": {
-            "collection": "terracotta-tiles"
+            "collection": "terracotta"
           }
         },
         "featured_collection_KjNiFi": {
@@ -409,7 +409,7 @@
         "featured_collection_bNqATe": {
           "type": "featured_collection",
           "settings": {
-            "collection": "terracotta-tiles"
+            "collection": "terracotta"
           }
         },
         "featured_collection_GCgNCp": {
