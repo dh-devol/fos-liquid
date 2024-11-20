@@ -273,13 +273,13 @@ if (!customElements.get("product-info")) {
         const allVariantSpecWidths = JSON.parse(
           document.querySelector("#variant_metafield_data").textContent
         );
-        console.log(allVariantSpecWidths);
+        console.log(allVariantSpecWidths[0].width);
 
         // replace content in specification with variant specific
         const variantSpecificationWidth =
           document.querySelector("#variant-spec");
         variantSpecificationWidth.innerHTML =
-          allVariantSpecWidths[variant.id].width.value;
+          allVariantSpecWidths[variant.id].width;
       }
 
       updateVariantInputs(variantId) {
