@@ -270,8 +270,8 @@ if (!customElements.get("product-info")) {
         console.log(variant);
 
         // load metafield data
-        const allVariantSpecWidths = document.querySelector(
-          "#variant_metafield_data"
+        const allVariantSpecWidths = JSON.parse(
+          document.querySelector("#variant_metafield_data").textContent
         );
         console.log(allVariantSpecWidths);
 
