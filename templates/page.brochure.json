@@ -67,9 +67,9 @@
     "contact_form_FAY3zY": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact form",
+        "heading": "",
         "heading_size": "h1",
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "padding_top": 36,
         "padding_bottom": 36
       }
