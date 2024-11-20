@@ -215,6 +215,10 @@ if (!customElements.get('product-info')) {
       updateSpecification(variant) {
           console.log("Update variant");
           console.log(variant);
+
+        // replace content in specification with variant specific
+        const variantSpecificationWidth = document.querySelector('#variant-spec');
+        variantSpecificationWidth.innerHTML = "changed";
       }
 
       updateVariantInputs(variantId) {
