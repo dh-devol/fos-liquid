@@ -281,7 +281,7 @@ if (!customElements.get("product-info")) {
         variantSpecificationWidth.innerHTML =
           allVariantSpecWidths[variant.id].width;
 
-        console.log(allVariantSpecWidths[variant.id]);
+        console.log(allVariantSpecWidths[variant.id][0]);
       }
 
       updateVariantInputs(variantId) {
