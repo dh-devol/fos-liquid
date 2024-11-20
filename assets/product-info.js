@@ -270,10 +270,10 @@ if (!customElements.get("product-info")) {
         console.log(variant);
 
         // load metafield data
-        const allVariantSpecWidths = JSON.parse(
+        const allVariantSpec = JSON.parse(
           document.querySelector("#variant_metafield_data").textContent
         );
-        console.log(allVariantSpecWidths);
+        console.log(allVariantSpec);
 
         // replace content in specification with variant specific
         const variantSpecificationWidth = document.querySelector(
@@ -286,11 +286,11 @@ if (!customElements.get("product-info")) {
           "#variant-spec-depth"
         );
         variantSpecificationWidth.innerHTML =
-          allVariantSpecWidths[variant.id][0].width[0].value;
+          allVariantSpec[variant.id][0].width[0].value;
+        variantSpecificationLength.innerHTML =
+          allVariantSpec[variant.id][0].length[0].value;
         variantSpecificationWidth.innerHTML =
-          allVariantSpecWidths[variant.id][0].width[0].value;
-        variantSpecificationWidth.innerHTML =
-          allVariantSpecWidths[variant.id][0].width[0].value;
+          allVariantSpec[variant.id][0].depth[0].value;
       }
 
       updateVariantInputs(variantId) {
