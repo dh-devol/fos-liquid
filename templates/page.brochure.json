@@ -11,13 +11,73 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_with_text_mhdFqt": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jWdwMP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Flooring Brochure",
+            "heading_size": "h2"
+          }
+        },
+        "text_hc9myK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complete the form below to request a free printed brochure. Please note that a copy will also be included with any tile samples you request.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_JXrYe3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Take a look inside",
+            "button_link": "https://view.publitas.com/devol-kitchens/floors-of-stone-brochure-2023-24/page/1",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_jWdwMP",
+        "text_hc9myK",
+        "button_JXrYe3"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/fos-brochure-closed.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "contact_form_FAY3zY": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_mhdFqt",
+    "contact_form_FAY3zY"
   ]
 }
