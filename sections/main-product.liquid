@@ -730,7 +730,7 @@
       {% assign variant_width = variant.metafields.custom.width %}
       {% assign variant_length = variant.metafields.custom.length %}
       {% assign variant_depth = variant.metafields.custom.depth %}
-      "{{ variant.id }}": "{{ variant_width }}"{% unless forloop.last %}, {% endunless %}
+      "{{ variant.id }}": ["{"width" : "{{ variant_width }}", "length" : "{{ variant_length }}", "depth" : "{{ variant_depth }}"}"{% unless forloop.last %}, {% endunless %}]
     {% endfor %}
   }
 </script>
