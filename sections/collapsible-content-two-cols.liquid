@@ -107,7 +107,7 @@
 <script id="variant_metafield_data" type="application/json">
   {
   {% for variant in product.variants %}
-    {% assign variant_width = get_variant_metafield.width %}
+    {% assign variant_width = variant.metafields.custom.width %}
   {% endfor %}
   }
 </script>
