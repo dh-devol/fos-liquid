@@ -216,6 +216,10 @@ if (!customElements.get('product-info')) {
           console.log("Update variant");
           console.log(variant);
 
+        // load metafield data
+        const allVariantSpecWidths = document.querySelector('variant_metafield_data');
+        console.log(allVariantSpecWidths);
+
         // replace content in specification with variant specific
         const variantSpecificationWidth = document.querySelector('#variant-spec');
         variantSpecificationWidth.innerHTML = variant.id;
