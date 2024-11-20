@@ -169,7 +169,7 @@ if (!customElements.get('product-info')) {
           this.updateOptionValues(html);
           this.updateURL(productUrl, variant?.id);
           this.updateVariantInputs(variant?.id);
-          this.updateSpecification();
+          this.updateSpecification(variant);
 
           if (!variant) {
             this.setUnavailable();
@@ -212,7 +212,7 @@ if (!customElements.get('product-info')) {
         };
       }
 
-      updateSpecification() {
+      updateSpecification(variant) {
           console.log("Update variant");
           console.log(variant);
       }
