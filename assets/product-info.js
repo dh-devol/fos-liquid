@@ -276,8 +276,19 @@ if (!customElements.get("product-info")) {
         console.log(allVariantSpecWidths);
 
         // replace content in specification with variant specific
-        const variantSpecificationWidth =
-          document.querySelector("#variant-spec");
+        const variantSpecificationWidth = document.querySelector(
+          "#variant-spec-width"
+        );
+        const variantSpecificationLength = document.querySelector(
+          "#variant-spec-length"
+        );
+        const variantSpecificationDepth = document.querySelector(
+          "#variant-spec-depth"
+        );
+        variantSpecificationWidth.innerHTML =
+          allVariantSpecWidths[variant.id][0].width[0].value;
+        variantSpecificationWidth.innerHTML =
+          allVariantSpecWidths[variant.id][0].width[0].value;
         variantSpecificationWidth.innerHTML =
           allVariantSpecWidths[variant.id][0].width[0].value;
       }
