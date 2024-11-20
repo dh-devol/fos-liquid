@@ -279,7 +279,7 @@ if (!customElements.get("product-info")) {
         const variantSpecificationWidth =
           document.querySelector("#variant-spec");
         variantSpecificationWidth.innerHTML =
-          allVariantSpecWidths[variant.id][0].width.value;
+          allVariantSpecWidths[variant.id].width.value;
       }
 
       updateVariantInputs(variantId) {
