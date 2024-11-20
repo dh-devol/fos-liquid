@@ -171,9 +171,6 @@ if (!customElements.get('product-info')) {
           this.updateVariantInputs(variant?.id);
           this.updateSpecification();
 
-          console.log("Update variant");
-          console.log(variant);
-
           if (!variant) {
             this.setUnavailable();
             return;
@@ -213,6 +210,11 @@ if (!customElements.get('product-info')) {
             },
           });
         };
+      }
+
+      updateSpecification() {
+          console.log("Update variant");
+          console.log(variant);
       }
 
       updateVariantInputs(variantId) {
