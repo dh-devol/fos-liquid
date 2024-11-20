@@ -273,7 +273,7 @@ if (!customElements.get("product-info")) {
         const allVariantSpecWidths = document.querySelector(
           "#variant_metafield_data"
         ).textContent;
-        console.log(JSON.parse(allVariantSpecWidths));
+        console.log(allVariantSpecWidths);
 
         // replace content in specification with variant specific
         const variantSpecificationWidth =
