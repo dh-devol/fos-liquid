@@ -64,9 +64,15 @@
                   <div>
                     {{ get_metafield.specification.value }}
                     <div>
-                      <p id="variant-spec-width">{{ get_variant_metafield.width | metafield_tag }}</p>
-                      <p id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</p>
-                      <p id="variant-spec-depth">{{ get_variant_metafield.depth | metafield_tag }}</p>
+                      <p>
+                        Width: <span id="variant-spec-width">{{ get_variant_metafield.width | metafield_tag }}</span>
+                      </p>
+                      <p>
+                        Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span>
+                      </p>
+                      <p>
+                        Depth: <span id="variant-spec-depth">{{ get_variant_metafield.depth | metafield_tag }}</span>
+                      </p>
                     </div>
                   </div>
                 </div>
