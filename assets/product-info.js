@@ -289,7 +289,7 @@ if (!customElements.get("product-info")) {
           allVariantSpec[variant.id][0].width[0].value;
         variantSpecificationLength.innerHTML =
           allVariantSpec[variant.id][0].length[0].value;
-        variantSpecificationWidth.innerHTML =
+        variantSpecificationDepth.innerHTML =
           allVariantSpec[variant.id][0].depth[0].value;
       }
 
