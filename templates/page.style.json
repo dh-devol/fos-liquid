@@ -92,6 +92,41 @@
         "padding_bottom": 72
       }
     },
+    "collection_list_ngqhjU": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_cP8hJf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "stone-effect-porcelain"
+          }
+        },
+        "featured_collection_A3p9qC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wood-effect-porcelain-tiles"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_cP8hJf",
+        "featured_collection_A3p9qC"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "link": "",
+        "button_label": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -104,6 +139,7 @@
   "order": [
     "rich_text_B9yc8M",
     "collection_list_xXmTTa",
+    "collection_list_ngqhjU",
     "main"
   ]
 }
