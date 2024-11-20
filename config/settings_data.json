@@ -157,6 +157,11 @@
         "settings": {
           "storefrontAccessToken": "1148413200d78fcaa71cf7abb3f0dde5"
         }
+      },
+      "316487575649303945": {
+        "type": "shopify://apps/easify-options/blocks/app-embed-block/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
