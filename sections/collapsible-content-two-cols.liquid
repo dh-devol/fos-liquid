@@ -16,7 +16,7 @@
 {%- endstyle -%}
 
 {% assign get_metafield = product.metafields.custom %}
-{% assign get_variant = product.selected_variant %}
+{% assign get_variant = product.selected_or_first_available_variant %}
 {% assign get_variant_metafield = get_variant.metafields.custom %}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
@@ -103,6 +103,14 @@
     </div>
   </div>
 </div>
+
+<script id="variant_metafield_data" type="application/json">
+  {
+  {% for variant in product.variants %}
+    {% assign variant_width = get_variant_metafield.width %}
+  {% endfor %}
+  }
+</script>
 
 {% schema %}
 {
