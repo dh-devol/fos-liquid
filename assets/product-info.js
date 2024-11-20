@@ -286,11 +286,17 @@ if (!customElements.get("product-info")) {
           "#variant-spec-depth"
         );
         variantSpecificationWidth.innerHTML =
-          allVariantSpec[variant.id][0].width[0].value;
+          allVariantSpec[variant.id][0].width[0].value +
+          " " +
+          allVariantSpec[variant.id][0].width[0].unit;
         variantSpecificationLength.innerHTML =
-          allVariantSpec[variant.id][0].length[0].value;
+          allVariantSpec[variant.id][0].length[0].value +
+          " " +
+          allVariantSpec[variant.id][0].length[0].unit;
         variantSpecificationDepth.innerHTML =
-          allVariantSpec[variant.id][0].depth[0].value;
+          allVariantSpec[variant.id][0].depth[0].value +
+          " " +
+          allVariantSpec[variant.id][0].depth[0].unit;
       }
 
       updateVariantInputs(variantId) {
