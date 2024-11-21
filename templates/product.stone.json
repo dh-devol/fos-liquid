@@ -154,7 +154,7 @@
     "featured_collection_qhwKgc": {
       "type": "featured-collection",
       "custom_css": [
-        "@media screen and (min-width: 750px) {.grid {column-gap: 25px;}}",
+        "@media screen and (min-width: 750px) {.grid {column-gap: 25px; }}",
         ".quick-add {margin-left: 0; margin-right: 0; padding-top: 0.5em;}",
         ".button--secondary:after {--border-opacity: none;}",
         ".quick-add__submit {color: white; background-color: #333333;}",
@@ -275,7 +275,8 @@
       ],
       "custom_css": [
         ".multicolumn-card__image-wrapper {margin-left: 0; margin-right: 0;}",
-        ".multicolumn-card__info {padding-left: 0; padding-top: 0;}"
+        ".multicolumn-card__info {padding-left: 0; padding-top: 0;}",
+        "@media screen and (max-width: 749px) {.slider-buttons {display: none; } .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {width: 70%; }}"
       ],
       "settings": {
         "title": "Or browse our flooring by",
