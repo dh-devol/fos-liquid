@@ -68,7 +68,10 @@
                         Width: <span id="variant-spec-width">{{ get_variant_metafield.width | metafield_tag }}</span>
                       </p>
                       <p>
-                        Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span>
+                        Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span
+                        ><span id="variant-spec-longest-length">
+                          - {{ get_variant_metafield.longest_length | metafield_tag }}
+                        </span>
                       </p>
                       <p
                         {% if get_variant.options.value contains 'Free Length' %}
