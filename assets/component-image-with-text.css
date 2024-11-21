@@ -98,8 +98,17 @@
   z-index: 1;
 }
 
-.image-with-text__content .full {
+.image-with-text__content--full {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   max-width: 100%;
+  justify-content: center;
+  align-self: center;
+  padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .image-with-text .grid__item::after {
