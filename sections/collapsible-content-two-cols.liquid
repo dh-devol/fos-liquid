@@ -70,12 +70,14 @@
                       <p>
                         Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span>
                       </p>
-                      <p>
-                        Longest length:
-                        <span id="variant-spec-longest-length">
-                          {{- get_variant_metafield.longest_length | metafield_tag -}}
-                        </span>
-                      </p>
+                      {% if get_variant.product_option_value contains 'Free Length' %}
+                        <p>
+                          Longest length:
+                          <span id="variant-spec-longest-length">
+                            {{ get_variant_metafield.longest_length | metafield_tag }}
+                          </span>
+                        </p>
+                      {% endif %}
                       <p>
                         Depth: <span id="variant-spec-depth">{{ get_variant_metafield.depth | metafield_tag }}</span>
                       </p>
