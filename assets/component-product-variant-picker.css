@@ -150,7 +150,7 @@ variant-selects {
   transition: all 0.3s ease;
 }
 
-.select__select:hover {
+.select__select:after {
   border-color: #ccc; /* Adjust hover effect */
 }
 
