@@ -305,7 +305,7 @@ if (!customElements.get("product-info")) {
             " " +
             allVariantSpec[variant.id][0].longest_length[0].unit;
         } else {
-          variantSpecificationLongestLength.innerHTML = 0;
+          variantSpecificationLongestLength.innerHTML = "do not show";
         }
         variantSpecificationDepth.innerHTML =
           allVariantSpec[variant.id][0].depth[0].value +
