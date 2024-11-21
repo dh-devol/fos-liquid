@@ -289,8 +289,6 @@ if (!customElements.get("product-info")) {
           "#variant-spec-depth"
         );
 
-        console.log(allVariantSpec[variant.id][0].longest_length[0].value);
-
         variantSpecificationWidth.innerHTML =
           allVariantSpec[variant.id][0].width[0].value +
           " " +
