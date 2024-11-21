@@ -150,9 +150,9 @@ variant-selects {
   transition: all 0.3s ease;
 }
 
-/* .select:hover.select:after {
+.select:hover.select:after {
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground),var(--inputs-border-opacity));
-} */
+}
 
 /* Styling for single variant */
 .select__select--single-variant {
