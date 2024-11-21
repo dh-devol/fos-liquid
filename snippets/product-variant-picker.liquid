@@ -57,16 +57,8 @@
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>
-          <div class="select">
-            {%- if picker_type == 'swatch_dropdown' -%}
-              <span
-                data-selected-value
-                class="dropdown-swatch"
-              >
-                {% render 'swatch', swatch: option.selected_value.swatch, shape: block.settings.swatch_shape %}
-              </span>
-            {%- endif -%}
-           {% if product.variants.size > 1 %}
+          {% if product.variants.size > 1 %}
+  <!-- Dropdown for multiple variants -->
   <select
     id="Option-{{ section.id }}-{{ forloop.index0 }}"
     class="select__select"
@@ -87,19 +79,15 @@
   <!-- Disabled dropdown for single variant -->
   <select
     id="Option-{{ section.id }}-{{ forloop.index0 }}"
-    class="select__select"
+    class="select__select select__select--single-variant"
     name="options[{{ option.name | escape }}]"
     form="{{ product_form_id }}"
     disabled
   >
     <option selected>{{ product.variants.first.title }}</option>
   </select>
-  <span class="svg-wrapper">
-    {{- 'icon-caret.svg' | inline_asset_content -}}
-  </span>
 {% endif %}
 
-          </div>
         </div>
       {%- endif -%}
     {%- endfor -%}
