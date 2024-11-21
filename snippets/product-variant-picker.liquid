@@ -58,7 +58,6 @@
             {{ option.name }}
           </label>
           {% if product.variants.size > 1 %}
-  <!-- Dropdown for multiple variants -->
   <select
     id="Option-{{ section.id }}-{{ forloop.index0 }}"
     class="select__select"
@@ -79,13 +78,16 @@
   <!-- Disabled dropdown for single variant -->
   <select
     id="Option-{{ section.id }}-{{ forloop.index0 }}"
-    class="select__select select__select--single-variant"
+    class="select__select"
     name="options[{{ option.name | escape }}]"
     form="{{ product_form_id }}"
     disabled
   >
     <option selected>{{ product.variants.first.title }}</option>
   </select>
+  <span class="svg-wrapper">
+    {{- 'icon-caret.svg' | inline_asset_content -}}
+  </span>
 {% endif %}
 
         </div>
