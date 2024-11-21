@@ -297,7 +297,9 @@ if (!customElements.get("product-info")) {
           allVariantSpec[variant.id][0].length[0].value +
           " " +
           allVariantSpec[variant.id][0].length[0].unit;
-        if (allVariantSpec[variant.id][0].longest_length[0].value != null) {
+        if (
+          allVariantSpec[variant.id][0].longest_length[0].value != undefined
+        ) {
           variantSpecificationLongestLength.innerHTML =
             allVariantSpec[variant.id][0].longest_length[0].value +
             " " +
