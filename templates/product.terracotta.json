@@ -154,7 +154,12 @@
     "featured_collection_qhwKgc": {
       "type": "featured-collection",
       "custom_css": [
-        "@media screen and (max-width: 749px) {.slider-buttons {display: none; }}"
+        ".grid {column-gap: 25px;}",
+        ".quick-add {margin-left: 0; margin-right: 0; padding-top: 0.5em;}",
+        ".button--secondary:after {--border-opacity: none;}",
+        ".quick-add__submit {color: white; background-color: #333333}",
+        ".button .h2 {color: #ffffff;}",
+        ".slider-buttons {display: none;}"
       ],
       "settings": {
         "title": "Fixing and care for these tiles",
