@@ -151,7 +151,7 @@ variant-selects {
 }
 
 .select:hover.select:after {
-  border-color: #ccc; /* Adjust hover effect */
+  box-shadow: 0 0 var(--inputs-border-width) rgba(var(--color-foreground),var(--inputs-border-opacity));
 }
 
 /* Styling for single variant */
