@@ -213,7 +213,7 @@
       "settings": {
         "heading": "You may also like...",
         "heading_size": "h2",
-        "products_to_show": 6,
+        "products_to_show": 8,
         "columns_desktop": 4,
         "color_scheme": "scheme-3",
         "image_ratio": "portrait",
@@ -222,6 +222,62 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_mX8Qnc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_j8Ct9d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/NoceTumbled-Thumb01.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "MATERIAL",
+            "link": "shopify://pages/material"
+          }
+        },
+        "column_cLbKb7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/GreyBlack-2024-01_c38eca9f-58d4-413b-af33-3d1075f932b0.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "COLOUR",
+            "link": "shopify://pages/colour"
+          }
+        },
+        "column_rPKzbY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Farmhouse-2024-01.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "STYLE",
+            "link": "shopify://pages/style"
+          }
+        }
+      },
+      "block_order": [
+        "column_j8Ct9d",
+        "column_cLbKb7",
+        "column_rPKzbY"
+      ],
+      "settings": {
+        "title": "Or browse our flooring by",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 0,
         "padding_bottom": 72
       }
@@ -232,6 +288,7 @@
     "collapsible_content_HcgWf6",
     "featured_collection_qhwKgc",
     "featured_collection_PAYMaR",
-    "related-products"
+    "related-products",
+    "multicolumn_mX8Qnc"
   ]
 }
