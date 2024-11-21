@@ -55,17 +55,6 @@
             "custom_liquid": "<p>\n  {{ page.title }}\n</p>"
           }
         },
-        "option_calculator_product_option_tMHpBc": {
-          "type": "shopify://apps/option-calculator/blocks/product_option/8f01aabe-62b9-4cde-aee9-dfb98853943a",
-          "settings": {
-            "include_jquery": false,
-            "metadata01": "Delete this text and insert Metadata",
-            "metadata02": "Delete this text and insert Metadata",
-            "metadata03": "Delete this text and insert Metadata",
-            "metadata04": "Delete this text and insert Metadata",
-            "metadata05": "Delete this text and insert Metadata"
-          }
-        },
         "custom_liquid_fHgEwc": {
           "type": "custom_liquid",
           "settings": {
@@ -82,7 +71,6 @@
         "quantity_selector",
         "buy_buttons",
         "custom_liquid_YigFRV",
-        "option_calculator_product_option_tMHpBc",
         "custom_liquid_fHgEwc"
       ],
       "settings": {
@@ -99,14 +87,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 52
-      }
-    },
-    "collapsible_content_two_cols_9hfcGG": {
-      "type": "collapsible-content-two-cols",
-      "settings": {
-        "caption": "",
-        "padding_top": 0,
-        "padding_bottom": 36
       }
     },
     "featured_collection_qhwKgc": {
@@ -187,7 +167,6 @@
   },
   "order": [
     "main",
-    "collapsible_content_two_cols_9hfcGG",
     "featured_collection_qhwKgc",
     "featured_collection_PAYMaR",
     "related-products"
