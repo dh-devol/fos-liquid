@@ -1,6 +1,7 @@
 {% assign get_metafield = product.metafields.custom %}
+{% assign samples = get_metafield.sample.value %}
 
 <div {{ block.shopify_attributes }}>
   Test
-  {{ get_metafield.sample.title }}
+  {{ samples.title }}
 </div>
