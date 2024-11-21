@@ -288,7 +288,7 @@ if (!customElements.get("product-info")) {
         const variantSpecificationDepth = document.querySelector(
           "#variant-spec-depth"
         );
-        console.log(allVariantSpec[variant.id][0].longest_length[0].value);
+        console.log(allVariantSpec[variant.id][0].longest_length[0].length);
         variantSpecificationWidth.innerHTML =
           allVariantSpec[variant.id][0].width[0].value +
           " " +
@@ -297,7 +297,7 @@ if (!customElements.get("product-info")) {
           allVariantSpec[variant.id][0].length[0].value +
           " " +
           allVariantSpec[variant.id][0].length[0].unit;
-        if (allVariantSpec[variant.id][0].longest_length[0] != undefined) {
+        if (allVariantSpec[variant.id][0].longest_length[0].length != 0) {
           variantSpecificationLongestLength.innerHTML =
             allVariantSpec[variant.id][0].longest_length[0].value +
             " " +
