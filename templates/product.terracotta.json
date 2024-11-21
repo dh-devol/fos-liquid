@@ -277,6 +277,7 @@
         "column_4qzGft"
       ],
       "custom_css": [
+        ".multicolumn .title-wrapper-with-link {padding-top: 36px; border-top: 1px solid #e5e5e5;}",
         ".multicolumn-card__image-wrapper {margin-left: 0; margin-right: 0;}",
         ".multicolumn-card__info {padding-left: 0; padding-top: 0;}",
         "@media screen and (max-width: 749px) {.slider-buttons {display: none; } .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {width: 70%; }}"
