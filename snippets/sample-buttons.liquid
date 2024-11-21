@@ -3,5 +3,7 @@
 
 <div {{ block.shopify_attributes }}>
   Test
-  {{ samples.title }}
+  {% for sample in samples %}
+    {{ samples.title }}
+  {% endfor %}
 </div>
