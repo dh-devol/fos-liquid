@@ -157,8 +157,7 @@ variant-selects {
 /* Styling for single variant */
 .select__select--single-variant {
   cursor: not-allowed; /* Indicate it's not clickable */
-  background-color: #f9f9f9;
-  border-color: #e0e0e0;
+  color: rgba(var(--color-foreground));
   pointer-events: none; /* Disable hover effects */
   transition: none;
 }
