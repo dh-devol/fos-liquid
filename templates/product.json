@@ -52,13 +52,7 @@
         "custom_liquid_YigFRV": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p>\n  {{ page.title }}\n</p>"
-          }
-        },
-        "custom_liquid_fHgEwc": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{{ variant.metafields.custom.tile_area }}"
+            "custom_liquid": "<p>\n  HEllo\n</p>"
           }
         }
       },
@@ -70,8 +64,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "custom_liquid_YigFRV",
-        "custom_liquid_fHgEwc"
+        "custom_liquid_YigFRV"
       ],
       "settings": {
         "enable_sticky_info": true,
