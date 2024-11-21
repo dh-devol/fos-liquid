@@ -71,6 +71,12 @@
                         Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span>
                       </p>
                       <p>
+                        Length:
+                        <span id="variant-spec-longest-length">
+                          {{- get_variant_metafield.longest_lengthlength | metafield_tag -}}
+                        </span>
+                      </p>
+                      <p>
                         Depth: <span id="variant-spec-depth">{{ get_variant_metafield.depth | metafield_tag }}</span>
                       </p>
                     </div>
