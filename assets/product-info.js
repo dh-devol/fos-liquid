@@ -282,6 +282,9 @@ if (!customElements.get("product-info")) {
         const variantSpecificationLength = document.querySelector(
           "#variant-spec-length"
         );
+        const variantSpecificationLongestLength = document.querySelector(
+          "#variant-spec-longest-length"
+        );
         const variantSpecificationDepth = document.querySelector(
           "#variant-spec-depth"
         );
