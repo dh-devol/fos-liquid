@@ -154,14 +154,6 @@ variant-selects {
   border-color: #ccc; /* Adjust hover effect */
 }
 
-/* /* Styling for single variant */
-.select__select--single-variant {
-  cursor: not-allowed; /* Indicate it's not clickable */
-  background-color: #f9f9f9;
-  border-color: #e0e0e0;
-  pointer-events: none; /* Disable hover effects */
-  transition: none;
-} */
 
 /* Hide the caret SVG wrapper for single-variant dropdowns */
 .select__select--single-variant + .svg-wrapper {
