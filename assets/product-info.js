@@ -288,6 +288,7 @@ if (!customElements.get("product-info")) {
         const variantSpecificationDepth = document.querySelector(
           "#variant-spec-depth"
         );
+        console.log(allVariantSpec[variant.id][0].longest_length[0]);
         variantSpecificationWidth.innerHTML =
           allVariantSpec[variant.id][0].width[0].value +
           " " +
@@ -306,8 +307,6 @@ if (!customElements.get("product-info")) {
           allVariantSpec[variant.id][0].depth[0].value +
           " " +
           allVariantSpec[variant.id][0].depth[0].unit;
-
-        console.log(allVariantSpec[variant.id][0].longest_length[0].value);
       }
 
       updateVariantInputs(variantId) {
