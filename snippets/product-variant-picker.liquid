@@ -66,39 +66,22 @@
                 {% render 'swatch', swatch: option.selected_value.swatch, shape: block.settings.swatch_shape %}
               </span>
             {%- endif -%}
-           {% if product.variants.size > 1 %}
-  <select
-    id="Option-{{ section.id }}-{{ forloop.index0 }}"
-    class="select__select"
-    name="options[{{ option.name | escape }}]"
-    form="{{ product_form_id }}"
-  >
-    {% render 'product-variant-options',
-      product: product,
-      option: option,
-      block: block,
-      picker_type: picker_type
-    %}
-  </select>
-  <span class="svg-wrapper">
-    {{- 'icon-caret.svg' | inline_asset_content -}}
-  </span>
-{% else %}
-  <!-- Disabled dropdown for single variant -->
-  <select
-    id="Option-{{ section.id }}-{{ forloop.index0 }}"
-    class="select__select"
-    name="options[{{ option.name | escape }}]"
-    form="{{ product_form_id }}"
-    disabled
-  >
-    <option selected>{{ product.variants.first.title }}</option>
-  </select>
-  <span class="svg-wrapper">
-    {{- 'icon-caret.svg' | inline_asset_content -}}
-  </span>
-{% endif %}
-
+            <select
+              id="Option-{{ section.id }}-{{ forloop.index0 }}"
+              class="select__select"
+              name="options[{{ option.name | escape }}]"
+              form="{{ product_form_id }}"
+            >
+              {% render 'product-variant-options',
+                product: product,
+                option: option,
+                block: block,
+                picker_type: picker_type
+              %}
+            </select>
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
           </div>
         </div>
       {%- endif -%}
