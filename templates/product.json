@@ -48,12 +48,6 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "custom_liquid_YigFRV": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<p>\n  HEllo\n</p>"
-          }
         }
       },
       "block_order": [
@@ -63,8 +57,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "custom_liquid_YigFRV"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
