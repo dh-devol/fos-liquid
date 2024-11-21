@@ -56,6 +56,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
+        "full_Width_content": true,
         "section_color_scheme": "",
         "color_scheme": "",
         "image_behavior": "none",
