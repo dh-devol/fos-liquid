@@ -157,7 +157,7 @@
         "@media screen and (max-width: 749px) {.slider-buttons {display: none; }}"
       ],
       "settings": {
-        "title": "For installing and maintaining these tiles...",
+        "title": "Fixing and care for these tiles",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -214,7 +214,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like...",
+        "heading": "You may also like",
         "heading_size": "h2",
         "products_to_show": 8,
         "columns_desktop": 4,
