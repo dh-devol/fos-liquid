@@ -150,10 +150,10 @@ variant-selects {
   transition: all 0.3s ease;
 }
 
-.select__select:hover {
+/* .select__select:hover {
   border-color: #ccc; /* Adjust hover effect */
 }
-
+ */
 /* Styling for single variant */
 .select__select--single-variant {
   cursor: not-allowed; /* Indicate it's not clickable */
