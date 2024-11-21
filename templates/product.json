@@ -48,6 +48,12 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
+        },
+        "sample_buttons_xFqrfC": {
+          "type": "sample_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
         }
       },
       "block_order": [
@@ -57,7 +63,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "sample_buttons_xFqrfC"
       ],
       "settings": {
         "enable_sticky_info": true,
