@@ -57,7 +57,7 @@
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>
-          {% if product.variants.size > 1 %}
+         {% if product.variants.size > 1 %}
   <select
     id="Option-{{ section.id }}-{{ forloop.index0 }}"
     class="select__select"
@@ -90,7 +90,6 @@
   </span>
 {% endif %}
 
-        </div>
       {%- endif -%}
     {%- endfor -%}
 
