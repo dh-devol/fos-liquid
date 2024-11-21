@@ -98,7 +98,7 @@
   z-index: 1;
 }
 
-.image-with-text__content .full {
+.image-with-text__content.full {
   max-width: 100%;
 }
 
