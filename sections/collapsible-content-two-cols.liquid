@@ -70,7 +70,13 @@
                       <p>
                         Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span>
                       </p>
-                      <p class="hidden">
+                      <p
+                        {% if get_variant.product_option_value contains 'Free Length' %}
+                          class="display"
+                        {% else %}
+                          class="hidden"
+                        {% endif %}
+                      >
                         Longest length:
                         <span id="variant-spec-longest-length">
                           {{ get_variant_metafield.longest_length | metafield_tag }}
