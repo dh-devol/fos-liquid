@@ -71,7 +71,7 @@
                         Length: <span id="variant-spec-length">{{ get_variant_metafield.length | metafield_tag }}</span>
                       </p>
                       <p
-                        {% if get_variant.product_option_value contains 'Free Length' %}
+                        {% if get_variant.options contains 'Free Length' %}
                           class="display"
                         {% else %}
                           class="hidden"
