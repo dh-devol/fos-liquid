@@ -296,10 +296,12 @@ if (!customElements.get("product-info")) {
           allVariantSpec[variant.id][0].length[0].value +
           " " +
           allVariantSpec[variant.id][0].length[0].unit;
-        variantSpecificationLongestLength.innerHTML =
+        if variantSpecificationLongestLength != null {
+          variantSpecificationLongestLength.innerHTML =
           allVariantSpec[variant.id][0].longest_length[0].value +
           " " +
           allVariantSpec[variant.id][0].longest_length[0].unit;
+        }
         variantSpecificationDepth.innerHTML =
           allVariantSpec[variant.id][0].depth[0].value +
           " " +
