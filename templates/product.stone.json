@@ -154,12 +154,12 @@
     "featured_collection_qhwKgc": {
       "type": "featured-collection",
       "custom_css": [
-        ".grid {column-gap: 25px;}",
+        "@media screen and (min-width: 750px) {.grid {column-gap: 25px;}}",
         ".quick-add {margin-left: 0; margin-right: 0; padding-top: 0.5em;}",
         ".button--secondary:after {--border-opacity: none;}",
         ".quick-add__submit {color: white; background-color: #333333;}",
         ".button .h2 {color: #ffffff;}",
-        "@media screen and (max-width: 749px) {.slider-buttons {display: none;}}"
+        "@media screen and (max-width: 749px) {.slider-buttons {display: none; }}"
       ],
       "settings": {
         "title": "For installing and maintaining these tiles...",
