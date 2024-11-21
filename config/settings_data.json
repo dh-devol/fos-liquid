@@ -144,13 +144,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "8127967367361207402": {
-        "type": "shopify://apps/option-calculator/blocks/global_product_option/8f01aabe-62b9-4cde-aee9-dfb98853943a",
-        "disabled": false,
-        "settings": {
-          "include_jquery": false
-        }
-      },
       "18228966181090706294": {
         "type": "shopify://apps/selleasy/blocks/app-embed/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": false,

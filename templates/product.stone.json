@@ -55,17 +55,6 @@
             "custom_liquid": "<p>\n  {{ page.title }}\n</p>"
           }
         },
-        "option_calculator_product_option_tMHpBc": {
-          "type": "shopify://apps/option-calculator/blocks/product_option/8f01aabe-62b9-4cde-aee9-dfb98853943a",
-          "settings": {
-            "include_jquery": false,
-            "metadata01": "Delete this text and insert Metadata",
-            "metadata02": "Delete this text and insert Metadata",
-            "metadata03": "Delete this text and insert Metadata",
-            "metadata04": "Delete this text and insert Metadata",
-            "metadata05": "Delete this text and insert Metadata"
-          }
-        },
         "custom_liquid_fHgEwc": {
           "type": "custom_liquid",
           "settings": {
@@ -82,7 +71,6 @@
         "quantity_selector",
         "buy_buttons",
         "custom_liquid_YigFRV",
-        "option_calculator_product_option_tMHpBc",
         "custom_liquid_fHgEwc"
       ],
       "settings": {
@@ -225,7 +213,7 @@
       "settings": {
         "heading": "You may also like...",
         "heading_size": "h2",
-        "products_to_show": 4,
+        "products_to_show": 6,
         "columns_desktop": 4,
         "color_scheme": "scheme-3",
         "image_ratio": "portrait",
