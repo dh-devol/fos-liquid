@@ -279,7 +279,7 @@
         "@media screen and (max-width: 749px) {.slider-buttons {display: none; } .slider--tablet.grid--peek.grid--2-col-tablet-down .grid__item, .grid--peek .grid__item {width: 70%; }}"
       ],
       "settings": {
-        "title": "Or browse our flooring by",
+        "title": "Or continue browsing by",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
