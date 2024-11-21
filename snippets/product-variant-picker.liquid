@@ -66,19 +66,21 @@
                 {% render 'swatch', swatch: option.selected_value.swatch, shape: block.settings.swatch_shape %}
               </span>
             {%- endif -%}
-            <select
-              id="Option-{{ section.id }}-{{ forloop.index0 }}"
-              class="select__select"
-              name="options[{{ option.name | escape }}]"
-              form="{{ product_form_id }}"
-            >
-              {% render 'product-variant-options',
-                product: product,
-                option: option,
-                block: block,
-                picker_type: picker_type
-              %}
-            </select>
+            {% if product.variants.size > 1 %}
+              <!-- Show the dropdown if more than one variant -->
+              <select name="id" id="product-variants" class="product-variants">
+                {% for variant in product.variants %}
+                  <option value="{{ variant.id }}">{{ variant.title }}</option>
+                {% endfor %}
+              </select>
+            {% else %}
+              <!-- Show a disabled dropdown or just display the single variant -->
+              <select name="id" id="product-variants" class="product-variants" disabled>
+                <option value="{{ product.variants.first.id }}">{{ product.variants.first.title }}</option>
+              </select>
+              <!-- Or display plain text for the single variant -->
+              <p>Variant: {{ product.variants.first.title }}</p>
+            {% endif %}
             <span class="svg-wrapper">
               {{- 'icon-caret.svg' | inline_asset_content -}}
             </span>
