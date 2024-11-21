@@ -218,6 +218,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".related-products__heading {padding-top: 36px; border-top: 1px solid #e5e5e5;}"
+      ],
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
