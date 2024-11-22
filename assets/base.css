@@ -3650,10 +3650,13 @@ details-disclosure > details {
     flex-wrap: nowrap;
     overflow: scroll;
     scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
   }
 
   .related-products .grid--2-col-tablet-down .grid__item {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) - 1rem);
+    scroll-snap-align: start;
+      flex: 0 0 auto;
   }
 
   .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down::-webkit-scrollbar {
