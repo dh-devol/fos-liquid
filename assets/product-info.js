@@ -310,6 +310,11 @@ if (!customElements.get("product-info")) {
           allVariantSpec[variant.id][0].depth[0].value +
           " " +
           allVariantSpec[variant.id][0].depth[0].unit;
+
+        tile_area =
+          allVariantSpec[variant.id][0].width[0].value *
+          allVariantSpec[variant.id][0].depth[0].value;
+        console.log(tile_area);
       }
 
       updateVariantInputs(variantId) {
