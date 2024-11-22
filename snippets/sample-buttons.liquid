@@ -44,50 +44,23 @@
           type="hidden"
           name="id"
           value="{{ sample }}"
-          {% if sample.status == false
-            or quantity_rule_soldout
-            or product.selected_or_first_available_variant == null
-          %}
+          {% if sample.status == 'Draft' %}
             disabled
           {% endif %}
-          class="product-variant-id"
+          class="sample-sku"
         >
 
-        {%- if gift_card_recipient_feature_active -%}
-          {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
-        {%- endif -%}
-
         <div class="product-form__buttons">
-          {%- liquid
-            assign check_against_inventory = true
-            if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
-              assign check_against_inventory = false
-            endif
-            if product.selected_or_first_available_variant.quantity_rule.min > product.selected_or_first_available_variant.inventory_quantity and check_against_inventory
-              assign quantity_rule_soldout = true
-            endif
-          -%}
           <button
-            id="ProductSubmitButton-{{ section_id }}"
+            id="SampleSubmitButton-{{ sample.sku }}"
             type="submit"
             name="add"
             class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-            {% if product.selected_or_first_available_variant.available == false
-              or quantity_rule_soldout
-              or product.selected_or_first_available_variant == null
-            %}
+            {% if sample.status == 'Draft' %}
               disabled
             {% endif %}
           >
-            <span>
-              {%- if product.selected_or_first_available_variant == null -%}
-                {{ 'products.product.unavailable' | t }}
-              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
-            </span>
+            <span> Request Sample </span>
             {%- render 'loading-spinner' -%}
           </button>
           {%- if show_dynamic_checkout -%}
@@ -97,8 +70,6 @@
       {%- endform -%}
     </product-form>
     {{ sample.title }}
-    {{ get_metafield.sample.value.status }}
-    {{ get_metafield.sample.value.id }}
     {{ sample.sku }}
   {% endif %}
 </div>
