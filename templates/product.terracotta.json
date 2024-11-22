@@ -89,68 +89,6 @@
         "padding_bottom": 52
       }
     },
-    "collapsible_content_HcgWf6": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_yqnwVQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Description",
-            "icon": "none",
-            "row_content": "{{ product.metafields.custom.product_long_description | metafield_tag }}",
-            "page": ""
-          }
-        },
-        "collapsible_row_mJmkgk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Specification",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_rGYeMQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Delivery",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_VNekGn": {
-          "type": "collapsible_row",
-          "repeater": "{{ product.metafields.custom.tile_pattern.value }}",
-          "settings": {
-            "heading": "Pattern information",
-            "icon": "none",
-            "row_content": "{{ product.metafields.custom.tile_pattern | metafield_tag: field: 'display_title' }}<p></p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_yqnwVQ",
-        "collapsible_row_mJmkgk",
-        "collapsible_row_rGYeMQ",
-        "collapsible_row_VNekGn"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h2",
-        "heading_alignment": "left",
-        "layout": "none",
-        "color_scheme": "scheme-3",
-        "container_color_scheme": "scheme-3",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection_qhwKgc": {
       "type": "featured-collection",
       "custom_css": [
@@ -298,11 +236,20 @@
         "padding_top": 0,
         "padding_bottom": 72
       }
+    },
+    "collapsible_content_tiles_LmHxJL": {
+      "type": "collapsible-content-tiles",
+      "settings": {
+        "caption": "",
+        "delivery": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "collapsible_content_HcgWf6",
+    "collapsible_content_tiles_LmHxJL",
     "featured_collection_qhwKgc",
     "featured_collection_PAYMaR",
     "related-products",
