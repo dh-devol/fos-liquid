@@ -15,7 +15,7 @@
 {% assign sample = get_metafield.sample.value %}
 
 <div {{ block.shopify_attributes }}>
-  {%- if product != blank -%}
+  {%- if sample != blank -%}
     {%- liquid
       assign show_dynamic_checkout = false
       if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
