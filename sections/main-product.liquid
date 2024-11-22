@@ -471,6 +471,14 @@
                   section_id: section.id,
                   show_pickup_availability: true
                 -%}
+              {%- when 'sample_buttons' %}
+                {%- render 'sample-buttons',
+                  block: block,
+                  product: product,
+                  product_form_id: product_form_id,
+                  section_id: section.id,
+                  show_pickup_availability: true
+                -%}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -724,6 +732,18 @@
   </div>
 </product-info>
 
+<script id="variant_metafield_data" type="application/json">
+  {
+    {% for variant in product.variants %}
+      {% assign variant_width = variant.metafields.custom.width %}
+      {% assign variant_length = variant.metafields.custom.length %}
+      {% assign variant_longest_length = variant.metafields.custom.longest_length %}
+      {% assign variant_depth = variant.metafields.custom.depth %}
+      "{{ variant.id }}": [{"width" : [{{ variant_width }}], "length" : [{{ variant_length }}], "longest_length" : [{{ variant_longest_length }}], "depth" : [{{ variant_depth }}]}]{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  }
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
@@ -914,6 +934,12 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
         }
       ]
+    },
+    {
+      "type": "sample_buttons",
+      "name": "Sample Button",
+      "limit": 1,
+      "settings": []
     },
     {
       "type": "description",
