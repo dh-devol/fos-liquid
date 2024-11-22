@@ -3651,10 +3651,11 @@ details-disclosure > details {
     overflow: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    column-gap: 25px;
   }
 
   .related-products .grid--2-col-tablet-down .grid__item {
-    width: calc(50% - var(--grid-mobile-horizontal-spacing) - 1rem);
+    width: calc(50% - var(--grid-mobile-horizontal-spacing) - 3rem);
     scroll-snap-align: start;
       flex: 0 0 auto;
   }
