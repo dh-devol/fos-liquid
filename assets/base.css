@@ -3645,7 +3645,7 @@ details-disclosure > details {
 }
 
 @media (max-width: 768px) {
-  .related-products .grid.product-grid.grid--1-col-desktop.grid--2-col-tablet-down {
+  .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
