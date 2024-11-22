@@ -46,7 +46,7 @@
 
         <div class="product-form__buttons">
           <button
-            id="SampleSubmitButton-{{ sample.sku }}"
+            id="SampleSubmitButton-{{ sample.id.value }}"
             type="submit"
             name="add"
             class="product-form__submit button button--full-width"
@@ -60,6 +60,6 @@
         </div>
       {%- endform -%}
     </product-form>
-    {{ sample }}
+    {{ sample.id.value }}
   {% endif %}
 </div>
