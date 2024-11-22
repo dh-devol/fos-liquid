@@ -3650,4 +3650,8 @@ details-disclosure > details {
     flex-wrap: nowrap;
     overflow: scroll;
   }
+
+  .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down::-webkit-scrollbar {
+    display: none;
+  }
 }
