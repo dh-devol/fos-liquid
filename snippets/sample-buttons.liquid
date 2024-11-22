@@ -1,5 +1,7 @@
+{% assign sample = product.metafields.custom.sample2 %}
 <div {{ block.shopify_attributes }}>
-  {% assign sample = product.metafields.custom.sample2 %}
-  {{ sample }}
-  {{ sample.title }}
+  {%- if sample != blank -%}
+    {{ sample }}
+    {{ sample.title }}
+  {% endif %}
 </div>
