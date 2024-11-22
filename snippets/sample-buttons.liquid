@@ -3,7 +3,7 @@
   Accepts:
   - product: {Object} product object.
   - block: {Object} passing the block information.
-  - product_form_id: {String} product form id.
+  - sample_form_id: {String} product form id.
   - section_id: {String} id of section to which this snippet belongs.
   - show_pickup_availability: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
 
@@ -33,9 +33,9 @@
         <span class="product-form__error-message"></span>
       </div>
 
-      {%- form 'product',
-        product,
-        id: product_form_id,
+      {%- form 'sample',
+        sample,
+        id: sample_form_id,
         class: 'form',
         novalidate: 'novalidate',
         data-type: 'add-to-cart-form'
@@ -43,8 +43,8 @@
         <input
           type="hidden"
           name="id"
-          value="{{ product.selected_or_first_available_variant.id }}"
-          {% if product.selected_or_first_available_variant.available == false
+          value="{{ sample }}"
+          {% if sample.status == false
             or quantity_rule_soldout
             or product.selected_or_first_available_variant == null
           %}
@@ -97,5 +97,6 @@
       {%- endform -%}
     </product-form>
     {{ sample.title }}
+    {{ sample.status }}
   {% endif %}
 </div>
