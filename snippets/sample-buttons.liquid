@@ -11,8 +11,7 @@
   {% render 'sample-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
 {% endcomment %}
 
-{% assign get_metafield = product.metafields.custom %}
-{% assign sample = get_metafield.product_sample %}
+{% assign sample = product.metafields.custom.product_sample %}
 
 <div {{ block.shopify_attributes }}>
   {%- if sample != blank -%}
