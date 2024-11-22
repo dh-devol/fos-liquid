@@ -474,7 +474,7 @@
               {%- when 'sample_buttons' %}
                 {%- render 'sample-buttons',
                   block: block,
-                  product: product,
+                  product: product.metafields.custom.sample2,
                   sample_form_id: sample_form_id,
                   section_id: section.id,
                   show_pickup_availability: true
