@@ -88,6 +88,12 @@
     }
   }
 
+  @media screen and (max-width: 989px) {
+    .header {
+      padding: 10px 3rem 10px 3rem;
+    }
+  }
+
   @media screen and (min-width: 990px) {
     .header {
       padding-top: {{ section.settings.padding_top }}px;
@@ -132,7 +138,7 @@
 
     {%- if section.settings.logo_position != 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
+        <h1 class="header__heading h1">
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
@@ -279,7 +285,7 @@
       </a>
     </div>
   </header>
-  {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
+  
 
   <script>
   document.addEventListener("DOMContentLoaded", function () {

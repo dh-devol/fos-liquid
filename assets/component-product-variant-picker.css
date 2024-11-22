@@ -144,6 +144,29 @@ variant-selects {
   margin: 0.7rem 1.2rem 0.2rem 0;
 }
 
+.select__select {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select:hover.select:after {
+  box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground),var(--inputs-border-opacity));
+}
+
+/* Styling for single variant */
+.select__select--single-variant {
+  cursor: not-allowed;
+  color: rgba(var(--color-foreground));
+  pointer-events: none;
+  transition: none;
+}
+
+/* Hide the caret SVG wrapper for single-variant dropdowns */
+.select__select--single-variant + .svg-wrapper {
+  display: none;
+}
+
+
 @media screen and (min-width: 750px) {
   .product-form__input--swatch .swatch-input__input + .swatch-input__label {
     --swatch-input--size: 2.8rem;

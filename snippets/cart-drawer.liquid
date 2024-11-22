@@ -125,7 +125,7 @@
                             <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
                             <img
                               class="cart-item__image"
-                              src="{{ item.image | image_url: width: 300 }}"
+                              src="{{ item.product.metafields.custom.thumbnail | image_url: width: 300 }}"
                               alt="{{ item.image.alt | escape }}"
                               loading="lazy"
                               width="150"
@@ -542,7 +542,7 @@
         <!-- CTAs -->
 
         <div class="cart__ctas" {{ block.shopify_attributes }}>
-          <button
+          <!-- <button
             type="submit"
             id="CartDrawer-Checkout"
             class="cart__checkout-button button"
@@ -553,7 +553,11 @@
             {% endif %}
           >
             {{ 'sections.cart.checkout' | t }}
-          </button>
+          </button> -->
+          <a href="/cart" class="cart__checkout-button button">{{ 'sections.cart.checkout' | t }}</a>
+          {% if cart == empty %}
+            disabled
+          {% endif %}
         </div>
       </div>
     </div>

@@ -508,10 +508,7 @@
         "text_6mXRcg",
         "button_CJGNjM"
       ],
-      "custom_css": [
-        "@media only screen and (min-width: 768px) {.image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em; }}",
-        ".image-with-text__text {font-size: 0.9em; color: #333333;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/Samples-2024_f1f118a4-9952-4927-9e60-760d5c896a8f.jpg",
         "height": "large",
@@ -559,10 +556,7 @@
         "text_yUbQyy",
         "button_W7Fgxq"
       ],
-      "custom_css": [
-        "@media only screen and (min-width: 768px) {.image-with-text__content {padding-left: 12em; padding-right: 12em; padding-top: 8em; padding-bottom: 8em; }}",
-        ".image-with-text__text {font-size: 0.9em; color: #333333;}"
-      ],
+      "custom_css": [],
       "settings": {
         "image": "shopify://shop_images/HomeBanner-2024-02.jpg",
         "height": "adapt",
@@ -659,7 +653,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "limestone",
+        "collection": "all-flooring",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
