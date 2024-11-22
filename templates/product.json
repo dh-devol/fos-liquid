@@ -51,9 +51,7 @@
         },
         "sample_buttons_xFqrfC": {
           "type": "sample_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
+          "settings": {}
         }
       },
       "block_order": [
