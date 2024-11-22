@@ -12,7 +12,7 @@
 {% endcomment %}
 
 {% assign get_metafield = product.metafields.custom %}
-{% assign sample = get_metafield.sample.value %}
+{% assign sample = get_metafield.product_sample.value %}
 
 <div {{ block.shopify_attributes }}>
   {%- if sample != blank -%}
