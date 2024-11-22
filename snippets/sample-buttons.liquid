@@ -3,7 +3,6 @@
   {%- if sample != blank -%}
     <product-form
       class="product-form"
-      data-hide-errors="{{ gift_card_recipient_feature_active }}"
       data-section-id="{{ section.id }}"
     >
       <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -30,9 +29,6 @@
           class="product-variant-id"
         >
 
-        {%- if gift_card_recipient_feature_active -%}
-          {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
-        {%- endif -%}
         <p>Request free sample:</p>
         <div class="product-form__buttons">
           <button
@@ -57,6 +53,6 @@
       {%- endform -%}
     </product-form>
     {{ sample }}
-    {{ sample.title }}
+    {{ sample.value.id }}
   {% endif %}
 </div>
