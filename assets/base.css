@@ -3649,6 +3649,11 @@ details-disclosure > details {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down {
+    width: calc(50% - var(--grid-mobile-horizontal-spacing) - 1rem);
   }
 
   .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down::-webkit-scrollbar {
