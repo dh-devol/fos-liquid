@@ -49,7 +49,7 @@
             id="SampleSubmitButton-{{ sample.sku }}"
             type="submit"
             name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+            class="product-form__submit button button--full-width"
             {% if sample.status == 'Draft' %}
               disabled
             {% endif %}
