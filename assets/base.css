@@ -3652,7 +3652,7 @@ details-disclosure > details {
     scroll-behavior: smooth;
   }
 
-  .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down {
+  .related-products .grid.product-grid.grid--4-col-desktop.grid--2-col-tablet-down .grid-item {
     width: calc(50% - var(--grid-mobile-horizontal-spacing) - 1rem);
   }
 
