@@ -47,8 +47,12 @@
         </p>
       {%- endif -%}
     </div>
-
-    <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+    <div class="main-cart">
+      <div class="upsell">
+        Hello from upsell
+      </div>
+      <div class="cart-items">
+        <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
       <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
         <div class="js-contents">
           {%- if cart != empty -%}
@@ -448,6 +452,8 @@
         {{ 'accessibility.loading' | t }}
       </p>
     </form>
+      </div>
+    </div>
   </div>
 </cart-items>
 
