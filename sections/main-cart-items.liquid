@@ -53,15 +53,7 @@
   <p>Custom message for tile m² in basket recommendation</p>
   <div class="products">
     {% for item in cart.items %}
-      {% for related_product_id in item.product.metafields.custom.related_products %}
-  {% assign related_product = related_product_id | product %}
-  <li>
-    <a href="{{ related_product.url }}">
-      {{ related_product.title }}
-    </a>
-  </li>
-{% endfor %}
-
+      {{ item.product.metafields.custom.related_products.value }}
     {% endfor %}
   </div>
 </div>
