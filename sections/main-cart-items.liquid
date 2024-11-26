@@ -52,24 +52,28 @@
   <h3>Don't forget the essentials</h3>
   <p>Custom message for tile m² in basket recommendation</p>
   <div class="products">
-    <!-- Loop through each cart item -->
     {% for item in cart.items %}
-      <!-- Check if the related products metafield exists for the product -->
-      {% if item.product.metafields.custom.related_products %}
+      {% if item.product.metafields.custom and item.product.metafields.custom.related_products and item.product.metafields.custom.related_products.size > 0 %}
         <div class="related-products" data-product-id="{{ item.product.id }}">
+          <h4>Related Products for {{ item.product.title }}</h4>
           <ul>
-            <!-- Loop through the related products array -->
-            <pre>
-  {{ item.product.metafields.custom.related_products | json }}
-</pre>
+            {% for related_product in item.product.metafields.custom.related_products %}
+              {% assign related_product_obj = related_product | product %}
+              <li>
+                <a href="{{ related_product_obj.url }}">
+                  {{ related_product_obj.title }}
+                </a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
-      {%  else %}
-        <p>Nothing here</p>
+      {% else %}
+        <p>No related products available for {{ item.product.title }}.</p>
       {% endif %}
     {% endfor %}
   </div>
 </div>
+
 
       <div class="cart__container--items">
         <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
