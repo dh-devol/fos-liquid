@@ -53,8 +53,11 @@
   <p>Custom message for tile m² in basket recommendation</p>
   <div class="products">
     <!-- Loop through each cart item -->
-   <pre>{{ item.product.metafields.custom.related_products | json }}</pre>
+    {% for item in cart.items %}
+      <!-- Check if the related products metafield exists for the product -->
+      <pre>{{ item.product.metafields.custom.related_products | json }}</pre>
 
+    {% endfor %}
   </div>
 </div>
 
