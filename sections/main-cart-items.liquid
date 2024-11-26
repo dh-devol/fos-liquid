@@ -47,11 +47,11 @@
         </p>
       {%- endif -%}
     </div>
-    <div class="cart-container">
-      <div class="upsell-section">
+    <div class="cart__container">
+      <div class="cart__container--upsell">
         Hello from upsell
       </div>
-      <div class="item-section">
+      <div class="cart__container--items">
         <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
       <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
         <div class="js-contents">
