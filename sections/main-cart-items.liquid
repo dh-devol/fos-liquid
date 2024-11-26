@@ -55,9 +55,8 @@
     <!-- Loop through each cart item -->
     {% for item in cart.items %}
       <!-- Check if the related products metafield exists for the product -->
-      {% if item.product.metafields.custom and item.product.metafields.custom.related_products %}
+      {% if item.product.metafields.custom.related_products %}
         <div class="related-products" data-product-id="{{ item.product.id }}">
-          <h4>Related Products for {{ item.product.title }}</h4>
           <ul>
             <!-- Loop through the related products array -->
             {% for related_product in item.product.metafields.custom.related_products %}
