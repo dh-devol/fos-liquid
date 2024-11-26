@@ -49,6 +49,10 @@ cart-items.is-empty .title-wrapper-with-link,
   width: 40%;
 }
 
+.cart__container--upsell h3 {
+  margin-top: 0;
+}
+
 .cart__container--items {
   width: 100%
 }
