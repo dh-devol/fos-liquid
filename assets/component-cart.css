@@ -43,6 +43,7 @@ cart-items.is-empty .title-wrapper-with-link,
 
 .cart__container {
   display: flex;
+  margin-top: 6rem;
 }
 
 .cart__container--upsell {
