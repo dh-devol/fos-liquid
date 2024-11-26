@@ -56,16 +56,11 @@
       {% if item.product.metafields.custom.related_products and item.product.metafields.custom.related_products.size > 0 %}
         <div class="related-products" data-product-id="{{ item.product.id }}">
           <h4>Related Products for {{ item.product.title }}</h4>
-          <ul>
-            {% for related_product in item.product.metafields.custom.related_products %}
-              {% assign related_product_obj = related_product | product %}
-              <li>
-                <a href="{{ related_product_obj.url }}">
-                  {{ related_product_obj.title }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+          <pre>
+  Product Title: {{ item.product.title }}
+  Related Products Metafield: {{ item.product.metafields.custom.related_products | json }}
+</pre>
+
         </div>
       {% else %}
         <p>No related products available for {{ item.product.title }}.</p>
