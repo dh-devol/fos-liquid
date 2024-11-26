@@ -58,16 +58,8 @@
       {% if item.product.metafields.custom and item.product.metafields.custom.related_products %}
         <div class="related-products" data-product-id="{{ item.product.id }}">
           <h4>Related Products for {{ item.product.title }}</h4>
-          <ul>
-            <!-- Loop through the related products array -->
-            {% for related_product in item.product.metafields.custom.related_products %}
-              <li>
-                <a href="{{ related_product.url }}">
-                  {{ related_product.title }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+          {{ item.product.metafields.custom | json }}
+
         </div>
       {% endif %}
     {% endfor %}
