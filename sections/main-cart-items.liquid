@@ -55,7 +55,7 @@
     <!-- Loop through each cart item -->
     {% for item in cart.items %}
       <!-- Check if the related products metafield exists for the product -->
-      <pre>{{ item.product.metafields.custom.related_products | json }}</pre>
+      <pre>{{ item.product.metafields.custom.related_products }}</pre>
 
     {% endfor %}
   </div>
