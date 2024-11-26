@@ -41,6 +41,18 @@ cart-items.is-empty .title-wrapper-with-link,
   font-size: inherit;
 }
 
+.cart__container {
+  display: flex;
+}
+
+.cart__container--upsell {
+  width: 40%;
+}
+
+.cart__container--items {
+  width: 100%
+}
+
 @media screen and (min-width: 990px) {
   .cart__warnings {
     padding: 7rem 0 1rem;
