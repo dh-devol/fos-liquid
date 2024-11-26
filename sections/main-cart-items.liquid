@@ -59,7 +59,13 @@
         <div class="related-products" data-product-id="{{ item.product.id }}">
           <ul>
             <!-- Loop through the related products array -->
-            {{ item.product.metafields.custom.related_products }}
+            {% for related_product in item.product.metafields.custom.related_products %}
+              <li>
+                <a href="{{ related_product.url }}">
+                  {{ related_product.title }}
+                </a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       {% endif %}
