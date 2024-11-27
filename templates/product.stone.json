@@ -48,6 +48,12 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
+        },
+        "fos_sample_request_sample_button_fwhEje": {
+          "type": "shopify://apps/fos-sample/blocks/request-sample-button/face7d63-f764-4f04-8970-ee65220ae541",
+          "settings": {
+            "product": "{{product}}"
+          }
         }
       },
       "block_order": [
@@ -57,7 +63,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "fos_sample_request_sample_button_fwhEje"
       ],
       "settings": {
         "enable_sticky_info": true,
