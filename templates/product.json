@@ -52,6 +52,12 @@
         "sample_buttons_xFqrfC": {
           "type": "sample_buttons",
           "settings": {}
+        },
+        "fos_sample_request_sample_button_tQLLq6": {
+          "type": "shopify://apps/fos-sample/blocks/request-sample-button/face7d63-f764-4f04-8970-ee65220ae541",
+          "settings": {
+            "product": "{{product}}"
+          }
         }
       },
       "block_order": [
@@ -62,7 +68,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "sample_buttons_xFqrfC"
+        "sample_buttons_xFqrfC",
+        "fos_sample_request_sample_button_tQLLq6"
       ],
       "settings": {
         "enable_sticky_info": true,
