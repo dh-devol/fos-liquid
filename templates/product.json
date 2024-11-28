@@ -53,10 +53,11 @@
           "type": "sample_buttons",
           "settings": {}
         },
-        "fos_sample_request_sample_button_tQLLq6": {
+        "fos_sample_request_sample_button_yLiMQ3": {
           "type": "shopify://apps/fos-sample/blocks/request-sample-button/face7d63-f764-4f04-8970-ee65220ae541",
           "settings": {
-            "product": "{{product}}"
+            "product": "{{product}}",
+            "max_samples": 4
           }
         }
       },
@@ -69,7 +70,7 @@
         "quantity_selector",
         "buy_buttons",
         "sample_buttons_xFqrfC",
-        "fos_sample_request_sample_button_tQLLq6"
+        "fos_sample_request_sample_button_yLiMQ3"
       ],
       "settings": {
         "enable_sticky_info": true,
