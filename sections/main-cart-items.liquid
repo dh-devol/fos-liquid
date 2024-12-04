@@ -49,15 +49,14 @@
     </div>
     <div class="cart__container">
       <div class="cart__container--upsell">
-  <h3>Don't forget the essentials</h3>
-  <p>Custom message for tile m² in basket recommendation</p>
-  <div class="products">
-    {% for item in cart.items %}
-      {{ item.product.metafields.custom.related_products.value }}
-    {% endfor %}
-  </div>
-</div>
-
+        <h3>Don't forget the essentials</h3>
+        <p>Custom message for tile m² in basket recommendation</p>
+        <div class="products">
+          {% for item in cart.items %}
+            {{ item.product.metafields.custom.related_products.value }}
+          {% endfor %}
+        </div>
+      </div>
 
       <div class="cart__container--items">
         <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
