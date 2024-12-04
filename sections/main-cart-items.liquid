@@ -56,7 +56,8 @@
             {% assign product_upsell = item.product.metafields.custom.related_products.value %}
             {% for product in product_upsell  %}
               <!-- {{ product | json }} -->
-              {{ product.images | image_tag }}
+              {{ product.title }}
+              {{ product.images }}
             {% endfor %}
           {% endfor %}
         </div>
