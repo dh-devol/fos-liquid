@@ -58,7 +58,7 @@
               <!-- {{ product | json }} -->
               <div>
                 <div>{{ product.title }}</div>
-                <div>{{ product.featured_image }}</div>
+                <div>{{ product.featured_image | image_url | image_tag }}</div>
               </div>
             {% endfor %}
           {% endfor %}
