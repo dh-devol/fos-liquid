@@ -54,7 +54,7 @@
         <div class="products">
           {% for item in cart.items %}
             {% for image in item.product.metafields.custom.related_products.value  %}
-              {{ image }}
+              {{ image.value }}
             {% endfor %}
           {% endfor %}
         </div>
