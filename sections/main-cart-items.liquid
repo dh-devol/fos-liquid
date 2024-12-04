@@ -53,8 +53,9 @@
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
           {% for item in cart.items %}
-            {% for image in item.product.metafields.custom.related_products.value  %}
-              {{ image }}
+            {% assign product_upsell = item.product.metafields.custom.related_products.value %}
+            {% for product in product_upsell  %}
+              {{ product }}
             {% endfor %}
           {% endfor %}
         </div>
