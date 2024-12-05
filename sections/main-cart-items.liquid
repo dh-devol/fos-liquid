@@ -53,9 +53,9 @@
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
           {% for item in cart.items %}
-            {% for collection in collections %}
-  {{- collection.title | link_to: collection.url }}
-{% endfor %}
+            {% if item.title == 'terracotta' %}
+              <h2>Hello</h2>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
