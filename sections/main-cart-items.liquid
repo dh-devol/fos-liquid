@@ -55,16 +55,9 @@
           {% for item in cart.items %}
             {{ item.product.title }}
             {% if item.product.type contains 'Terracotta' %}
-              {% assign collection = collections['fixing-care-for-wood-flooring'] %}
-
-                {% if collection and collection.products.size > 0 %}
-                  {% for product in collection.products %}
-                    <a href="{{ product.url }}">{{ product.title }}</a>
-                  {% endfor %}
-                {% else %}
-                  <p>No products found in this collection.</p>
-                {% endif %}
-
+              {% for product in collections['fixing-care-for-wood-flooring'].products %}
+                {{- product.title | link_to: product.url }}
+              {% endfor %}
             {% else %}
               <h2>Nah</h2>
             {% endif %}
