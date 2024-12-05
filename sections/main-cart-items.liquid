@@ -55,7 +55,7 @@
           {% for item in cart.items %}
             {{ item.product.title }}
             {% for collection in collections %}
-  {{- collection.title | link_to: collection.url |handle }}
+  {{- collection.title |handle }}
 {% endfor %}
             {% if item.product.type contains 'Terracotta' %}
               {% for product in collections['fixing-&-care-for-terracotta-tiles'].products %}
