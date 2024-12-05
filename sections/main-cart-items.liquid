@@ -55,7 +55,7 @@
           {% for item in cart.items %}
             {{ item.product.title }}
             {% if item.product.type contains 'Terracotta' %}
-              {% for product in collections['porcelain'].products %}
+              {% for product in collections['fixing-care-for-wood-flooring'].products %}
                 {{- product.title | link_to: product.url }}
               {% endfor %}
             {% else %}
