@@ -52,15 +52,8 @@
         <h3>Don't forget the essentials</h3>
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
-          {% for item in cart.items %}
-            {% assign product_upsell = item.product.metafields.custom.related_products.value %}
-            {% for product in product_upsell  %}
-              <!-- {{ product | json }} -->
-              <div>
-                <div>{{ product.title }}</div>
-                <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
-              </div>
-            {% endfor %}
+          {% for collection in collections %}
+            {{- collection.title | link_to: collection.url }}
           {% endfor %}
         </div>
       </div>
