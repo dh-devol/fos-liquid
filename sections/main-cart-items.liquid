@@ -54,6 +54,9 @@
         <div class="products">
           {% for item in cart.items %}
             {{ item.product.title }}
+            {% for collection in collections %}
+  {{- collection.title | link_to: collection.url }}
+{% endfor %}
             {% if item.product.type contains 'Terracotta' %}
               {% for product in collections['fixing-care-for-wood-flooring'].products %}
                 {{- product.title | link_to: product.url }}
