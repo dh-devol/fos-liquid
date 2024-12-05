@@ -53,7 +53,7 @@
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
           {% for item in cart.items %}
-            {{ item.product.title | handleize}}
+            {{ item.product.title }}
             {% if item.product.type contains 'Terracotta' %}
               
             {% else %}
