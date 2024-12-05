@@ -52,8 +52,10 @@
         <h3>Don't forget the essentials</h3>
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
-          {% for collection in collections %}
-            {{- collection.title }}
+          {% for item in cart.items %}
+            {% for collection in collections %}
+  {{- collection.title | link_to: collection.url }}
+{% endfor %}
           {% endfor %}
         </div>
       </div>
