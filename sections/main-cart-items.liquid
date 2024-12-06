@@ -54,9 +54,11 @@
         <div class="products">
           {% for item in cart.items %}
             {{ item.product.title }}
-            {% assign collection = collections['fixing-care-for-terracotta-tiles'].products %}
+            {% for collection in collections %}
               {{- collection.title |handle }}
+            {% endfor %}
             {% if item.product.type contains 'Terracotta' %}
+  {% assign collection = collections['fixing-care-for-terracotta-tiles'] %}
 
   {% if collection %}
     <h2>{{ collection.title }}</h2> <!-- Display the collection title -->
