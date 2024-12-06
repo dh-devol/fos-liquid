@@ -65,7 +65,7 @@
                   {% for product in collection.products %}
                     <!-- {{ product | json }} -->
                     <div>{{ product.title }}</div>
-                    <div>{{ product.featured.image }}</div>
+                    <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
                   {% endfor %}
                 {% else %}
                   <p>No products available in the "{{ collection.title }}" collection.</p>
