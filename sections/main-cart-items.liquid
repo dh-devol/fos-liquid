@@ -57,7 +57,7 @@
             {% for collection in collections %}
               {{- collection.title |handle }}
             {% endfor %}
-            {% if item.product.type contains 'Terracotta' %}
+            {% if item.product.type contains 'terracotta' %}
   {{ collections['fixing-care-for-terracotta'] | json }}
 {% endif %}
 
