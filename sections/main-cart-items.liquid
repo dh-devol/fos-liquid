@@ -58,12 +58,25 @@
               <!-- {{- collection.title |handle }} -->
             {% endfor %}
             {% if item.product.type contains 'Terracotta' %}
-              {% for product in collections['fixing-care-for-terracotta-tiles'].products %}
-                {{- product.title | link_to: product.url }}
-              {% endfor %}
-            {% else %}
-              <h2>Nah</h2>
-            {% endif %}
+  {% assign collection = collections['fixing-care-for-terracotta-tiles'] %}
+
+  {% if collection %}
+    <h2>{{ collection.title }}</h2> <!-- Display the collection title -->
+
+    {% if collection.products.size > 0 %}
+      {% for product in collection.products %}
+        <a href="{{ product.url }}">{{ product.title }}</a>
+      {% endfor %}
+    {% else %}
+      <p>No products available in the "{{ collection.title }}" collection.</p>
+    {% endif %}
+  {% else %}
+    <p>Collection not found.</p>
+  {% endif %}
+{% else %}
+  <h2>Nah</h2>
+{% endif %}
+
           {% endfor %}
         </div>
       </div>
