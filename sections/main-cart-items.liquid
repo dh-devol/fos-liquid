@@ -52,6 +52,15 @@
         <h3>Don't forget the essentials</h3>
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
+          <h2>Fixing Care</h2>
+{% for product in collections['fixing-care'].products %}
+  <p>{{ product.title }}</p>
+{% endfor %}
+
+<h2>Fixing Care for Terracotta</h2>
+{% for product in collections['fixing-care-for-terracotta'].products %}
+  <p>{{ product.title }}</p>
+{% endfor %}
           {% for item in cart.items %}
             {{ item.product.title }}
             {% for collection in collections %}
