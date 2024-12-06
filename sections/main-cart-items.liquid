@@ -63,9 +63,9 @@
                 <h2>{{ collection.title }}</h2>
                 {% if collection.products.size > 0 %}
                   {% for product in collection.products %}
-                    {{ product | json }}
+                    <!-- {{ product | json }} -->
                     <div>{{ product.title }}</div>
-                    <div>{{ product.image }}</div>
+                    <div>{{ product.featured.image }}</div>
                   {% endfor %}
                 {% else %}
                   <p>No products available in the "{{ collection.title }}" collection.</p>
