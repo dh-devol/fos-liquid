@@ -62,10 +62,10 @@
   <p>{{ product.title }}</p>
 {% endfor %}
           {% for item in cart.items %}
-            {{ item.product.title }}
+            <!-- {{ item.product.title }}
             {% for collection in collections %}
               {{- collection.title |handle }}
-            {% endfor %}
+            {% endfor %} -->
             {% if item.product.type contains 'Terracotta' %}
   {% assign collection = collections['fixing-care'] %}
 
