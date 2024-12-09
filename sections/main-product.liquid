@@ -454,7 +454,7 @@
                 </div>
               </div>
               <script>
-                const variantSelector = document.querySelector('[name="id"]'); // Assuming Shopify's default variant dropdown
+                const variantSelector = document.querySelector('name="options[{{ option.name | escape }}]"'); // Assuming Shopify's default variant dropdown
 
 variantSelector.addEventListener('change', function() {
     const selectedVariantId = variantSelector.value;
