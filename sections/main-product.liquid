@@ -453,7 +453,40 @@
                   <p>Total Price: <span id="total-price">{{ product.variants.first.price | money }}</span></p>
                 </div>
               </div>
+              <script>
+                const variantSelector = document.querySelector('[name="id"]'); // Assuming Shopify's default variant dropdown
 
+variantSelector.addEventListener('change', function() {
+    const selectedVariantId = variantSelector.value;
+    currentPrice = variantPrices[selectedVariantId];
+    quantityInput.dispatchEvent(new Event('input')); // Trigger recalculation
+});
+
+    // Grab all variant prices from Liquid
+    var variantPrices = {
+        {% for variant in product.variants %}
+        "{{ variant.id }}": {{ variant.price | divided_by: 100 }},
+        {% endfor %}
+    };
+
+    // JavaScript to Update Total Price
+    document.addEventListener('DOMContentLoaded', function() {
+        const quantityInput = document.getElementById('quantity');
+        const totalPriceElement = document.getElementById('total-price');
+        
+        // Default variant price (first variant)
+        let currentPrice = variantPrices["{{ product.variants.first.id }}"];
+
+        // Update total price when quantity changes
+        quantityInput.addEventListener('input', function() {
+            const quantity = parseInt(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
+            totalPriceElement.textContent = (quantity * currentPrice).toLocaleString('en-US', {
+                style: 'currency',
+                currency: '{{ shop.currency }}'
+            });
+        });
+    });
+</script>
               {%- when 'popup' -%}
                 <modal-opener
                   class="product-popup-modal__opener quick-add-hidden"
