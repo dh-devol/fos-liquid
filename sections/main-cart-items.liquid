@@ -53,10 +53,10 @@
         <p>Custom message for tile m² in basket recommendation</p>
         <div class="products">
           {% for item in cart.items %}
-            {{ item.product.title }}
+            <!-- {{ item.product.title }}
             {% for collection in collections %}
               {{- collection.title |handle }}
-            {% endfor %}
+            {% endfor %} -->
             {% if item.product.type contains 'Terracotta' %}
               {% assign collection = collections['terracotta-tile-upsell'] %}
               {% if collection %}
