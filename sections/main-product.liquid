@@ -441,9 +441,16 @@
                   {%- endif -%}
                 </div>
               <div class="calc-test">
-                <div>QTY (m²)</div>
-                <div>QTY (UNIT)</div>
-                <div>Sub-total</div>
+                <div>
+                  <label>QTY (m²)</label>
+                  <input type="number" id="quantity" min="1" value="1" />
+                </div>
+                <div>
+                  <label>QTY (UNIT)</label>
+                </div>
+                <div>
+                  <label>Sub-total</label>
+                </div>
               </div>
               {%- when 'popup' -%}
                 <modal-opener
