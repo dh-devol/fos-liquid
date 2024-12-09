@@ -479,15 +479,16 @@
                 currency: '{{ shop.currency }}'
             });
         });
-    });
-
-                               const variantSelector = document.querySelector('[name="options[Tile Size]"'); // Assuming Shopify's default variant dropdown
+      const variantSelector = document.querySelector('[name="options[Tile Size]"'); // Assuming Shopify's default variant dropdown
 
 variantSelector.addEventListener('change', function() {
     const selectedVariantId = variantSelector.value;
     currentPrice = variantPrices[selectedVariantId];
     quantityInput.dispatchEvent(new Event('input')); // Trigger recalculation
 });
+    });
+
+                               
 </script>
               {%- when 'popup' -%}
                 <modal-opener
