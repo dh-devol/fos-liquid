@@ -2,6 +2,11 @@ product-info {
   display: block;
 }
 
+.calc-test {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product {
   margin: 0;
 }
