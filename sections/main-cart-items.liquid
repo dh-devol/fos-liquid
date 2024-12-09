@@ -74,7 +74,7 @@
                 <p>Collection not found.</p>
               {% endif %}
             {% elsif item.product.type contains 'Parquet' %}
-              {% assign collection = collections['wood-prodcut-upsell'] %}
+              {% assign collection = collections['wood-product-upsell'] %}
               {% if collection %}
                 <h2>{{ collection.title }}</h2>
                 {% if collection.products.size > 0 %}
