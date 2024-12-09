@@ -7,6 +7,11 @@ product-info {
   justify-content: space-between;
 }
 
+.calc-test-box {
+  display: flex;
+  flex-direction: column;
+}
+
 .product {
   margin: 0;
 }
