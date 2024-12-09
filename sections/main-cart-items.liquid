@@ -59,53 +59,29 @@
             {% endfor %} -->
             {% if item.product.type contains 'Terracotta' %}
               {% assign collection = collections['terracotta-tile-upsell'] %}
-              {% if collection %}
                 <h2>{{ collection.title }}</h2>
-                {% if collection.products.size > 0 %}
-                  {% for product in collection.products %}
-                    <!-- {{ product | json }} -->
-                    <div>{{ product.title }}</div>
-                    <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
-                  {% endfor %}
-                {% else %}
-                  <p>No products available in the "{{ collection.title }}" collection.</p>
-                {% endif %}
-              {% else %}
-                <p>Collection not found.</p>
-              {% endif %}
+                {% for product in collection.products %}
+                  <!-- {{ product | json }} -->
+                  <div>{{ product.title }}</div>
+                  <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
+                {% endfor %}
             {% elsif item.product.type contains 'Parquet' %}
-              {% assign collection = collections['wood-product-upsell'] %}
-              {% if collection %}
+              {% assign collection = collections['wood-product-upsell'] %}  
                 <h2>{{ collection.title }}</h2>
-                {% if collection.products.size > 0 %}
-                  {% for product in collection.products %}
-                    <!-- {{ product | json }} -->
-                    <div>{{ product.title }}</div>
-                    <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
-                  {% endfor %}
-                {% else %}
-                  <p>No products available in the "{{ collection.title }}" collection.</p>
-                {% endif %}
-              {% else %}
-                <p>Collection not found.</p>
-              {% endif %}
+                {% for product in collection.products %}
+                  <!-- {{ product | json }} -->
+                  <div>{{ product.title }}</div>
+                  <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
+                {% endfor %}
             {% else %}
               {% assign collection = collections['standard-tile-upsell'] %}
-              {% if collection %}
                 <h2>{{ collection.title }}</h2>
-                {% if collection.products.size > 0 %}
-                  {% for product in collection.products %}
-                    <!-- {{ product | json }} -->
-                    <div>{{ product.title }}</div>
-                    <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
-                  {% endfor %}
-                {% else %}
-                  <p>No products available in the "{{ collection.title }}" collection.</p>
-                {% endif %}
-              {% else %}
-                <p>Collection not found.</p>
+                {% for product in collection.products %}
+                  <!-- {{ product | json }} -->
+                  <div>{{ product.title }}</div>
+                  <div>{{ product.featured_image | image_url: width: 150, height: 150 | image_tag }}</div>
+                {% endfor %}
               {% endif %}
-            {% endif %}
           {% endfor %}
         </div>
       </div>
