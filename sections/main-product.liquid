@@ -510,7 +510,8 @@
 </script>
 
               <script>
-  window.product = {{ product | json }};
+  const test = window.product = {{ product | json }};
+                console.log(test);
 </script>
  
               {%- when 'popup' -%}
