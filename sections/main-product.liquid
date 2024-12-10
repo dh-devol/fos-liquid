@@ -469,47 +469,48 @@
               </div>
               <script>
   document.addEventListener('DOMContentLoaded', () => {
-  const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Target the variant select dropdown
-  const quantityInput = document.getElementById('quantity'); // Target the quantity input field
-  const totalPriceElement = document.getElementById('total-price').querySelector('span'); // Target the element that will display the total price
+    // Reference the DOM elements
+  const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Select the variant dropdown by name
+    const quantityInput = document.getElementById('quantity');
+    const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
-  // Function to update the subtotal
-  const updateSubtotal = () => {
-    // Get the selected option in the variant dropdown
-    const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+    // Function to update the subtotal
+    const updateSubtotal = () => {
+  // Select the div that contains the price for the selected variant
+  const priceDiv = document.querySelector('#price-{{ section.id }} .price--large');
+  
+  // Extract the price (assuming it's rendered as a string with the currency symbol)
+  const priceText = priceDiv.textContent.trim();
+  console.log(priceText);
+  
+  // Remove any non-numeric characters like the dollar sign
+  const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")).toFixed(2) || 0;
+  console.log(priceNumber);
+  
+  // Get the quantity
+  const quantity = parseFloat(quantityInput.value) || 1;
+  
+  // Calculate the subtotal
+  const subtotal = quantity * priceNumber;
+  
+  // Update the total price element
+  totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
+};
 
-    // Get the price in cents from the selected option's data-price attribute
-    const variantPriceCents = parseFloat(selectedOption.dataset.price) || 0;
 
-    // Get the quantity value from the input (default to 1 if invalid)
-    const quantity = parseFloat(quantityInput.value) || 1;
+    // Event listener for the variant change
+    variantSelect.addEventListener('change', () => {
+      // Reset quantity input to default value
+      quantityInput.value = 1;
+      updateSubtotal(); // Update subtotal for the new variant
+    });
 
-    // Calculate the subtotal in cents
-    const subtotalCents = quantity * variantPriceCents;
+    // Event listener for the quantity input change
+    quantityInput.addEventListener('input', updateSubtotal);
 
-    // Convert subtotal to dollars and format it to two decimal places
-    const subtotalDollars = (subtotalCents / 100).toFixed(2);
-
-    // Update the total price element with the formatted subtotal
-    totalPriceElement.textContent = `$${subtotalDollars}`;
-  };
-
-  // Event listener for variant change (when the user selects a different variant)
-  variantSelect.addEventListener('change', () => {
-    // Reset quantity to 1 when the variant changes
-    quantityInput.value = 1;
-
-    // Update the subtotal immediately after variant selection
+    // Initialize subtotal on page load
     updateSubtotal();
   });
-
-  // Event listener for quantity input change
-  quantityInput.addEventListener('input', updateSubtotal);
-
-  // Initialize the subtotal when the page loads
-  updateSubtotal();
-});
-
 </script>
  
               {%- when 'popup' -%}
