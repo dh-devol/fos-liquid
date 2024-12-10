@@ -470,7 +470,7 @@
               <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Reference the DOM elements
-    const variantSelect = document.getElementById('variant');
+  const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Select the variant dropdown by name
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
