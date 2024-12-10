@@ -468,7 +468,7 @@
     // Function to calculate and update the subtotal
     const updateSubtotal = () => {
       const quantity = parseFloat(quantityInput.value) || 1;
-      const subtotal = (quantity * productPrice).toFixed(2); // Format to 2 decimal places
+      const subtotal = (quantity * productPrice); // Format to 2 decimal places
       totalPriceElement.textContent = `£${subtotal}`;
     };
     
