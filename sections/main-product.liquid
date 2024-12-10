@@ -487,14 +487,10 @@
     // Event listener for the variant change
     variantSelect.addEventListener('change', () => {
       // Reset quantity input to default value
+      console.log(variantSelect.value);
       quantityInput.value = 1;
       updateSubtotal(); // Update subtotal for the new variant
     });
-
-    variantSelect.addEventListener('change', () => {
-  // Your code to handle the change event
-  console.log(variantSelect.value); // Log the selected value
-});
 
     // Event listener for the quantity input change
     quantityInput.addEventListener('input', updateSubtotal);
