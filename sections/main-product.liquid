@@ -462,9 +462,11 @@
  
 
     // Grab all variant prices from Liquid
-    var variantPrices = {
+     var variantPrices = {
         {% for variant in product.variants %}
+        {% if variant.available %}
         "{{ variant.id }}": {{ variant.price | divided_by: 100 }},
+        {% endif %}
         {% endfor %}
     };
 
@@ -474,7 +476,7 @@
         const totalPriceElement = document.getElementById('total-price');
         
         // Default variant price (first variant)
-        let currentPrice = variantPrices["{{ product.variants.first.id }}"];
+        let currentPrice = variantPrices["{{ first_available_variant.id }}"];
 
         // Update total price when quantity changes
         quantityInput.addEventListener('input', function() {
