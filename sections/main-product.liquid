@@ -478,18 +478,17 @@
         // Default variant price (first variant)
         let currentPrice = variantPrices["{{ first_available_variant.id }}"];
 
-         // Function to format price without rounding issues
+         // Function to format and display price precisely
         function calculateTotal(quantity, price) {
-            const total = quantity * price;
+            // Use precise floating-point arithmetic
+            const total = parseFloat((quantity * price).toFixed(2)); // Ensure two decimal places
             return total.toLocaleString('en-US', {
                 style: 'currency',
-                currency: '{{ shop.currency }}',
-                minimumFractionDigits: 2, // Ensure two decimal places
-                maximumFractionDigits: 2
+                currency: '{{ shop.currency }}'
             });
         }
 
-        // Update total price when quantity changes
+       // Update total price when quantity changes
         quantityInput.addEventListener('input', function() {
             const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
             totalPriceElement.textContent = calculateTotal(quantity, currentPrice);
