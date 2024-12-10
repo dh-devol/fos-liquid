@@ -460,7 +460,7 @@
               <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Define the product price (you can dynamically fetch this from Liquid if needed)
-    const productPrice = {{ product.price | divided_by: 100 | default: 0 }};
+    const productPrice = {{ product.price | default: 0 }};
     
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
@@ -468,8 +468,9 @@
     // Function to calculate and update the subtotal
     const updateSubtotal = () => {
       const quantity = parseFloat(quantityInput.value) || 1;
-      const subtotal = (quantity * productPrice); // Format to 2 decimal places
-      totalPriceElement.textContent = `£${subtotal}`;
+      const subtotalCents = quantity * productPriceCents; // Keep in cents for precision
+      const subtotalDollars = (subtotalCents / 100).toFixed(2); // Convert to dollars for display
+      totalPriceElement.textContent = `$${subtotalDollars}`;
     };
     
     // Add event listener to the quantity input
