@@ -476,12 +476,26 @@
 
     // Function to update the subtotal
     const updateSubtotal = () => {
-      const selectedOption = variantSelect.options[variantSelect.selectedIndex];
-      const variantPriceCents = parseFloat(selectedOption.dataset.price) || 0; // Get price in cents
-      const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if invalid
-      const subtotalCents = quantity * variantPriceCents; // Calculate subtotal in cents
-      const subtotalDollars = (subtotalCents / 100).toFixed(2); // Convert to dollars for display
-      totalPriceElement.textContent = `$${subtotalDollars}`;
+      const updateSubtotal = () => {
+  // Select the div that contains the price for the selected variant
+  const priceDiv = document.querySelector('#price-{{ section.id }} .price--large');
+  
+  // Extract the price (assuming it's rendered as a string with the currency symbol)
+  const priceText = priceDiv.textContent.trim();
+  
+  // Remove any non-numeric characters like the dollar sign
+  const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")) || 0;
+  
+  // Get the quantity
+  const quantity = parseFloat(quantityInput.value) || 1;
+  
+  // Calculate the subtotal
+  const subtotal = quantity * priceNumber;
+  
+  // Update the total price element
+  totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
+};
+
     };
 
     // Event listener for the variant change
