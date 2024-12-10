@@ -469,45 +469,53 @@
               </div>
               <script>
  document.addEventListener('DOMContentLoaded', () => {
-  const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Variant select dropdown
-  const quantityInput = document.getElementById('quantity'); // Quantity input
-  const totalPriceElement = document.getElementById('total-price').querySelector('span'); // Subtotal display element
+  let variantSelect = document.querySelector('[name="options[Tile Size]"]');
+  const quantityInput = document.getElementById('quantity');
+  const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
-  // Assuming `product` object is available globally (common in Shopify themes)
-  const productVariants = window.product?.variants || []; // Get product variants from Shopify's global object
+  const productVariants = window.product?.variants || [];
 
-  // Function to find the selected variant's price
+  // Function to find the selected variant price
   const getSelectedVariantPrice = () => {
-    const selectedOptionValue = variantSelect.value; // Get selected value (variant title)
+    const selectedOptionValue = variantSelect.value;
     const selectedVariant = productVariants.find(
       (variant) => variant.title === selectedOptionValue
-    ); // Find variant by title
-    return selectedVariant ? selectedVariant.price / 100 : 0; // Convert price to dollars
+    );
+    return selectedVariant ? selectedVariant.price / 100 : 0;
   };
 
-  // Function to update the subtotal
+  // Function to update subtotal
   const updateSubtotal = () => {
-    const price = getSelectedVariantPrice(); // Fetch the selected variant's price
-    const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1)
-    const subtotal = price * quantity; // Calculate subtotal
-    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
+    const price = getSelectedVariantPrice();
+    const quantity = parseFloat(quantityInput.value) || 1;
+    const subtotal = price * quantity;
+    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
   };
 
-  // Event listener for variant selection change
-  variantSelect.addEventListener('change', () => {
-    quantityInput.value = 1; // Reset quantity to 1 on variant change
-    updateSubtotal(); // Update subtotal for the new variant
-    console.log('test fire');
-   console.log("Selected Option:", variantSelect.value);
-console.log("Calculated Price:", getSelectedVariantPrice());
-  });
+  // Attach event listener to the variant dropdown
+  const attachEventListener = () => {
+    if (variantSelect) {
+      variantSelect.addEventListener('change', () => {
+        quantityInput.value = 1; // Reset quantity
+        updateSubtotal();
+      });
+    }
+  };
 
-  // Event listener for quantity input change
-  quantityInput.addEventListener('input', updateSubtotal);
-
-  // Initialize subtotal on page load
+  // Initial setup
+  attachEventListener();
   updateSubtotal();
 
+  // Observe DOM changes to re-attach event listeners if necessary
+  const observer = new MutationObserver(() => {
+    const newVariantSelect = document.querySelector('[name="options[Tile Size]"]');
+    if (newVariantSelect !== variantSelect) {
+      variantSelect = newVariantSelect;
+      attachEventListener(); // Re-attach event listener
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
 });
 
 
