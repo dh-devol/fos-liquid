@@ -479,17 +479,12 @@
         let currentPrice = variantPrices["{{ first_available_variant.id }}"];
 
         // Update total price when quantity changes
-         quantityInput.addEventListener('input', function() {
-            const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
-            
-            // Calculate total without rounding and format with currency
-            const total = quantity * currentPrice;
-            totalPriceElement.textContent = new Intl.NumberFormat('en-US', {
+        quantityInput.addEventListener('input', function() {
+            const quantity = parseInt(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
+            totalPriceElement.textContent = (quantity * currentPrice).toLocaleString('en-US', {
                 style: 'currency',
-                currency: '{{ shop.currency }}',
-                minimumFractionDigits: 2, // Ensure cents are displayed correctly
-                maximumFractionDigits: 2
-            }).format(total);
+                currency: '{{ shop.currency }}'
+            });
         });
       const variantSelector = document.querySelector('[name="options[Tile Size]"'); // Assuming Shopify's default variant dropdown
 
