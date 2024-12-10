@@ -465,7 +465,7 @@
      var variantPrices = {
         {% for variant in product.variants %}
         {% if variant.available %}
-        "{{ variant.id }}": {{ variant.price | divided_by: 100 }},
+        "{{ variant.id }}": {{ variant.price }},
         {% endif %}
         {% endfor %}
     };
