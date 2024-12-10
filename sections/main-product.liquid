@@ -499,6 +499,8 @@
     if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
       quantityInput.value = 1; // Reset quantity
       updateSubtotal();
+         console.log("Selected Option:", variantSelect.value);
+console.log("Calculated Price:", getSelectedVariantPrice());
     }
   });
 
