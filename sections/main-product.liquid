@@ -469,55 +469,40 @@
               </div>
               <script>
  document.addEventListener('DOMContentLoaded', () => {
-  const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Target the variant select dropdown
-  const quantityInput = document.getElementById('quantity'); // Target the quantity input field
-  const totalPriceElement = document.getElementById('total-price').querySelector('span'); // Target the element that will display the total price
+  const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Variant select dropdown
+  const quantityInput = document.getElementById('quantity'); // Quantity input
+  const totalPriceElement = document.getElementById('total-price').querySelector('span'); // Subtotal display element
 
-  // Target the div or element where the price is rendered
-  const priceDiv = document.querySelector('#price-{{ section.id }} .price--large .price-item.price-item--regular');
+  // Assuming `product` object is available globally (common in Shopify themes)
+  const productVariants = window.product?.variants || []; // Get product variants from Shopify's global object
+
+  // Function to find the selected variant's price
+  const getSelectedVariantPrice = () => {
+    const selectedOptionValue = variantSelect.value; // Get selected value (variant title)
+    const selectedVariant = productVariants.find(
+      (variant) => variant.title === selectedOptionValue
+    ); // Find variant by title
+    return selectedVariant ? selectedVariant.price / 100 : 0; // Convert price to dollars
+  };
 
   // Function to update the subtotal
   const updateSubtotal = () => {
-    // Extract the price text (default to "$0.00" if the price div is not found)
-    const priceText = priceDiv ? priceDiv.textContent.trim() : "$0.00";
-
-    // Remove any non-numeric characters from the price text (like '$' or ',')
-    const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")) || 0;
-
-    // Get the quantity value from the input (default to 1 if invalid)
-    const quantity = parseFloat(quantityInput.value) || 1;
-
-    // Calculate the subtotal in dollars
-    const subtotal = quantity * priceNumber;
-
-    // Update the total price element with the formatted subtotal
-    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
+    const price = getSelectedVariantPrice(); // Fetch the selected variant's price
+    const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1)
+    const subtotal = price * quantity; // Calculate subtotal
+    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`; // Update subtotal display
   };
-
-  // Monitor price changes using MutationObserver
-  const observer = new MutationObserver(() => {
-    // Trigger subtotal update whenever the price changes
-    updateSubtotal();
-  });
-
-  // Start observing the price div for changes
-  if (priceDiv) {
-    observer.observe(priceDiv, { childList: true, subtree: true });
-  }
 
   // Event listener for variant selection change
   variantSelect.addEventListener('change', () => {
-    // Reset quantity to 1 when the variant changes
-    quantityInput.value = 1;
-
-    // Update subtotal (price might not be updated yet, but observer will catch it)
-    updateSubtotal();
+    quantityInput.value = 1; // Reset quantity to 1 on variant change
+    updateSubtotal(); // Update subtotal for the new variant
   });
 
   // Event listener for quantity input change
   quantityInput.addEventListener('input', updateSubtotal);
 
-  // Initialize subtotal when the page loads
+  // Initialize subtotal on page load
   updateSubtotal();
 });
 
