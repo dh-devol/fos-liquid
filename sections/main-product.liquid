@@ -480,7 +480,7 @@
     const selectedVariantTitle = selectedOption.value;
 
     // Extract the price from the price div (assumed that the correct price is rendered there)
-    const priceDiv = document.querySelector('#price-{{ section.id }} .price--large'); // Adjust this if your price div is different
+    const priceDiv = document.querySelector('.price-item .price-item--regular'); // Adjust this if your price div is different
     const priceText = priceDiv ? priceDiv.textContent.trim() : "$0.00"; // Get the price text (default to $0 if not found)
 
     // Remove any non-numeric characters from the price text (like '$' or ',')
