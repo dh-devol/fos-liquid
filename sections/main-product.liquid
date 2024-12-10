@@ -470,7 +470,7 @@
               <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Reference the DOM elements
-    const variantSelect = document.getElementById('Option-template--23993183732054__main-0');
+    const variantSelect = document.getElementById('[name="options[Tile Size]"]');
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
@@ -490,6 +490,11 @@
       quantityInput.value = 1;
       updateSubtotal(); // Update subtotal for the new variant
     });
+
+    variantSelect.addEventListener('change', () => {
+  // Your code to handle the change event
+  console.log(variantSelect.value); // Log the selected value
+});
 
     // Event listener for the quantity input change
     quantityInput.addEventListener('input', updateSubtotal);
