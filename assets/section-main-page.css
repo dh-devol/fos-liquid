@@ -6,9 +6,25 @@
   margin-bottom: 3rem;
 }
 
+.cols-2 {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.col-break {
+  break-after: column;
+  margin-block-start: 0px;
+}
+
 @media screen and (min-width: 750px) {
   .main-page-title {
     margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cols-2 {
+    column-count: unset;
   }
 }
 
