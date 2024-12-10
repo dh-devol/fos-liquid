@@ -18,7 +18,7 @@
   <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     {{ page.title | escape }}
   </h1>
-  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if page.metafields.custom.number_of_columns == 2 %}cols-2{% endif %}">
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if page.metafields.custom.number_of_columns == 2 %}cols-2{% endif %}">
     {{ page.content }}
   </div>
 </div>
