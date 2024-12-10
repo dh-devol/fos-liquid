@@ -498,6 +498,9 @@
       variantSelect.addEventListener('change', () => {
         quantityInput.value = 1; // Reset quantity
         updateSubtotal();
+         console.log('test fire');
+   console.log("Selected Option:", variantSelect.value);
+console.log("Calculated Price:", getSelectedVariantPrice());
       });
     }
   };
