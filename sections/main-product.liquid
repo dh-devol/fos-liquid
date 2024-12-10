@@ -490,7 +490,7 @@
     const price = getSelectedVariantPrice(); // Fetch the selected variant's price
     const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1)
     const subtotal = price * quantity; // Calculate subtotal
-    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`; // Update subtotal display
+    totalPriceElement.textContent = `$£${subtotal.toFixed(2)}`; // Update subtotal display
   };
 
   // Event listener for variant selection change
