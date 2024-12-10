@@ -476,12 +476,12 @@
 
     // Function to update the subtotal
     const updateSubtotal = () => {
-      const updateSubtotal = () => {
   // Select the div that contains the price for the selected variant
   const priceDiv = document.querySelector('#price-{{ section.id }} .price--large');
   
   // Extract the price (assuming it's rendered as a string with the currency symbol)
   const priceText = priceDiv.textContent.trim();
+  console.log(priceText);
   
   // Remove any non-numeric characters like the dollar sign
   const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")) || 0;
@@ -496,7 +496,6 @@
   totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
 };
 
-    };
 
     // Event listener for the variant change
     variantSelect.addEventListener('change', () => {
