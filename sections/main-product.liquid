@@ -489,7 +489,7 @@
     const price = getSelectedVariantPrice();
     const quantity = parseFloat(quantityInput.value) || 1;
     const subtotal = price * quantity;
-    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
+    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
   };
 
   // Attach event listener to the variant dropdown
