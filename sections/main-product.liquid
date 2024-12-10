@@ -473,15 +473,12 @@
   const quantityInput = document.getElementById('quantity'); // Target the quantity input field
   const totalPriceElement = document.getElementById('total-price').querySelector('span'); // Target the element that will display the total price
 
+    const priceDiv = document.querySelector('#price-{{ section.id }} .price--large .price-item.price-item--regular'); // Adjust this if your price div is different
   // Function to update the subtotal
   const updateSubtotal = () => {
-    // Get the selected variant option text (this could be the variant's title)
-    const selectedOption = variantSelect.options[variantSelect.selectedIndex];
-    const selectedVariantTitle = selectedOption.value;
 
-    // Extract the price from the price div (assumed that the correct price is rendered there)
-    const priceDiv = document.querySelector('#price-{{ section.id }} .price--large .price-item.price-item--regular'); // Adjust this if your price div is different
-    const priceText = priceDiv ? priceDiv.textContent.trim() : "$0.00"; // Get the price text (default to $0 if not found)
+    // Extract the price text (default to "$0.00" if the price div is not found)
+    const priceText = priceDiv ? priceDiv.textContent.trim() : "$0.00";
 
     // Remove any non-numeric characters from the price text (like '$' or ',')
     const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")).toFixed(2) || 0;
@@ -495,6 +492,17 @@
     // Update the total price element with the formatted subtotal
     totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
   };
+
+    // Monitor price changes using MutationObserver
+  const observer = new MutationObserver(() => {
+    // Trigger subtotal update whenever the price changes
+    updateSubtotal();
+  });
+
+  // Start observing the price div for changes
+  if (priceDiv) {
+    observer.observe(priceDiv, { childList: true, subtree: true });
+  }
 
   // Event listener for variant change (when the user selects a different variant)
   variantSelect.addEventListener('change', () => {
