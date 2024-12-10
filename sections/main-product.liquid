@@ -470,7 +470,7 @@
               <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Reference the DOM elements
-    const variantSelect = document.getElementById('[name="options[Tile Size]"]');
+    const variantSelect = document.getElementById('variant');
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
@@ -487,7 +487,6 @@
     // Event listener for the variant change
     variantSelect.addEventListener('change', () => {
       // Reset quantity input to default value
-      
       quantityInput.value = 1;
       updateSubtotal(); // Update subtotal for the new variant
     });
