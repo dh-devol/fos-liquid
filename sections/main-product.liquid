@@ -485,7 +485,7 @@
   
   // Remove any non-numeric characters like the dollar sign
   const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")) || 0;
-  console.log(priceNumber);
+  console.log(priceNumber.toFixed(2));
   
   // Get the quantity
   const quantity = parseFloat(quantityInput.value) || 1;
