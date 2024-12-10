@@ -440,7 +440,7 @@
                     </volume-pricing>
                   {%- endif -%}
                 </div>
-              <div class="calc-test">
+              <div class="calc-test" data-available="{{ product.available }}">
                 <div class="calc-test-box">
                   <label for="quantity">QTY (m²)</label>
                   <input type="number" id="quantity" min="1" value="1" />
@@ -459,6 +459,18 @@
               </div>
               <script>
   document.addEventListener('DOMContentLoaded', () => {
+    // Get the container element
+    const calcTestContainer = document.querySelector('.calc-test');
+
+    // Check if the product is available
+    const isAvailable = calcTestContainer.dataset.available === 'true';
+    
+    if (!isAvailable) {
+      // If unavailable, show a message and disable the input field
+      calcTestContainer.innerHTML = '<p class="unavailable-message">This product is currently unavailable.</p>';
+      return;
+    }
+    
     // Define the product price (you can dynamically fetch this from Liquid if needed)
     const productPrice = {{ product.price | divided_by: 100 | default: 0 }};
     
@@ -469,7 +481,7 @@
     const updateSubtotal = () => {
       const quantity = parseFloat(quantityInput.value) || 1;
       const subtotal = (quantity * productPrice).toFixed(2); // Format to 2 decimal places
-      totalPriceElement.textContent = `£${subtotal}`;
+      totalPriceElement.textContent = `$${subtotal}`;
     };
     
     // Add event listener to the quantity input
