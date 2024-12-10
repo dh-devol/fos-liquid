@@ -476,7 +476,7 @@
 
     // Function to update the subtotal
     const updateSubtotal = () => {
-      const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+      const selectedOption = variantSelect;
       const variantPriceCents = parseFloat(selectedOption.dataset.price) || 0; // Get price in cents
       const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if invalid
       const subtotalCents = quantity * variantPriceCents; // Calculate subtotal in cents
