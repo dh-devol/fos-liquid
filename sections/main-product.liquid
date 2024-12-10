@@ -468,20 +468,21 @@
                 </div>
               </div>
               <script>
-  document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
   const variantSelect = document.querySelector('[name="options[Tile Size]"]'); // Target the variant select dropdown
   const quantityInput = document.getElementById('quantity'); // Target the quantity input field
   const totalPriceElement = document.getElementById('total-price').querySelector('span'); // Target the element that will display the total price
 
-    const priceDiv = document.querySelector('#price-{{ section.id }} .price--large .price-item.price-item--regular'); // Adjust this if your price div is different
+  // Target the div or element where the price is rendered
+  const priceDiv = document.querySelector('#price-{{ section.id }} .price--large');
+
   // Function to update the subtotal
   const updateSubtotal = () => {
-
     // Extract the price text (default to "$0.00" if the price div is not found)
     const priceText = priceDiv ? priceDiv.textContent.trim() : "$0.00";
 
     // Remove any non-numeric characters from the price text (like '$' or ',')
-    const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")).toFixed(2) || 0;
+    const priceNumber = parseFloat(priceText.replace(/[^0-9.-]+/g, "")) || 0;
 
     // Get the quantity value from the input (default to 1 if invalid)
     const quantity = parseFloat(quantityInput.value) || 1;
@@ -490,10 +491,10 @@
     const subtotal = quantity * priceNumber;
 
     // Update the total price element with the formatted subtotal
-    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
+    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
   };
 
-    // Monitor price changes using MutationObserver
+  // Monitor price changes using MutationObserver
   const observer = new MutationObserver(() => {
     // Trigger subtotal update whenever the price changes
     updateSubtotal();
@@ -504,21 +505,22 @@
     observer.observe(priceDiv, { childList: true, subtree: true });
   }
 
-  // Event listener for variant change (when the user selects a different variant)
+  // Event listener for variant selection change
   variantSelect.addEventListener('change', () => {
     // Reset quantity to 1 when the variant changes
     quantityInput.value = 1;
 
-    // Update the subtotal immediately after variant selection
+    // Update subtotal (price might not be updated yet, but observer will catch it)
     updateSubtotal();
   });
 
   // Event listener for quantity input change
   quantityInput.addEventListener('input', updateSubtotal);
 
-  // Initialize the subtotal when the page loads
+  // Initialize subtotal when the page loads
   updateSubtotal();
 });
+
 
 </script>
  
