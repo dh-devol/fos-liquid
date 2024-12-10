@@ -12,7 +12,7 @@
 }
 
 .col-break {
-  break-after: column;
+  break-before: column;
   margin-block-start: 0px;
 }
 
