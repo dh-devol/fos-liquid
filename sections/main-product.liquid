@@ -452,58 +452,12 @@
                   <label>Sub-total</label>
                   <p>Total Price: 
                     <span id="total-price">
-                      {% assign first_available_variant = product.variants | where: 'available', true | first %}
-                      {{ first_available_variant.price | money }}
+                      x
                     </span>
                   </p>
                 </div>
               </div>
-              <script>
  
-
-    // Grab all variant prices from Liquid
-     var variantPrices = {
-        {% for variant in product.variants %}
-        {% if variant.available %}
-        "{{ variant.id }}": {{ variant.price | divided_by: 100 }},
-        {% endif %}
-        {% endfor %}
-    };
-
-    // JavaScript to Update Total Price
-    document.addEventListener('DOMContentLoaded', function() {
-        const quantityInput = document.getElementById('quantity');
-        const totalPriceElement = document.getElementById('total-price');
-        
-        // Default variant price (first variant)
-        let currentPrice = variantPrices["{{ first_available_variant.id }}"];
-
-         // Function to format and display price precisely
-        function calculateTotal(quantity, price) {
-            // Use precise floating-point arithmetic
-            const total = parseFloat((quantity * price).toFixed(2)); // Ensure two decimal places
-            return total.toLocaleString('en-US', {
-                style: 'currency',
-                currency: '{{ shop.currency }}'
-            });
-        }
-
-       // Update total price when quantity changes
-        quantityInput.addEventListener('input', function() {
-            const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
-            totalPriceElement.textContent = calculateTotal(quantity, currentPrice);
-        });
-      const variantSelector = document.querySelector('[name="options[Tile Size]"'); // Assuming Shopify's default variant dropdown
-
-variantSelector.addEventListener('change', function() {
-    const selectedVariantId = variantSelector.value;
-    currentPrice = variantPrices[selectedVariantId];
-    quantityInput.dispatchEvent(new Event('input')); // Trigger recalculation
-});
-    });
-
-                               
-</script>
               {%- when 'popup' -%}
                 <modal-opener
                   class="product-popup-modal__opener quick-add-hidden"
