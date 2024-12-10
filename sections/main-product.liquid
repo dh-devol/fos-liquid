@@ -469,7 +469,7 @@
     const updateSubtotal = () => {
       const quantity = parseFloat(quantityInput.value) || 1;
       const subtotal = (quantity * productPrice).toFixed(2); // Format to 2 decimal places
-      totalPriceElement.textContent = `$${subtotal}`;
+      totalPriceElement.textContent = `£${subtotal}`;
     };
     
     // Add event listener to the quantity input
