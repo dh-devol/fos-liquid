@@ -469,7 +469,7 @@
               </div>
               <script>
  document.addEventListener('DOMContentLoaded', () => {
-  let variantSelect = document.querySelector('[name="options[Tile Size]"]');
+  const container = document.body; // Attach to a stable parent container
   const quantityInput = document.getElementById('quantity');
   const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
@@ -477,6 +477,8 @@
 
   // Function to find the selected variant price
   const getSelectedVariantPrice = () => {
+    const variantSelect = document.querySelector('[name="options[Tile Size]"]');
+    if (!variantSelect) return 0;
     const selectedOptionValue = variantSelect.value;
     const selectedVariant = productVariants.find(
       (variant) => variant.title === selectedOptionValue
@@ -489,36 +491,19 @@
     const price = getSelectedVariantPrice();
     const quantity = parseFloat(quantityInput.value) || 1;
     const subtotal = price * quantity;
-    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
+    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`;
   };
 
-  // Attach event listener to the variant dropdown
-  const attachEventListener = () => {
-    if (variantSelect) {
-      variantSelect.addEventListener('change', () => {
-        quantityInput.value = 1; // Reset quantity
-        updateSubtotal();
-         console.log('test fire');
-   console.log("Selected Option:", variantSelect.value);
-console.log("Calculated Price:", getSelectedVariantPrice());
-      });
-    }
-  };
-
-  // Initial setup
-  attachEventListener();
-  updateSubtotal();
-
-  // Observe DOM changes to re-attach event listeners if necessary
-  const observer = new MutationObserver(() => {
-    const newVariantSelect = document.querySelector('[name="options[Tile Size]"]');
-    if (newVariantSelect !== variantSelect) {
-      variantSelect = newVariantSelect;
-      attachEventListener(); // Re-attach event listener
+  // Event delegation for the dropdown change
+  container.addEventListener('change', (event) => {
+    if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
+      quantityInput.value = 1; // Reset quantity
+      updateSubtotal();
     }
   });
 
-  observer.observe(document.body, { childList: true, subtree: true });
+  // Initialize subtotal
+  updateSubtotal();
 });
 
 
