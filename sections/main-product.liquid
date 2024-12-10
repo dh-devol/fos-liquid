@@ -457,6 +457,28 @@
                   </p>
                 </div>
               </div>
+              <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Define the product price (you can dynamically fetch this from Liquid if needed)
+    const productPrice = {{ product.price | divided_by: 100 | default: 0 }};
+    
+    const quantityInput = document.getElementById('quantity');
+    const totalPriceElement = document.getElementById('total-price').querySelector('span');
+    
+    // Function to calculate and update the subtotal
+    const updateSubtotal = () => {
+      const quantity = parseFloat(quantityInput.value) || 1;
+      const subtotal = (quantity * productPrice).toFixed(2); // Format to 2 decimal places
+      totalPriceElement.textContent = `$${subtotal}`;
+    };
+    
+    // Add event listener to the quantity input
+    quantityInput.addEventListener('input', updateSubtotal);
+
+    // Initialize the subtotal on page load
+    updateSubtotal();
+  });
+</script>
  
               {%- when 'popup' -%}
                 <modal-opener
