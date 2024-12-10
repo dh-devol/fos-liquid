@@ -460,7 +460,7 @@
               <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Define the product price (you can dynamically fetch this from Liquid if needed)
-    const productPrice = {{ product.price | default: 0 }};
+    const productPriceCents  = {{ product.price | default: 0 }};
     
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
