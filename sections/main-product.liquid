@@ -498,6 +498,8 @@
     quantityInput.value = 1; // Reset quantity to 1 on variant change
     updateSubtotal(); // Update subtotal for the new variant
     console.log('test fire');
+   console.log("Selected Option:", variantSelect.value);
+console.log("Calculated Price:", getSelectedVariantPrice());
   });
 
   // Event listener for quantity input change
@@ -505,8 +507,6 @@
 
   // Initialize subtotal on page load
   updateSubtotal();
-   console.log("Selected Option:", variantSelect.value);
-console.log("Calculated Price:", getSelectedVariantPrice());
 
 });
 
