@@ -471,21 +471,33 @@
     };
 
     // JavaScript to Update Total Price
-    document.addEventListener('DOMContentLoaded', function() {
+   document.addEventListener('DOMContentLoaded', function() {
         const quantityInput = document.getElementById('quantity');
         const totalPriceElement = document.getElementById('total-price');
         
-        // Default variant price (first variant)
+        // Default to the first available variant's price
         let currentPrice = variantPrices["{{ first_available_variant.id }}"];
+
+        // Function to format price
+        function formatPrice(price) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: '{{ shop.currency }}',
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            }).format(price);
+        }
+
+        // Set the initial total price
+        totalPriceElement.textContent = formatPrice(currentPrice);
 
         // Update total price when quantity changes
         quantityInput.addEventListener('input', function() {
-            const quantity = parseInt(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
-            totalPriceElement.textContent = (quantity * currentPrice).toLocaleString('en-US', {
-                style: 'currency',
-                currency: '{{ shop.currency }}'
-            });
+            const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if input is empty or invalid
+            const total = quantity * currentPrice; // Calculate total without rounding
+            totalPriceElement.textContent = formatPrice(total);
         });
+    });
       const variantSelector = document.querySelector('[name="options[Tile Size]"'); // Assuming Shopify's default variant dropdown
 
 variantSelector.addEventListener('change', function() {
