@@ -482,7 +482,7 @@
     const selectedVariant = productVariants.find(
       (variant) => variant.title === selectedOptionValue
     ); // Find variant by title
-    return selectedVariant ? selectedVariant.price / 100 : 0; // Convert price to dollars
+    return selectedVariant ? selectedVariant.price; // Convert price to dollars
   };
 
   // Function to update the subtotal
