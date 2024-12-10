@@ -470,7 +470,7 @@
       const quantity = parseFloat(quantityInput.value) || 1;
       const subtotalCents = quantity * productPriceCents; // Keep in cents for precision
       const subtotalDollars = (subtotalCents / 100).toFixed(2); // Convert to dollars for display
-      totalPriceElement.textContent = `$${subtotalDollars}`;
+      totalPriceElement.textContent = `£${subtotalDollars}`;
     };
     
     // Add event listener to the quantity input
