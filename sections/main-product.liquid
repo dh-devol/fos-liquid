@@ -450,7 +450,12 @@
                 </div>
                 <div>
                   <label>Sub-total</label>
-                  <p>Total Price: <span id="total-price">{{ product.variants.first.price | money }}</span></p>
+                  <p>Total Price: 
+                    <span id="total-price">
+                      {% assign first_available_variant = product.variants | where: 'available', true | first %}
+                      {{ first_available_variant.price | money }}
+                    </span>
+                  </p>
                 </div>
               </div>
               <script>
