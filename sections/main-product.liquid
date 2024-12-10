@@ -469,24 +469,32 @@
               </div>
               <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Define the product price (you can dynamically fetch this from Liquid if needed)
-    const productPriceCents  = {{ product.price | default: 0 }};
-    
+    // Reference the DOM elements
+    const variantSelect = document.getElementById('variant');
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
-    
-    // Function to calculate and update the subtotal
+
+    // Function to update the subtotal
     const updateSubtotal = () => {
-      const quantity = parseFloat(quantityInput.value) || 1;
-      const subtotalCents = quantity * productPriceCents; // Keep in cents for precision
+      const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+      const variantPriceCents = parseFloat(selectedOption.dataset.price) || 0; // Get price in cents
+      const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if invalid
+      const subtotalCents = quantity * variantPriceCents; // Calculate subtotal in cents
       const subtotalDollars = (subtotalCents / 100).toFixed(2); // Convert to dollars for display
-      totalPriceElement.textContent = `£${subtotalDollars}`;
+      totalPriceElement.textContent = `$${subtotalDollars}`;
     };
-    
-    // Add event listener to the quantity input
+
+    // Event listener for the variant change
+    variantSelect.addEventListener('change', () => {
+      // Reset quantity input to default value
+      quantityInput.value = 1;
+      updateSubtotal(); // Update subtotal for the new variant
+    });
+
+    // Event listener for the quantity input change
     quantityInput.addEventListener('input', updateSubtotal);
 
-    // Initialize the subtotal on page load
+    // Initialize subtotal on page load
     updateSubtotal();
   });
 </script>
