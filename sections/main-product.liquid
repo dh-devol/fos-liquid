@@ -470,13 +470,13 @@
               <script>
   document.addEventListener('DOMContentLoaded', () => {
     // Reference the DOM elements
-    const variantSelect = document.querySelector('[name="options[Tile Size]"]');
+    const variantSelect = document.getElementById('Option-template--23993183732054__main-0');
     const quantityInput = document.getElementById('quantity');
     const totalPriceElement = document.getElementById('total-price').querySelector('span');
 
     // Function to update the subtotal
     const updateSubtotal = () => {
-      const selectedOption = variantSelect;
+      const selectedOption = variantSelect.options[variantSelect.selectedIndex];
       const variantPriceCents = parseFloat(selectedOption.dataset.price) || 0; // Get price in cents
       const quantity = parseFloat(quantityInput.value) || 1; // Default to 1 if invalid
       const subtotalCents = quantity * variantPriceCents; // Calculate subtotal in cents
