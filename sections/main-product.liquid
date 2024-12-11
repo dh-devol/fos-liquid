@@ -443,9 +443,7 @@
               <div class="calc-test" >
                 <div class="calc-test-box">
                   <label for="quantity">QTY (m²)</label>
-                  {% for variant in product.variants %}
-                    {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-                  {% endfor %}
+                  
                   <input type="number" id="quantity" min="" step="1" value="1" />
                 </div>
                 <div>
@@ -460,6 +458,9 @@
                   </p>
                 </div>
               </div>
+              {% for variant in product.variants %}
+                    {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
+                  {% endfor %}
 
               <script>
                 document.addEventListener('DOMContentLoaded', () => {
