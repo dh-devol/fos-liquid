@@ -516,6 +516,13 @@
                   },
                   {% endfor %}
                 ];
+                document.addEventListener('DOMContentLoaded', () => {
+                  if (window.productVariants) {
+                    console.log("Product Variants:", window.productVariants);
+                  } else {
+                    console.error("Product Variants are not defined.");
+                  }
+                });
               </script>
  
               {%- when 'popup' -%}
