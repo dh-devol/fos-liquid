@@ -440,11 +440,11 @@
                     </volume-pricing>
                   {%- endif -%}
                 </div>
-              {% for variant in product.variants %}
-                    {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-                  {% endfor %}
               <div class="calc-test" >
                 <div class="calc-test-box">
+                  {% for variant in product.variants %}
+                    {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
+                  {% endfor %}
                   <label for="quantity">QTY (m²)</label>
                   
                   <input type="number" id="quantity" min="" step="1" value="1" />
