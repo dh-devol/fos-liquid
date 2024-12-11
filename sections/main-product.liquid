@@ -457,17 +457,6 @@
                   </p>
                 </div>
               </div>
-              <div id="variant-info">
-  <ul>
-    {% for variant in product.variants %}
-      <li>
-        <strong>{{ variant.title }}</strong>: 
-        Minimum Quantity: 
-        {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
 
               <script>
                 document.addEventListener('DOMContentLoaded', () => {
