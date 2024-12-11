@@ -453,7 +453,7 @@
   </div> -->
                 <div class="calc-test-box">
                   <label for="quantity">QTY (m²)</label>
-                  <input type="number" id="quantity" min="1" value="1" />
+                  <input type="number" id="quantity" min=".24" step=".24" value=".24" />
                 </div>
                 <div>
                   <label>QTY (UNIT)</label>
@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const price = getSelectedVariantPrice(); // Get selected variant price
     const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1 if invalid)
     const subtotal = price * quantity; // Calculate subtotal
-    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`; // Update subtotal display
+    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
   };
 
   // Event delegation for the dropdown change
