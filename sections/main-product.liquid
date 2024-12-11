@@ -443,9 +443,10 @@
               <div class="calc-test" >
                 <div class="calc-test-box">
                   <label for="quantity">QTY (m²)</label>
-                  <input type="number" id="quantity" min="{% for variant in product.variants %}
-        {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-    {% endfor %}" step="1" value="1" />
+                  {% for variant in product.variants %}
+                    
+                  <input type="number" id="quantity" min="{{ variant.metafields["custom"]["tile_area"] | default: 1 }}" step="1" value="1" />
+                  {% endfor %}
                 </div>
                 <div>
                   <label>QTY (UNIT)</label>
