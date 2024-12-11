@@ -507,6 +507,18 @@
               </script>
 
               <script>
+                const productVariants = [
+                  {% for variant in product.variants %}
+                  {
+                    id: {{ variant.id }},
+                    title: "{{ variant.title | escape }}",
+                    price: {{ variant.price }},
+                    minQty: {{ variant.metafields.custom.tile_area | default: 1 }}
+                  },
+                  {% endfor %}
+                ];
+              </script>
+              <script>
   console.log("Raw Variant Data:", {{ product.variants | json }});
 </script>
  
