@@ -447,7 +447,6 @@
                 </div>
                 <div>
                   <label>QTY (UNIT)</label>
-                  {{ minQty }}
                 </div>
                 <div>
                   <label>Sub-total</label>
@@ -458,12 +457,25 @@
                   </p>
                 </div>
               </div>
+              <div id="variant-info">
+  <ul>
+    {% for variant in product.variants %}
+      <li>
+        <strong>{{ variant.title }}</strong>: 
+        Minimum Quantity: 
+        {{ variant.metafields["custom"]["minimum_quantity"] | default: 1 }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
               <script>
                 document.addEventListener('DOMContentLoaded', () => {
                   const container = document.body; // Attach to a stable parent container
                   const quantityInput = document.getElementById('quantity');
                   const totalPriceElement = document.getElementById('total-price').querySelector('span');
-
+                  const minQty = variant?.minQty
+                  console.l
                 
                   const productVariants = window.product?.variants || [];
                 
