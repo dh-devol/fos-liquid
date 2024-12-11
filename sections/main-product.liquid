@@ -502,28 +502,13 @@
 
               <script>
                 const test = window.product = {{ product | json }};
+                window.
                 console.log(test);
               </script>
 
               <script>
-                const productVariants = [
-                  {% for variant in product.variants %}
-                  {
-                    id: {{ variant.id }},
-                    title: "{{ variant.title | escape }}",
-                    price: {{ variant.price }},
-                    minQty: {{ variant.metafields.custom.tile_area | default: 1 }}
-                  },
-                  {% endfor %}
-                ];
-                document.addEventListener('DOMContentLoaded', () => {
-                  if (window.productVariants) {
-                    console.log("Product Variants:", window.productVariants);
-                  } else {
-                    console.error("Product Variants are not defined.");
-                  }
-                });
-              </script>
+  console.log("Raw Variant Data:", {{ product.variants | json }});
+</script>
  
               {%- when 'popup' -%}
                 <modal-opener
