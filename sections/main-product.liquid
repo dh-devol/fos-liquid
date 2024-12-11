@@ -479,6 +479,7 @@
   // Function to update the minimum quantity value
   const updateQuantityMinValue = (variant) => {
     const minQty = variant?.minQty || 1;
+    console.log(minQty);
     quantityInput.setAttribute('min', minQty);
     if (parseFloat(quantityInput.value) < minQty) {
       quantityInput.value = minQty;
