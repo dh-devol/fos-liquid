@@ -468,7 +468,7 @@
                 </div>
               </div>
               <script>
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const container = document.body; // Attach to a stable parent container
   const quantityInput = document.getElementById('quantity');
   const totalPriceElement = document.getElementById('total-price').querySelector('span');
@@ -478,35 +478,37 @@
   // Function to find the selected variant price
   const getSelectedVariantPrice = () => {
     const variantSelect = document.querySelector('[name="options[Tile Size]"]');
-    if (!variantSelect) return 0;
-    const selectedOptionValue = variantSelect.value;
+    if (!variantSelect) return 0; // Fallback if dropdown not found
+    const selectedOptionValue = variantSelect.value; // Selected value
     const selectedVariant = productVariants.find(
       (variant) => variant.title === selectedOptionValue
     );
-    return selectedVariant ? selectedVariant.price / 100 : 0;
+    return selectedVariant ? selectedVariant.price / 100 : 0; // Return price in dollars
   };
 
   // Function to update subtotal
   const updateSubtotal = () => {
-    const price = getSelectedVariantPrice();
-    const quantity = parseFloat(quantityInput.value) || 1;
-    const subtotal = price * quantity;
-    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
-    console.log(subtotal);
+    const price = getSelectedVariantPrice(); // Get selected variant price
+    const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1 if invalid)
+    const subtotal = price * quantity; // Calculate subtotal
+    totalPriceElement.textContent = `$${subtotal.toFixed(2)}`; // Update subtotal display
   };
 
   // Event delegation for the dropdown change
   container.addEventListener('change', (event) => {
     if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
-      quantityInput.value = 1; // Reset quantity
-      updateSubtotal();
-
+      quantityInput.value = 1; // Reset quantity on variant change
+      updateSubtotal(); // Update subtotal
     }
   });
 
-  // Initialize subtotal
+  // Event listener for quantity input
+  quantityInput.addEventListener('input', updateSubtotal);
+
+  // Initialize subtotal on page load
   updateSubtotal();
 });
+
 
 
 </script>
