@@ -506,7 +506,7 @@
               </script>
 
               <script>
-                const productVariantsi = [
+                const productVariants = [
                   {% for variant in product.variants %}
                   {
                     id: {{ variant.id }},
@@ -517,8 +517,8 @@
                   {% endfor %}
                 ];
                 document.addEventListener('DOMContentLoaded', () => {
-                  if (window.productVariantsi) {
-                    console.log("Product Variants:", window.productVariantsi);
+                  if (window.productVariants) {
+                    console.log("Product Variants:", window.productVariants);
                   } else {
                     console.error("Product Variants are not defined.");
                   }
