@@ -514,11 +514,10 @@
               </script>
 
               <script>
+                // Expose general product data
                 const test = window.product = {{ product | json }};
-                // console.log(test);
-              </script>
-
-              <script>
+                
+                // Expose variant-specific data, including minQty metafield
                 const productVariants = [
                   {% for variant in product.variants %}
                   {
@@ -526,13 +525,10 @@
                     title: "{{ variant.title | escape }}",
                     price: {{ variant.price }},
                     minQty: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-                  },
+                  }{% if forloop.last == false %},{% endif %}
                   {% endfor %}
                 ];
               </script>
-              <script>
-  console.log(productVariants);
-</script>
  
               {%- when 'popup' -%}
                 <modal-opener
