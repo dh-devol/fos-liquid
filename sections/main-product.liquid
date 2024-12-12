@@ -537,7 +537,7 @@
               </script>
 
               <script>
-                window.productVariants = [
+                const productVariants = [
                   {% for variant in product.variants %}
                   {
                     id: {{ variant.id }},
