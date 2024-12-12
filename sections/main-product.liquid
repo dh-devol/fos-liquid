@@ -551,7 +551,7 @@
 
               <script>
                 const test1 = window.productVariants = {{ product.variants | map: 'id' | json }};
-                const= test2 = window.productVariantMetafields = {{ product.variants | map: 'metafields' | json }};
+                const test2 = window.productVariantMetafields = {{ product.variants | map: 'metafields' | json }};
                 console.log("1 " test1, "2 " test2);
             </script>
  
