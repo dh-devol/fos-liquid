@@ -500,6 +500,7 @@
                     const minQty = selectedVariant.minQty || 1; // Use metafield value or fallback to 1
                     quantityInput.setAttribute('min', minQty); // Update input's min attribute
                     quantityInput.value = minQty; // Set input's value to minQty
+                    console.log(minQty);
                   };
                 
                   // Function to update subtotal
