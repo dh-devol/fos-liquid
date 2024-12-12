@@ -548,13 +548,6 @@
   ];
 </script>
 
-
-              <script>
-                const test1 = window.productVariants = {{ product.variants | map: 'id' | json }};
-                const test2 = window.productVariantMetafields = {{ product.variants | map: 'metafields' | json }};
-                console.log(test1);
-                console.log(test2);
-            </script>
  
               {%- when 'popup' -%}
                 <modal-opener
