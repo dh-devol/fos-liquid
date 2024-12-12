@@ -521,7 +521,7 @@
         {% for variant in product.variants %}
         {
             ...{{ variant | json }},
-            minQty: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
+            tileArea: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
     ]
