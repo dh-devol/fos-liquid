@@ -514,20 +514,22 @@
               </script>
 
               <script>
-                // Expose general product data
-                const wholeProduct = window.product = {{ product | json }};
-                
-                // Expose variant-specific data, including minQty metafield
-                const productVariants = [
-                  {% for variant in product.variants %}
-                  {
-                    id: {{ variant.id }},
-                    title: "{{ variant.title | escape }}",
-                    price: {{ variant.price }},
-                    minQty: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-                  }{% if forloop.last == false %},{% endif %}
-                  {% endfor %}
-                ];
+    // Expose general product data
+    const test = window.product = {
+    ...{{ product | json }},
+    variants: [
+        {% for variant in product.variants %}
+        {
+            ...{{ variant | json }},
+            minQty: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
+        }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ]
+};
+
+                console.log(test);
+</script>
+
                 console.log(wholeProduct);
                 console.log('Product Variants:', productVariants);
 
