@@ -499,9 +499,9 @@
         const selectedVariant = getSelectedVariant();
         const minQty = selectedVariant ? selectedVariant.tile_area || 1 : 1; // Fallback to 1 if minQty is not set
         quantityInput.min = minQty; // Set the min value for quantity input
-        console.log(quantityInput.min);
         if (parseFloat(quantityInput.value) < minQty) {
             quantityInput.value = minQty; // Reset quantity to min value if it's below
+          console.log(quantityInput.value);
         }
     };
     
