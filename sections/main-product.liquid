@@ -443,7 +443,7 @@
               <div class="calc-test" >
                 <div class="calc-test-box">
                   <label for="quantity">QTY (m²)</label>
-                  <input type="number" id="quantity" min="1" step="1" value="1" />
+                  <input type="number" id="quantity" min="1" />
                 </div>
                 <div>
                   <label>QTY (UNIT)</label>
@@ -503,7 +503,7 @@
             quantityInput.value = minQty; // Reset quantity to min value if it's below
         }
     };
-                  console.log(updateMinQty.minQty);
+                  console.log(minQty);
     
     // Function to update subtotal
     const updateSubtotal = () => {
