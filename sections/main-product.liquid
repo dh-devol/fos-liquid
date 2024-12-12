@@ -458,7 +458,7 @@
                 </div>
               </div>
               <div id="variant-info">
-  <ul>
+  <!-- <ul>
     {% for variant in product.variants %}
       <li>
         <strong>{{ variant.title }}</strong>: 
@@ -466,7 +466,7 @@
         {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
       </li>
     {% endfor %}
-  </ul>
+  </ul> -->
 </div>
 
 
@@ -514,25 +514,19 @@
               </script>
 
               <script>
-    // Expose general product data
-    const test = window.product = {
-    ...{{ product | json }},
-    variants: [
-        {% for variant in product.variants %}
-        {
-            ...{{ variant | json }},
-            tileArea: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-        }{% if forloop.last == false %},{% endif %}
-        {% endfor %}
-    ]
-};
-
+                // Expose general product data
+                const test = window.product = {
+                  ...{{ product | json }},
+                  variants: [
+                      {% for variant in product.variants %}
+                      {
+                          ...{{ variant | json }},
+                          tile_area: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
+                      }{% if forloop.last == false %},{% endif %}
+                      {% endfor %}
+                  ]
+                };
                 console.log(test);
-</script>
-
-                console.log(wholeProduct);
-                console.log('Product Variants:', productVariants);
-
               </script>
  
               {%- when 'popup' -%}
