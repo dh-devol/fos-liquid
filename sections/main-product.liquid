@@ -457,91 +457,78 @@
                   </p>
                 </div>
               </div>
-              <div id="variant-info">
-  <!-- <ul>
-    {% for variant in product.variants %}
-      <li>
-        <strong>{{ variant.title }}</strong>: 
-        Minimum Quantity: 
-        {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-      </li>
-    {% endfor %}
-  </ul> -->
-</div>
-
 
               <script>
                 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.body; // Attach to a stable parent container
-    const quantityInput = document.getElementById('quantity');
-    const totalPriceElement = document.getElementById('total-price').querySelector('span');
-    
-    const productVariants = window.product?.variants || [];
-    
-    // Function to find the selected variant
-    const getSelectedVariant = () => {
-        const variantSelect = document.querySelector('[name="options[Tile Size]"]');
-        if (!variantSelect) return null; // Fallback if dropdown not found
-        const selectedOptionValue = variantSelect.value; // Selected value
-        return productVariants.find(
-            (variant) => variant.title === selectedOptionValue
-        );
-    };
-    
-    // Function to get the selected variant price
-    const getSelectedVariantPrice = () => {
-        const selectedVariant = getSelectedVariant();
-        return selectedVariant ? selectedVariant.price / 100 : 0; // Return price in dollars
-    };
-
-    // Function to update the minQty based on selected variant
-    const updateMinQty = () => {
-        const selectedVariant = getSelectedVariant();
-        const minQty = selectedVariant ? selectedVariant.tile_area || 1 : 1; // Fallback to 1 if minQty is not set
-        quantityInput.min = minQty; // Set the min value for quantity input
-        quantityInput.step = minQty;
-        quantityInput.value = minQty;
-        if (parseFloat(quantityInput.value) < minQty) {
-            quantityInput.value = minQty; // Reset quantity to min value if it's below
-        }
-    };
-    
-    // Function to update subtotal
-    const updateSubtotal = () => {
-        const price = getSelectedVariantPrice(); // Get selected variant price
-        const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1 if invalid)
-        const subtotal = price * quantity; // Calculate subtotal
-        totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
-    };
-    
-    // Event delegation for the dropdown change
-    container.addEventListener('change', (event) => {
-        if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
-            quantityInput.value = 1; // Reset quantity on variant change
-            updateMinQty(); // Update minQty
-            updateSubtotal(); // Update subtotal
-        }
-    });
-    
-    // Event listener for quantity input
-    quantityInput.addEventListener('input', () => {
-        const minQty = parseFloat(quantityInput.min);
-        if (parseFloat(quantityInput.value) < minQty) {
-            quantityInput.value = minQty; // Prevent user from entering less than minQty
-        }
-        updateSubtotal();
-    });
-    
-    // Initialize on page load
-    updateMinQty(); // Set initial minQty
-    updateSubtotal(); // Initialize subtotal
-});
-
+                  const container = document.body; // Attach to a stable parent container
+                  const quantityInput = document.getElementById('quantity');
+                  const totalPriceElement = document.getElementById('total-price').querySelector('span');
+                  
+                  const productVariants = window.product?.variants || [];
+                  
+                  // Function to find the selected variant
+                  const getSelectedVariant = () => {
+                      const variantSelect = document.querySelector('[name="options[Tile Size]"]');
+                      if (!variantSelect) return null; // Fallback if dropdown not found
+                      const selectedOptionValue = variantSelect.value; // Selected value
+                      return productVariants.find(
+                          (variant) => variant.title === selectedOptionValue
+                      );
+                  };
+                  
+                  // Function to get the selected variant price
+                  const getSelectedVariantPrice = () => {
+                      const selectedVariant = getSelectedVariant();
+                      return selectedVariant ? selectedVariant.price / 100 : 0; // Return price in dollars
+                  };
+              
+                  // Function to update the minQty based on selected variant
+                  const updateMinQty = () => {
+                      const selectedVariant = getSelectedVariant();
+                      const minQty = selectedVariant ? selectedVariant.tile_area || 1 : 1; // Fallback to 1 if minQty is not set
+                      quantityInput.min = minQty; // Set the min value for quantity input
+                      quantityInput.step = minQty;
+                      quantityInput.value = minQty;
+                      if (parseFloat(quantityInput.value) < minQty) {
+                          quantityInput.value = minQty; // Reset quantity to min value if it's below
+                      }
+                  };
+                  
+                  // Function to update subtotal
+                  const updateSubtotal = () => {
+                      const price = getSelectedVariantPrice(); // Get selected variant price
+                      const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1 if invalid)
+                      const subtotal = price * quantity; // Calculate subtotal
+                      totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
+                  };
+                  
+                  // Event delegation for the dropdown change
+                  container.addEventListener('change', (event) => {
+                      if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
+                          quantityInput.value = 1; // Reset quantity on variant change
+                          updateMinQty(); // Update minQty
+                          updateSubtotal(); // Update subtotal
+                      }
+                  });
+                  
+                  // Event listener for quantity input
+                  quantityInput.addEventListener('input', () => {
+                      const minQty = parseFloat(quantityInput.min);
+                      if (parseFloat(quantityInput.value) < minQty) {
+                          quantityInput.value = minQty; // Prevent user from entering less than minQty
+                      }
+                      updateSubtotal();
+                  });
+                  
+                  // Initialize on page load
+                  updateMinQty(); // Set initial minQty
+                  updateSubtotal(); // Initialize subtotal
+                });
               </script>
 
               <script>
                 // Expose general product data
-                const test = window.product = {
+                const allProductVariants = window.product = {
                   ...{{ product | json }},
                   variants: [
                       {% for variant in product.variants %}
@@ -552,7 +539,6 @@
                       {% endfor %}
                   ]
                 };
-                console.log(test);
               </script>
  
               {%- when 'popup' -%}
