@@ -500,7 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateQuantityFromUnit = () => {
         const minQty = getMinQty();
         const unitValue = Math.max(Number(quantityUnitInput.value) || 1, 1);
-        const newQuantity = (unitValue * minQty).toFixed(2);
+        const newQuantity = (unitValue * minQty);
         quantityInput.value = newQuantity;
         updateSubtotal();
     };
