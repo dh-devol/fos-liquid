@@ -483,38 +483,37 @@
               
                   // Function to update the minQty based on selected variant
                  const updateMinQty = () => {
-    const selectedVariant = getSelectedVariant();
-    const minQty = selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
-    quantityInput.min = minQty;
-    quantityInput.step = minQty;
-    quantityInput.value = minQty; // Reset value to minQty
-};
+                    const selectedVariant = getSelectedVariant();
+                    const minQty = selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
+                    quantityInput.min = minQty;
+                    quantityInput.step = minQty;
+                    quantityInput.value = minQty; // Reset value to minQty
+                };
 
+                // Function to update subtotal
+                const updateSubtotal = () => {
+                    const price = getSelectedVariantPrice(); // Get selected variant price
+                    const quantity = Number(quantityInput.value) || 1;
+                    const subtotal = price * quantity; // Calculate subtotal
+                    totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
+                };
                   
-                  // Function to update subtotal
-                  const updateSubtotal = () => {
-                      const price = getSelectedVariantPrice(); // Get selected variant price
-                      const quantity = Number(quantityInput.value) || 1;
-                      const subtotal = price * quantity; // Calculate subtotal
-                      totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
-                  };
+                // Event delegation for the dropdown change
+                container.addEventListener('change', (event) => {
+                    if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
+                        updateMinQty(); // Update minQty
+                        updateSubtotal(); // Update subtotal
+                    }
+                });
                   
-                  // Event delegation for the dropdown change
-                  container.addEventListener('change', (event) => {
-                      if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
-                          updateMinQty(); // Update minQty
-                          updateSubtotal(); // Update subtotal
-                      }
-                  });
-                  
-                  // Event listener for quantity input
-                  quantityInput.addEventListener('input', () => {
-                      const minQty = parseFloat(quantityInput.min);
-                      if (parseFloat(quantityInput.value) < minQty) {
-                          quantityInput.value = minQty; // Prevent user from entering less than minQty
-                      }
-                      updateSubtotal();
-                  });
+                // Event listener for quantity input
+                quantityInput.addEventListener('input', () => {
+                    const minQty = parseFloat(quantityInput.min);
+                    if (parseFloat(quantityInput.value) < minQty) {
+                        quantityInput.value = minQty; // Prevent user from entering less than minQty
+                    }
+                    updateSubtotal();
+                });
                   
                   // Initialize on page load
                   updateMinQty(); // Set initial minQty
