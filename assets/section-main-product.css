@@ -13,6 +13,10 @@ product-info {
   width: 30%;
 }
 
+.calc-test-box input {
+  width: 50%;
+}
+
 .product {
   margin: 0;
 }
