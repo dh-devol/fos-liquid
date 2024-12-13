@@ -522,10 +522,8 @@
                   updateMinQty(); // Set initial minQty
                   updateSubtotal(); // Initialize subtotal
                 });
-              </script>
 
-              <script>
-                window.product = {
+                              window.product = {
     ...{{ product | json }},
     variants: [
         {% for variant in product.variants %}
@@ -536,6 +534,10 @@
         {% endfor %}
     ]
 };
+              </script>
+
+              <script>
+  
               </script>
  
               {%- when 'popup' -%}
