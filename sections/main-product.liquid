@@ -482,21 +482,19 @@
                   };
               
                   // Function to update the minQty based on selected variant
-                  const updateMinQty = () => {
-                      const selectedVariant = getSelectedVariant();
-                      const minQty = selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
-                      quantityInput.min = minQty; // Set the min value for quantity input
-                      quantityInput.step = minQty;
-                      quantityInput.value = minQty;
-                      if (parseFloat(quantityInput.value) < minQty) {
-                          quantityInput.value = minQty; // Reset quantity to min value if it's below
-                      }
-                  };
+                 const updateMinQty = () => {
+    const selectedVariant = getSelectedVariant();
+    const minQty = selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
+    quantityInput.min = minQty;
+    quantityInput.step = minQty;
+    quantityInput.value = minQty; // Reset value to minQty
+};
+
                   
                   // Function to update subtotal
                   const updateSubtotal = () => {
                       const price = getSelectedVariantPrice(); // Get selected variant price
-                      const quantity = parseFloat(quantityInput.value) || 1; // Get quantity (default to 1 if invalid)
+                      const quantity = Number(quantityInput.value) || 1;
                       const subtotal = price * quantity; // Calculate subtotal
                       totalPriceElement.textContent = `£${subtotal.toFixed(2)}`; // Update subtotal display
                   };
