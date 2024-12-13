@@ -13,6 +13,10 @@ product-info {
   width: 30%;
 }
 
+.calc-test-box #total-price {
+  margin: 0;
+}
+
 .product {
   margin: 0;
 }
