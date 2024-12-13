@@ -500,7 +500,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateQuantityFromUnit = () => {
         const minQty = getMinQty();
         const unitValue = Math.max(Number(quantityUnitInput.value) || 1, 1);
-        const newQuantity = unitValue * minQty;
+        const newQuantity = (unitValue * minQty).toFixed(2);
         quantityInput.value = newQuantity;
         updateSubtotal();
     };
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateUnitFromQuantity = () => {
         const minQty = getMinQty();
         const quantity = Math.max(Number(quantityInput.value) || minQty, minQty);
-        const unitValue = Math.round(quantity / minQty); // Ensure correct integer value
+        const unitValue = Math.round(quantity / minQty).toFixed(2); // Ensure correct integer value
         quantityUnitInput.value = unitValue;
         updateSubtotal();
     };
