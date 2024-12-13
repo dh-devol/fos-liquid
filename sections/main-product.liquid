@@ -525,18 +525,17 @@
               </script>
 
               <script>
-                // Expose general product data
-                const allProductVariants = window.product = {
-                  ...{{ product | json }},
-                  variants: [
-                      {% for variant in product.variants %}
-                      {
-                          ...{{ variant | json }},
-                          tile_area: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
-                      }{% if forloop.last == false %},{% endif %}
-                      {% endfor %}
-                  ]
-                };
+                window.product = {
+    ...{{ product | json }},
+    variants: [
+        {% for variant in product.variants %}
+        {
+            ...{{ variant | json }},
+            tile_area: {{ variant.metafields["custom"]["tile_area"] | default: 1 }}
+        }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ]
+};
               </script>
  
               {%- when 'popup' -%}
