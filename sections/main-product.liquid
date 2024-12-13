@@ -451,11 +451,7 @@
                 </div>
                 <div class="calc-test-box">
                   <label>Sub-total</label>
-                  <p id="total-price">
-                    <span >
-                      
-                    </span>
-                  </p>
+                  <p id="total-price"></p>
                 </div>
               </div>
 
@@ -463,7 +459,7 @@
                 document.addEventListener('DOMContentLoaded', () => {
                   const container = document.body; // Attach to a stable parent container
                   const quantityInput = document.getElementById('quantity');
-                  const totalPriceElement = document.getElementById('total-price').querySelector('span');
+                  const totalPriceElement = document.getElementById('total-price');
                   
                   const productVariants = window.product?.variants || [];
                   
