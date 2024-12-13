@@ -456,7 +456,7 @@
               </div>
 
               <script>
-                document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
     const container = document.body;
     const quantityInput = document.getElementById('quantity');
     const quantityUnitInput = document.getElementById('quantity-unit');
@@ -484,15 +484,9 @@
     };
 
     // Function to update minQty based on selected variant
-    const updateMinQty = () => {
+    const getMinQty = () => {
         const selectedVariant = getSelectedVariant();
-        const minQty = selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
-        quantityInput.min = minQty;
-        quantityInput.step = minQty;
-        quantityInput.value = minQty;
-
-        // Sync the quantityUnitInput based on minQty
-        quantityUnitInput.value = minQty;
+        return selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
     };
 
     // Function to update subtotal
@@ -503,45 +497,48 @@
         totalPriceElement.textContent = `£${subtotal.toFixed(2)}`;
     };
 
-    // Function to sync quantity and quantity-unit inputs
-    const syncInputs = (sourceInput) => {
-        const isQuantityInput = sourceInput === quantityInput;
-        const minQty = Number(quantityInput.min);
-        const sourceValue = Math.max(Number(sourceInput.value) || minQty, minQty);
-
-        if (isQuantityInput) {
-            // Update quantityUnitInput based on quantityInput
-            const unitValue = sourceValue / minQty;
-            quantityUnitInput.value = unitValue.toFixed(0); // Sync units
-        } else {
-            // Update quantityInput based on quantityUnitInput
-            const newQuantity = sourceValue * minQty;
-            quantityInput.value = newQuantity.toFixed(0); // Sync quantity
-        }
-
+    // Function to sync quantity based on quantityUnitInput
+    const updateQuantityFromUnit = () => {
+        const minQty = getMinQty();
+        const unitValue = Math.max(Number(quantityUnitInput.value) || 1, 1);
+        const newQuantity = unitValue * minQty;
+        quantityInput.value = newQuantity; // Update the quantity input
         updateSubtotal();
     };
 
-    // Handle variant dropdown changes
+    // Function to sync quantityUnitInput based on quantity
+    const updateUnitFromQuantity = () => {
+        const minQty = getMinQty();
+        const quantity = Math.max(Number(quantityInput.value) || minQty, minQty);
+        const unitValue = Math.ceil(quantity / minQty);
+        quantityUnitInput.value = unitValue; // Update the unit input
+        updateSubtotal();
+    };
+
+    // Event delegation for variant dropdown changes
     container.addEventListener('change', (event) => {
         if (event.target?.matches('[name="options[Tile Size]"]')) {
-            updateMinQty();
+            const minQty = getMinQty();
+            quantityInput.value = minQty; // Reset quantity to minQty
+            quantityUnitInput.value = 1; // Reset unit to 1
             updateSubtotal();
         }
     });
 
-    // Handle changes in quantity input
+    // Event listener for quantity input changes
     quantityInput.addEventListener('input', () => {
-        syncInputs(quantityInput);
+        updateUnitFromQuantity();
     });
 
-    // Handle changes in quantity-unit input
+    // Event listener for quantity-unit input changes
     quantityUnitInput.addEventListener('input', () => {
-        syncInputs(quantityUnitInput);
+        updateQuantityFromUnit();
     });
 
     // Initialize on page load
-    updateMinQty();
+    const minQty = getMinQty();
+    quantityInput.value = minQty;
+    quantityUnitInput.value = 1;
     updateSubtotal();
 });
 
@@ -557,6 +554,7 @@ window.product = {
         {% endfor %}
     ]
 };
+
 
               </script>
  
