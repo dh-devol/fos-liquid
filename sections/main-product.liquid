@@ -502,7 +502,6 @@
                   // Event delegation for the dropdown change
                   container.addEventListener('change', (event) => {
                       if (event.target && event.target.matches('[name="options[Tile Size]"]')) {
-                          quantityInput.value = 1; // Reset quantity on variant change
                           updateMinQty(); // Update minQty
                           updateSubtotal(); // Update subtotal
                       }
