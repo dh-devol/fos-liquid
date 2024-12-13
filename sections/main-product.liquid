@@ -488,6 +488,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
     };
 
+    // Function to format number for display without trailing zeros
+    const formatForDisplay = (value) => {
+        return value % 1 === 0 ? value.toFixed(0) : value.toFixed(2);
+    };
+
     // Function to update subtotal
     const updateSubtotal = () => {
         const price = getSelectedVariantPrice();
@@ -500,8 +505,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateQuantityFromUnit = () => {
         const minQty = getMinQty();
         const unitValue = Math.max(Number(quantityUnitInput.value) || 1, 1);
-        const newQuantity = (unitValue * minQty).toFixed(2); // Round quantity to 2 decimal places
-        quantityInput.value = newQuantity;
+        const newQuantity = unitValue * minQty;
+        quantityInput.value = formatForDisplay(newQuantity); // Display without trailing zeros
         updateSubtotal();
     };
 
@@ -509,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateUnitFromQuantity = () => {
         const minQty = getMinQty();
         const quantity = Math.max(Number(quantityInput.value) || minQty, minQty);
-        const unitValue = Math.round(quantity / minQty); // Keep as an integer
+        const unitValue = Math.round(quantity / minQty);
         quantityUnitInput.value = unitValue;
         updateSubtotal();
     };
@@ -520,7 +525,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const minQty = getMinQty();
             quantityInput.min = minQty;
             quantityInput.step = minQty;
-            quantityInput.value = minQty.toFixed(2); // Round to 2 decimal places
+            quantityInput.value = formatForDisplay(minQty); // Display without trailing zeros
             quantityUnitInput.value = 1;
             updateSubtotal();
         }
@@ -541,7 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
             value = minQty;
         }
 
-        quantityInput.value = value.toFixed(2); // Round to 2 decimal places
+        quantityInput.value = formatForDisplay(value); // Display without trailing zeros
         updateUnitFromQuantity();
     });
 
@@ -554,10 +559,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const minQty = getMinQty();
     quantityInput.min = minQty;
     quantityInput.step = minQty;
-    quantityInput.value = minQty.toFixed(2); // Round to 2 decimal places
+    quantityInput.value = formatForDisplay(minQty); // Display without trailing zeros
     quantityUnitInput.value = 1;
     updateSubtotal();
 });
+
 
 
 
