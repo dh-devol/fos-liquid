@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateUnitFromQuantity = () => {
         const minQty = getMinQty();
         const quantity = Math.max(Number(quantityInput.value) || minQty, minQty);
-        const unitValue = Math.ceil(quantity / minQty);
+        const unitValue = Math.round(quantity / minQty); // Ensure correct integer value
         quantityUnitInput.value = unitValue;
         updateSubtotal();
     };
@@ -558,6 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quantityUnitInput.value = 1;
     updateSubtotal();
 });
+
 
 
 // Expose product data globally
