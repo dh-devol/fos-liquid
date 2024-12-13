@@ -484,7 +484,7 @@
                   // Function to update the minQty based on selected variant
                   const updateMinQty = () => {
                       const selectedVariant = getSelectedVariant();
-                      const minQty = selectedVariant ? selectedVariant.tile_area || 1 : 1; // Fallback to 1 if minQty is not set
+                      const minQty = selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
                       quantityInput.min = minQty; // Set the min value for quantity input
                       quantityInput.step = minQty;
                       quantityInput.value = minQty;
