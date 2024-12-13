@@ -456,7 +456,7 @@
               </div>
 
               <script>
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const container = document.body;
     const quantityInput = document.getElementById('quantity');
     const quantityUnitInput = document.getElementById('quantity-unit');
@@ -482,7 +482,7 @@
         return selectedVariant ? selectedVariant.price / 100 : 0;
     };
 
-    // Function to update the minQty based on selected variant
+    // Function to get the minQty for the selected variant
     const getMinQty = () => {
         const selectedVariant = getSelectedVariant();
         return selectedVariant ? Number(selectedVariant.tile_area) || 1 : 1;
@@ -501,7 +501,7 @@
         const minQty = getMinQty();
         const unitValue = Math.max(Number(quantityUnitInput.value) || 1, 1);
         const newQuantity = unitValue * minQty;
-        quantityInput.value = newQuantity; // Update the quantity input
+        quantityInput.value = newQuantity;
         updateSubtotal();
     };
 
@@ -510,18 +510,18 @@
         const minQty = getMinQty();
         const quantity = Math.max(Number(quantityInput.value) || minQty, minQty);
         const unitValue = Math.ceil(quantity / minQty);
-        quantityUnitInput.value = unitValue; // Update the unit input
+        quantityUnitInput.value = unitValue;
         updateSubtotal();
     };
 
-    // Event delegation for variant dropdown changes
+    // Event delegation for dropdown changes
     container.addEventListener('change', (event) => {
         if (event.target?.matches('[name="options[Tile Size]"]')) {
             const minQty = getMinQty();
-            quantityInput.min = minQty; // Update min value for quantity input
-            quantityInput.step = minQty; // Ensure it increments by minQty
-            quantityInput.value = minQty; // Reset quantity to minQty
-            quantityUnitInput.value = 1; // Reset unit to 1
+            quantityInput.min = minQty;
+            quantityInput.step = minQty;
+            quantityInput.value = minQty;
+            quantityUnitInput.value = 1;
             updateSubtotal();
         }
     });
@@ -529,13 +529,19 @@
     // Event listener for quantity input changes
     quantityInput.addEventListener('input', () => {
         const minQty = getMinQty();
-        const value = Number(quantityInput.value) || minQty;
+        let value = Number(quantityInput.value) || minQty;
 
-        // Ensure the value aligns with minQty increments
+        // Adjust the value to remain a multiple of minQty
         if (value % minQty !== 0) {
-            quantityInput.value = Math.ceil(value / minQty) * minQty;
+            value = Math.round(value / minQty) * minQty;
         }
 
+        // Prevent decrementing below minQty
+        if (value < minQty) {
+            value = minQty;
+        }
+
+        quantityInput.value = value;
         updateUnitFromQuantity();
     });
 
@@ -552,6 +558,7 @@
     quantityUnitInput.value = 1;
     updateSubtotal();
 });
+
 
 // Expose product data globally
 window.product = {
